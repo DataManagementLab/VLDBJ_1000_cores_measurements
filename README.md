@@ -1,11 +1,11 @@
-## General Structure
+# General Structure
 
 In the following data collection, we provide for all experiments discussed in __[paper](paper)__: __1.__ The configuration (".conf") and scripts (".sh") for the experimental setup, raw logs ("log.out", ".log"), and extracted measurements (".results.csv") compressed into measurements.zip; __2.__ accumulated measurements ("result.csv") and resulting plots (".svg", ".tex").
 
 The data collection is first organized as the experiments appear in the paper and
 second by hardware platforms (HPE, Power8, and Power9).
 
-## Memory latency and bandwidth by NUMA (Section 2, Table 2)
+# Memory latency and bandwidth by NUMA (Section 2, Table 2)
 
 [section_2_memory_latency_and_bandwidth](section_2_memory_latency_and_bandwidth) contains the raw data from the measurements of memory latency and bandwidth made with HCMT
 
@@ -16,9 +16,9 @@ All following measurements were only executed on the HPE hardware platform.
 
 The following measurements contain the initial rerun of the original prototype on real hardware, Fig. 4 and Fig. 5.
 
-[section_3-1_plain_original_results_high_conflict_4_warehouses](plain_original_results_high_conflict_4_warehouses) contains the measurements for high conflict workload with 4 warehouses, Fig. 4a and Fig. 5a.
+[section_3-1_plain_original_results_high_conflict_4_warehouses](section_3-1_plain_original_results_high_conflict_4_warehouses) contains the measurements for high conflict workload with 4 warehouses, Fig. 4a and Fig. 5a.
 
-[section_3-1_plain_original_results_low_conflict_1024_warehouses](plain_original_results_low_conflict_1024_warehouses) contains the measurements for high conflict workload with 4 warehouses, Fig. 4b and Fig. 5b.
+[section_3-1_plain_original_results_low_conflict_1024_warehouses](section_3-1_plain_original_results_low_conflict_1024_warehouses) contains the measurements for high conflict workload with 4 warehouses, Fig. 4b and Fig. 5b.
 
 ## A Second Look: Hidden Secrets (Section 3.2)
 
