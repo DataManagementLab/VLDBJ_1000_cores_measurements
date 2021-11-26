@@ -1,0 +1,1390 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.945098039215686,0.345098039215686,0.329411764705882}
+\definecolor{color1}{rgb}{0.870588235294118,0.811764705882353,0.247058823529412}
+\definecolor{color2}{rgb}{0.980392156862745,0.643137254901961,0.227450980392157}
+\definecolor{color3}{rgb}{0.364705882352941,0.647058823529412,0.854901960784314}
+\definecolor{color4}{rgb}{0.698039215686274,0.462745098039216,0.698039215686274}
+\definecolor{color5}{rgb}{1,0,0.501960784313725}
+
+\begin{groupplot}[group style={group size=4 by 2}]
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled x ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={DL DETECT},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.4, xmax=8.4,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+xticklabels={},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Speedup},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=5.62101480910415,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black}
+]
+\path [draw=color0, fill=color0, opacity=0.3, line width=0.32pt]
+(axis cs:0,1)
+--(axis cs:0,1)
+--(axis cs:1,1.81329590388446)
+--(axis cs:2,1.15581898979104)
+--(axis cs:3,2.12214030635968)
+--(axis cs:4,1.11220298568479)
+--(axis cs:5,1.26313897277887)
+--(axis cs:6,1.08546282456044)
+--(axis cs:7,1.00991197738681)
+--(axis cs:8,2.99499113135738)
+--(axis cs:8,1.19219960491263)
+--(axis cs:8,1.19219960491263)
+--(axis cs:7,0.844148997190134)
+--(axis cs:6,0.856665714984022)
+--(axis cs:5,1.01227221861881)
+--(axis cs:4,0.832404985838558)
+--(axis cs:3,1.32069713817432)
+--(axis cs:2,0.957313283222559)
+--(axis cs:1,0.985032931503141)
+--(axis cs:0,1)
+--cycle;
+
+\addplot [line width=0.48pt, black, dashed]
+table {%
+-0.4 0.999999999999999
+8.4 0.999999999999999
+};
+\addplot [line width=0.004pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.71533415644082
+2 1.10644905879204
+3 1.38999418717303
+4 0.981230940050041
+5 1.06391086945968
+6 1.04979996772303
+7 1.00023222159604
+8 1.21205703458597
+};
+\addplot [line width=0.004pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.71676759205647
+2 1.11866899722082
+3 1.42022675131793
+4 0.995660214179266
+5 1.04045923182872
+6 1.06963355412534
+7 1.00300003879812
+8 1.19219960491263
+};
+\addplot [line width=0.004pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.81329590388446
+2 1.09257937197463
+3 1.401799189124
+4 1.00228941059325
+5 1.07172991590792
+6 1.02709247030365
+7 1.00991197738681
+8 1.25196921743414
+};
+\addplot [line width=0.004pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.78444690581445
+2 1.08465809373138
+3 1.32069713817432
+4 1.02108633632139
+5 1.05309056262925
+6 1.02566169594795
+7 0.999145658780567
+8 1.89885377235907
+};
+\addplot [line width=0.004pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.54752715126252
+2 1.01325607167808
+3 1.41807875954088
+4 1.04246552077334
+5 1.02661064486359
+6 1.02296227651067
+7 0.995487353847966
+8 2.99499113135738
+};
+\addplot [line width=0.004pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.4980713033448
+2 0.957313283222559
+3 1.62412775116239
+4 1.07775140832564
+5 1.01227221861881
+6 1.03207325777644
+7 1.00823616287481
+8 2.34043643610649
+};
+\addplot [line width=0.004pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.39499788945426
+2 1.02533196404332
+3 1.99092159551738
+4 1.11220298568479
+5 1.04934877138877
+6 1.0302663275633
+7 0.971121549367627
+8 1.99374978303989
+};
+\addplot [line width=0.004pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.985032931503141
+2 1.15581898979104
+3 2.12214030635968
+4 0.832404985838558
+5 1.26313897277887
+6 1.08546282456044
+7 0.844148997190134
+8 1.76374006675759
+};
+\addplot [line width=0.004pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.4049388408052
+2 0.977191940198651
+3 1.62589543752159
+4 1.06756480083543
+5 1.02433250565994
+6 0.856665714984022
+7 0.885501459113104
+8 1.80292653546423
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled x ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={WAIT DIE},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.4, xmax=8.4,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+xticklabels={},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=5.62101480910415,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color1, fill=color1, opacity=0.3, line width=0.32pt]
+(axis cs:0,1)
+--(axis cs:0,1)
+--(axis cs:1,1.83169849661376)
+--(axis cs:2,1.11239327122284)
+--(axis cs:3,1.4034550782534)
+--(axis cs:4,1.02434797213924)
+--(axis cs:5,1.09850748327255)
+--(axis cs:6,1.08736785396053)
+--(axis cs:7,1.00570635897482)
+--(axis cs:8,2.33351413591985)
+--(axis cs:8,0.627030479318083)
+--(axis cs:8,0.627030479318083)
+--(axis cs:7,0.83043235364636)
+--(axis cs:6,1.01839110441507)
+--(axis cs:5,1.03310818177855)
+--(axis cs:4,0.982504620303112)
+--(axis cs:3,0.761226212189673)
+--(axis cs:2,1.03841133364504)
+--(axis cs:1,1.29662641189869)
+--(axis cs:0,1)
+--cycle;
+
+\addplot [line width=0.48pt, black, dashed]
+table {%
+-0.4 0.999999999999999
+8.4 0.999999999999999
+};
+\addplot [line width=0.004pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.74573376489223
+2 1.0926815319815
+3 1.36412697598029
+4 0.982504620303112
+5 1.09084733269525
+6 1.03134706427978
+7 0.999011012054884
+8 1.21644559042524
+};
+\addplot [line width=0.004pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.76808829733193
+2 1.08995164443285
+3 1.4034550782534
+4 1.00382244753392
+5 1.03783316825581
+6 1.08736785396053
+7 1.00570635897482
+8 1.16076334554397
+};
+\addplot [line width=0.004pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.82144149065132
+2 1.09624465702735
+3 1.3773637929735
+4 1.00648039288898
+5 1.08884186913782
+6 1.04268014342004
+7 0.989615408817558
+8 1.25909990691636
+};
+\addplot [line width=0.004pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.83169849661376
+2 1.09227383157554
+3 1.30497653607636
+4 0.991089983876767
+5 1.09850748327255
+6 1.03368431784789
+7 0.997714106972048
+8 1.92077265701919
+};
+\addplot [line width=0.004pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.72710655561495
+2 1.11239327122284
+3 1.25331835039359
+4 0.995657126150455
+5 1.07892253675522
+6 1.03904257878824
+7 0.997108669260464
+8 2.33351413591985
+};
+\addplot [line width=0.004pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.72767121856344
+2 1.08605324170404
+3 1.21405276863764
+4 0.993931586311743
+5 1.0830108182808
+6 1.02996789891898
+7 0.996286693640389
+8 2.32676796337566
+};
+\addplot [line width=0.004pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.69240801812983
+2 1.08477987391068
+3 0.986513252008581
+4 0.999774741214123
+5 1.05095577676935
+6 1.01839110441507
+7 0.999093205904552
+8 2.17480021809881
+};
+\addplot [line width=0.004pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.44959514539274
+2 1.05122904709087
+3 0.76405221853771
+4 1.0048725915952
+5 1.03310818177855
+6 1.05723531218724
+7 0.935732591584466
+8 0.970603636485823
+};
+\addplot [line width=0.004pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.29662641189869
+2 1.03841133364504
+3 0.761226212189673
+4 1.02434797213924
+5 1.04514712803318
+6 1.0505969523598
+7 0.83043235364636
+8 0.627030479318083
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled x ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={NO WAIT},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.4, xmax=8.4,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+xticklabels={},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=5.62101480910415,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color2, fill=color2, opacity=0.3, line width=0.32pt]
+(axis cs:0,1)
+--(axis cs:0,1)
+--(axis cs:1,1.82006638502254)
+--(axis cs:2,1.15746934834309)
+--(axis cs:3,1.43906286710133)
+--(axis cs:4,1.00730538540682)
+--(axis cs:5,1.10650076569907)
+--(axis cs:6,1.06224711131241)
+--(axis cs:7,1.01311544643342)
+--(axis cs:8,2.59693365681538)
+--(axis cs:8,1.18306333108941)
+--(axis cs:8,1.18306333108941)
+--(axis cs:7,0.852372317797688)
+--(axis cs:6,1.00641608160813)
+--(axis cs:5,0.997771177678701)
+--(axis cs:4,0.972192703910493)
+--(axis cs:3,0.603954987159049)
+--(axis cs:2,0.949898427796371)
+--(axis cs:1,1.08559092734305)
+--(axis cs:0,1)
+--cycle;
+
+\addplot [line width=0.48pt, black, dashed]
+table {%
+-0.399999999999999 0.999999999999999
+8.4 0.999999999999999
+};
+\addplot [line width=0.004pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.73797148516755
+2 1.15746934834309
+3 1.29188141683778
+4 0.989457804551607
+5 1.10553284441999
+6 1.03098178955077
+7 0.997562842003436
+8 1.21216204863979
+};
+\addplot [line width=0.004pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.73234384507697
+2 1.1041679280208
+3 1.43906286710133
+4 0.991016784113675
+5 1.05872195617649
+6 1.05744532944235
+7 1.01311544643342
+8 1.18306333108941
+};
+\addplot [line width=0.004pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.82006638502254
+2 1.12331043272577
+3 1.38883633198077
+4 0.999945395782451
+5 1.07896612300725
+6 1.06224711131241
+7 0.990008164302123
+8 1.23469297179641
+};
+\addplot [line width=0.004pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.72964294710428
+2 1.119521242473
+3 1.34776432120618
+4 0.994168853209091
+5 1.10650076569907
+6 1.02838606058015
+7 1.00006235705624
+8 2.00931094689969
+};
+\addplot [line width=0.004pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.75189739224233
+2 1.11795198407733
+3 1.27519923381536
+4 0.996841812252191
+5 1.10138533873189
+6 1.02468516599694
+7 0.992305980350364
+8 2.4896428180541
+};
+\addplot [line width=0.004pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.74739763263842
+2 1.10686214533292
+3 1.20829753260976
+4 1.00730538540682
+5 1.09156069929879
+6 1.02372075236569
+7 1.0043821092569
+8 2.59693365681538
+};
+\addplot [line width=0.004pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.7208851326971
+2 1.11805734316777
+3 1.07355686401024
+4 1.00549878586025
+5 1.04421117042925
+6 1.03585717706815
+7 0.990183154398568
+8 2.49419378721185
+};
+\addplot [line width=0.004pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.42246308123356
+2 0.949898427796371
+3 0.603954987159049
+4 1.00651817950287
+5 0.997771177678701
+6 1.03505776642667
+7 0.977439854199305
+8 1.58570483080194
+};
+\addplot [line width=0.004pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.08559092734305
+2 1.03978390375412
+3 0.698926987589969
+4 0.972192703910493
+5 1.03869457584366
+6 1.00641608160813
+7 0.852372317797688
+8 1.34663618036428
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled x ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={MVCC},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.4, xmax=8.4,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+xticklabels={},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=5.62101480910415,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color3, fill=color3, opacity=0.3, line width=0.32pt]
+(axis cs:0,1)
+--(axis cs:0,1)
+--(axis cs:1,4.95455874500882)
+--(axis cs:2,1.12936663629878)
+--(axis cs:3,1.00714443709146)
+--(axis cs:4,1.07346007152973)
+--(axis cs:5,1.08234978718607)
+--(axis cs:6,1.04917018560448)
+--(axis cs:7,1.00626189788557)
+--(axis cs:8,1.64637493232182)
+--(axis cs:8,0.925131350310222)
+--(axis cs:8,0.925131350310222)
+--(axis cs:7,0.608794302967171)
+--(axis cs:6,1.01160393795708)
+--(axis cs:5,1.02586036318528)
+--(axis cs:4,0.989944761164871)
+--(axis cs:3,0.966039616186159)
+--(axis cs:2,1.03948648699059)
+--(axis cs:1,2.35331895964539)
+--(axis cs:0,1)
+--cycle;
+
+\addplot [line width=0.48pt, black, dashed]
+table {%
+-0.399999999999995 0.999999999999999
+8.40000000000001 0.999999999999999
+};
+\addplot [line width=0.004pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.35331895964539
+2 1.096585702179
+3 1.00432636892285
+4 0.989944761164871
+5 1.04405807214437
+6 1.02272404964462
+7 1.0014232288665
+8 1.10480151164949
+};
+\addplot [line width=0.004pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.54326539922522
+2 1.12936663629878
+3 0.996247454577605
+4 1.00069504472276
+5 1.04389240658062
+6 1.04917018560448
+7 1.00002908906105
+8 1.06315010111881
+};
+\addplot [line width=0.004pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.75194812011772
+2 1.10284088373818
+3 0.999768600157128
+4 0.992980559481405
+5 1.07613421967055
+6 1.03040290380807
+7 0.996350006401612
+8 1.08952595185093
+};
+\addplot [line width=0.004pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.90068167952619
+2 1.09503111808484
+3 0.996953684103276
+4 0.996418967066574
+5 1.08234978718607
+6 1.02766092907718
+7 0.991952299250397
+8 1.11191288462049
+};
+\addplot [line width=0.004pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 3.70637817822116
+2 1.09477113994671
+3 0.983467326367088
+4 0.994213239991997
+5 1.07746666167852
+6 1.01988399898653
+7 1.00626189788557
+8 1.16747911585561
+};
+\addplot [line width=0.004pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 4.10458029247428
+2 1.09215430577782
+3 0.970718983083427
+4 0.992172947191717
+5 1.06492705931988
+6 1.0291104771442
+7 0.998828648331937
+8 1.27184284386013
+};
+\addplot [line width=0.004pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 4.09775975415562
+2 1.08966151100155
+3 0.966039616186159
+4 0.99765645869064
+5 1.05098685819321
+6 1.02534547168436
+7 0.709789415310007
+8 1.64637493232182
+};
+\addplot [line width=0.004pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 4.95455874500882
+2 1.07598316913233
+3 0.989133028086115
+4 1.03456778972167
+5 1.02723736573058
+6 1.02740899410226
+7 0.721448658943276
+8 1.20378259859761
+};
+\addplot [line width=0.004pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 4.68842843470271
+2 1.03948648699059
+3 1.00714443709146
+4 1.07346007152973
+5 1.02586036318528
+6 1.01160393795708
+7 0.608794302967171
+8 0.925131350310222
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={OCC},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Optimisations},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.4, xmax=8.4,
+xtick style={color=white!15!black},
+xtick={-1,0,1,2,3,4,5,6,7,8,9},
+xticklabel style={align=left},
+xticklabel style={rotate={0.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,0}[\ticknum]},
+xticklabels={−1,base,Opt. 1,Opt. 2,Opt. 3,Opt. 4,Opt. 5,Opt. 6,Opt. 7,Opt. 8,Opt. 9},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Speedup},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=5.62101480910415,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black}
+]
+\path [draw=color4, fill=color4, opacity=0.3, line width=0.32pt]
+(axis cs:0,1)
+--(axis cs:0,1)
+--(axis cs:1,1.54863601507793)
+--(axis cs:2,1.1122983280054)
+--(axis cs:3,1.77141292080712)
+--(axis cs:4,1.02352817916315)
+--(axis cs:5,1.07758628201956)
+--(axis cs:6,1.02780969756574)
+--(axis cs:7,1.28534563109924)
+--(axis cs:8,4.32727629128158)
+--(axis cs:8,1.25039983582688)
+--(axis cs:8,1.25039983582688)
+--(axis cs:7,1.0177473591895)
+--(axis cs:6,0.997515927366497)
+--(axis cs:5,0.990702867177953)
+--(axis cs:4,0.995183095668945)
+--(axis cs:3,1.22953031608377)
+--(axis cs:2,0.998755510622555)
+--(axis cs:1,1.26140293665243)
+--(axis cs:0,1)
+--cycle;
+
+\addplot [line width=0.48pt, black, dashed]
+table {%
+-0.4 1
+8.4 1
+};
+\addplot [line width=0.004pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.43633783207424
+2 1.1122983280054
+3 1.22953031608377
+4 1.02015816697303
+5 1.07152018175489
+6 1.01188776702053
+7 1.23434238951338
+8 1.28500432279199
+};
+\addplot [line width=0.004pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.51451013652645
+2 1.07992602044723
+3 1.25877118603069
+4 1.00144873347613
+5 1.07758628201956
+6 1.01213668495092
+7 1.28534563109924
+8 1.25039983582688
+};
+\addplot [line width=0.004pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.54863601507793
+2 1.10578062987559
+3 1.24621548804158
+4 0.997782521193979
+5 1.06664277702456
+6 0.997515927366497
+7 1.25521117874147
+8 1.35260417276246
+};
+\addplot [line width=0.004pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.50695667441929
+2 1.06049273986529
+3 1.40316681105603
+4 0.997715412835744
+5 1.04381790994444
+6 1.0116932886877
+7 1.1703987809637
+8 2.00216469110439
+};
+\addplot [line width=0.004pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.40311859782292
+2 1.02083990819472
+3 1.57120736362178
+4 1.01334908408259
+5 1.01031660589956
+6 1.02216975495875
+7 1.0430864582036
+8 3.14786685333589
+};
+\addplot [line width=0.004pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.30898276495524
+2 1.013198136454
+3 1.77141292080712
+4 0.995183095668945
+5 1.00928045674076
+6 1.00496460974532
+7 1.0177473591895
+8 3.69177932984367
+};
+\addplot [line width=0.004pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.31161324646588
+2 1.01825005532376
+3 1.24065238972892
+4 1.01188048921333
+5 1.02970695324924
+6 1.01466398343912
+7 1.14123946004346
+8 4.32727629128158
+};
+\addplot [line width=0.004pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.37703044616685
+2 0.998755510622555
+3 1.30299717393111
+4 1.0216964498401
+5 0.990903427949628
+6 1.02780969756574
+8 nan
+};
+\addplot [line width=0.004pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.26140293665243
+2 1.03636161207225
+3 1.32004514368723
+4 1.02352817916315
+5 0.990702867177953
+6 1.02619332612105
+8 nan
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={HSTORE},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Optimisations},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.4, xmax=8.4,
+xtick style={color=white!15!black},
+xtick={-1,0,1,2,3,4,5,6,7,8,9},
+xticklabel style={align=left},
+xticklabel style={rotate={0.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,0}[\ticknum]},
+xticklabels={−1,base,Opt. 1,Opt. 2,Opt. 3,Opt. 4,Opt. 5,Opt. 6,Opt. 7,Opt. 8,Opt. 9},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=5.62101480910415,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=white!30.1960784313725!black, fill=white!30.1960784313725!black, opacity=0.3, line width=0.32pt]
+(axis cs:0,1)
+--(axis cs:0,1)
+--(axis cs:1,2.18434152481574)
+--(axis cs:2,1.27661408026348)
+--(axis cs:3,1.06677351271964)
+--(axis cs:4,0.991824818716978)
+--(axis cs:5,1.37624985560933)
+--(axis cs:6,1.11283888909685)
+--(axis cs:7,1.00991278047303)
+--(axis cs:8,1.0080662084922)
+--(axis cs:8,0.988675667479027)
+--(axis cs:8,0.988675667479027)
+--(axis cs:7,0.813749697532516)
+--(axis cs:6,1.06835816221295)
+--(axis cs:5,1.23711090108713)
+--(axis cs:4,0.963402335656887)
+--(axis cs:3,0.955760524143022)
+--(axis cs:2,1.12285668075263)
+--(axis cs:1,1.70493303998637)
+--(axis cs:0,1)
+--cycle;
+
+\addplot [line width=0.48pt, black, dashed]
+table {%
+-0.4 1
+8.4 1
+};
+\addplot [line width=0.004pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.11478243930946
+2 1.16545114747984
+3 1.02771019081743
+4 0.980569990521946
+5 1.23711090108713
+6 1.06835816221295
+7 1.00040512947938
+8 1.00400787474171
+};
+\addplot [line width=0.004pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.97070889908071
+2 1.26929344478026
+3 1.0310664696851
+4 0.98867432742524
+5 1.28895281086667
+6 1.07906175296676
+7 1.00991278047303
+8 0.988675667479027
+};
+\addplot [line width=0.004pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.10625481282829
+2 1.2736114837485
+3 1.01518659796892
+4 0.976079957400477
+5 1.33341607105782
+6 1.08793804104871
+7 0.995542605971474
+8 1.00376376381705
+};
+\addplot [line width=0.004pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.12360903366411
+2 1.27661408026348
+3 0.955760524143022
+4 0.981188699348518
+5 1.31176354886979
+6 1.08317383719649
+7 0.999970902120783
+8 1.00034098847832
+};
+\addplot [line width=0.004pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.1828650624125
+2 1.2390008599621
+3 0.961832540315978
+4 0.971986408603681
+5 1.32284275323606
+6 1.07335741027365
+7 1.00088348236976
+8 0.999588067632794
+};
+\addplot [line width=0.004pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.18434152481574
+2 1.25162454409275
+3 0.95983168152937
+4 0.979704659910702
+5 1.31343101305804
+6 1.07538818698824
+7 0.997126311978061
+8 0.996756730520425
+};
+\addplot [line width=0.004pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.10836584065016
+2 1.2571241980574
+3 0.987074137677955
+4 0.965623349104233
+5 1.32123523821755
+6 1.07899936235776
+7 1.00631132460071
+8 0.998564654700671
+};
+\addplot [line width=0.004pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.84200036692893
+2 1.17570675565273
+3 1.06108313151952
+4 0.963402335656887
+5 1.34897028174764
+6 1.10592917466415
+7 0.972987313075618
+8 1.0080662084922
+};
+\addplot [line width=0.004pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.70493303998637
+2 1.12285668075263
+3 1.06677351271964
+4 0.991824818716978
+5 1.37624985560933
+6 1.11283888909685
+7 0.813749697532516
+8 1.00718672951865
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={SILO},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Optimisations},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.4, xmax=8.4,
+xtick style={color=white!15!black},
+xtick={-1,0,1,2,3,4,5,6,7,8,9},
+xticklabel style={align=left},
+xticklabel style={rotate={0.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,0}[\ticknum]},
+xticklabels={−1,base,Opt. 1,Opt. 2,Opt. 3,Opt. 4,Opt. 5,Opt. 6,Opt. 7,Opt. 8,Opt. 9},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=5.62101480910415,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color5, fill=color5, opacity=0.3, line width=0.32pt]
+(axis cs:0,1)
+--(axis cs:0,1)
+--(axis cs:1,3.95502496869561)
+--(axis cs:2,1.22253962784353)
+--(axis cs:3,1.04905775936381)
+--(axis cs:4,1.00720727975195)
+--(axis cs:5,1.23117015621101)
+--(axis cs:6,1.04877169117131)
+--(axis cs:7,1.06444537301537)
+--(axis cs:8,2.24674263448014)
+--(axis cs:8,1.12918449940273)
+--(axis cs:8,1.12918449940273)
+--(axis cs:7,0.964129235658808)
+--(axis cs:6,0.850224035168988)
+--(axis cs:5,0.964470201768133)
+--(axis cs:4,0.830693478420868)
+--(axis cs:3,0.968693400524759)
+--(axis cs:2,0.943690382899382)
+--(axis cs:1,1.95273236658317)
+--(axis cs:0,1)
+--cycle;
+
+\addplot [line width=0.48pt, black, dashed]
+table {%
+-0.399999999999999 1
+8.4 1
+};
+\addplot [line width=0.004pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.96569199372176
+2 1.16520903539498
+3 1.01125115030417
+4 0.991327952979615
+5 0.99047619047619
+6 1.01174879553715
+7 1.01374119472179
+8 1.25434582161908
+};
+\addplot [line width=0.004pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.95273236658317
+2 1.22253962784353
+3 0.994877042616976
+4 0.994917343024633
+5 0.964470201768133
+6 1.04703229776113
+7 1.05308358006922
+8 1.12918449940273
+};
+\addplot [line width=0.004pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.07175149542027
+2 1.2004751649729
+3 1.00388041960443
+4 1.00531910530082
+5 0.994196353228554
+6 1.03572933581988
+7 1.0477061529006
+8 1.18242058471033
+};
+\addplot [line width=0.004pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.21683617752536
+2 1.16119128080677
+3 0.996510800937232
+4 0.997552048645302
+5 1.02416355530127
+6 1.03651947272717
+7 1.06444537301537
+8 1.36203344355225
+};
+\addplot [line width=0.004pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.59922018025396
+2 1.12434419218778
+3 1.00109516750757
+4 1.00154757434901
+5 1.0075156370613
+6 1.04365032041508
+7 1.05078859938638
+8 1.60615593183276
+};
+\addplot [line width=0.004pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 3.18722068001631
+2 1.08163744788535
+3 0.99731361643215
+4 1.00720727975195
+5 0.990438500551431
+6 1.04597428440916
+7 1.03858572840973
+8 1.83793827187757
+};
+\addplot [line width=0.004pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 3.54497162217371
+2 1.05024245778939
+3 1.00963292469944
+4 0.988605304764427
+5 0.98228203656174
+6 1.04877169117131
+7 1.0207361519831
+8 2.24674263448014
+};
+\addplot [line width=0.004pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 3.95502496869561
+2 0.943690382899382
+3 0.968693400524759
+4 0.946425132185085
+5 1.19336024442447
+6 0.912485666209556
+7 0.98391437863798
+8 1.1925045544032
+};
+\addplot [line width=0.004pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.53721727535481
+2 0.961249879523906
+3 1.04905775936381
+4 0.830693478420868
+5 1.23117015621101
+6 0.850224035168988
+7 0.964129235658808
+8 1.25726910794547
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={TICTOC},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Optimisations},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.4, xmax=8.4,
+xtick style={color=white!15!black},
+xtick={-1,0,1,2,3,4,5,6,7,8,9},
+xticklabel style={align=left},
+xticklabel style={rotate={0.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,0}[\ticknum]},
+xticklabels={−1,base,Opt. 1,Opt. 2,Opt. 3,Opt. 4,Opt. 5,Opt. 6,Opt. 7,Opt. 8,Opt. 9},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=5.62101480910415,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=white!63.1372549019608!black, fill=white!63.1372549019608!black, opacity=0.3, line width=0.32pt]
+(axis cs:0,1)
+--(axis cs:0,1)
+--(axis cs:1,5.38210719853534)
+--(axis cs:2,1.2178399429846)
+--(axis cs:3,1.03528546650738)
+--(axis cs:4,1.00889009158188)
+--(axis cs:5,1.12929529030691)
+--(axis cs:6,1.04211515879283)
+--(axis cs:7,1.09451764854745)
+--(axis cs:8,1.23945429908535)
+--(axis cs:8,0.996932732737753)
+--(axis cs:8,0.996932732737753)
+--(axis cs:7,0.924391438052572)
+--(axis cs:6,1.00357979698576)
+--(axis cs:5,1.00397400241972)
+--(axis cs:4,0.921243670538005)
+--(axis cs:3,0.973501356490086)
+--(axis cs:2,0.940946678975796)
+--(axis cs:1,2.01957981677307)
+--(axis cs:0,1)
+--cycle;
+
+\addplot [line width=0.48pt, black, dashed]
+table {%
+-0.399999999999995 1
+8.40000000000001 1
+};
+\addplot [line width=0.004pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.03223458630494
+2 1.18134188758659
+3 0.992397891230623
+4 0.971900240096602
+5 1.11421675898102
+6 1.00374933329129
+7 1.09451764854745
+8 1.13415437603147
+};
+\addplot [line width=0.004pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.01957981677307
+2 1.2178399429846
+3 0.991859906917048
+4 0.997104961982859
+5 1.12636018721526
+6 1.00548082750167
+7 1.07759123338549
+8 1.1331835614437
+};
+\addplot [line width=0.004pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.12696098253403
+2 1.20628032076283
+3 0.983309463474157
+4 1.00220751761299
+5 1.12929529030691
+6 1.03825941338501
+7 1.0291246924849
+8 1.20438462331096
+};
+\addplot [line width=0.004pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.23301869790998
+2 1.18825589198338
+3 0.983735169974178
+4 1.00410757011075
+5 1.12539717662686
+6 1.03437411561545
+7 1.04185475733217
+8 1.23945429908535
+};
+\addplot [line width=0.004pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 2.62137552140213
+2 1.1560028041327
+3 0.990112639800439
+4 1.00683647644191
+5 1.10384345524121
+6 1.04211515879283
+7 1.04533208983522
+8 1.218674747684
+};
+\addplot [line width=0.004pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 3.68171328706819
+2 1.11937801612076
+3 0.987652360383797
+4 1.00889009158188
+5 1.08091355449993
+6 1.02878476710253
+7 1.0426016252496
+8 1.17324701767093
+};
+\addplot [line width=0.004pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 5.38210719853534
+2 1.05940088391789
+3 0.991517394761044
+4 1.00513348171639
+5 1.06033029623712
+6 1.03667230684885
+7 1.04603173476542
+8 1.15316923200537
+};
+\addplot [line width=0.004pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 4.32868693156742
+2 0.940946678975796
+3 1.03528546650738
+4 0.921243670538005
+5 1.00397400241972
+6 1.00357979698576
+7 1.08313941150157
+8 1.11991218566243
+};
+\addplot [line width=0.004pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 3.2762623724447
+2 0.991848127614822
+3 0.973501356490086
+4 0.945412565877097
+5 1.02998322455654
+6 1.00621120418599
+7 0.924391438052572
+8 0.996932732737753
+};
+\end{groupplot}
+

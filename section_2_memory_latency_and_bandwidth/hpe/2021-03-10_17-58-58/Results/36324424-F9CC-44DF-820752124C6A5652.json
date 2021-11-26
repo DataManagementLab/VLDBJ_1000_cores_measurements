@@ -1,0 +1,227 @@
+{
+  "Header": {
+    "Description": "Measures NUMA node memory latency",
+    "ID": "36324424-F9CC-44DF-820752124C6A5652",
+    "Name": "NUMA Memory Latency Test",
+    "ResultSchema": "Measurement",
+    "Version": "1.0"
+  },
+  "Measures": [{
+    "ExecutionVariant": {
+      "Description": "Simple NUMA Memory Latency Check",
+      "Hint": "",
+      "Host": "localhost"
+    },
+    "InputVector": {
+      "Contention": 1,
+      "CreateJexLog": false,
+      "LoadThreadsCPUNode": 3,
+      "Loaded": false,
+      "Memory": 100000,
+      "NvmBasePath": "",
+      "StealingPolicy": 3,
+      "StopAfterWarmup": false,
+      "Stride": 64,
+      "TestTime": 10,
+      "UseNvm": false,
+      "WarmUpCPUNode": false
+    },
+    "Results": [{
+      "MemoryLatency": [{
+        "CPUNode": 0,
+        "Latency": 97,
+        "MemoryNode": 0
+      }, {
+        "CPUNode": 0,
+        "Latency": 226,
+        "MemoryNode": 1
+      }, {
+        "CPUNode": 0,
+        "Latency": 259,
+        "MemoryNode": 2
+      }, {
+        "CPUNode": 0,
+        "Latency": 259,
+        "MemoryNode": 3
+      }, {
+        "CPUNode": 0,
+        "Latency": 386,
+        "MemoryNode": 4
+      }, {
+        "CPUNode": 0,
+        "Latency": 384,
+        "MemoryNode": 5
+      }, {
+        "CPUNode": 0,
+        "Latency": 390,
+        "MemoryNode": 6
+      }, {
+        "CPUNode": 0,
+        "Latency": 378,
+        "MemoryNode": 7
+      }, {
+        "CPUNode": 0,
+        "Latency": 381,
+        "MemoryNode": 8
+      }, {
+        "CPUNode": 0,
+        "Latency": 372,
+        "MemoryNode": 9
+      }, {
+        "CPUNode": 0,
+        "Latency": 385,
+        "MemoryNode": 10
+      }, {
+        "CPUNode": 0,
+        "Latency": 380,
+        "MemoryNode": 11
+      }, {
+        "CPUNode": 0,
+        "Latency": 387,
+        "MemoryNode": 12
+      }, {
+        "CPUNode": 0,
+        "Latency": 383,
+        "MemoryNode": 13
+      }, {
+        "CPUNode": 0,
+        "Latency": 388,
+        "MemoryNode": 14
+      }, {
+        "CPUNode": 0,
+        "Latency": 383,
+        "MemoryNode": 15
+      }, {
+        "CPUNode": 0,
+        "Latency": 386,
+        "MemoryNode": 16
+      }, {
+        "CPUNode": 0,
+        "Latency": 380,
+        "MemoryNode": 17
+      }, {
+        "CPUNode": 0,
+        "Latency": 384,
+        "MemoryNode": 18
+      }, {
+        "CPUNode": 0,
+        "Latency": 380,
+        "MemoryNode": 19
+      }, {
+        "CPUNode": 0,
+        "Latency": 384,
+        "MemoryNode": 20
+      }, {
+        "CPUNode": 0,
+        "Latency": 374,
+        "MemoryNode": 21
+      }, {
+        "CPUNode": 0,
+        "Latency": 379,
+        "MemoryNode": 22
+      }, {
+        "CPUNode": 0,
+        "Latency": 384,
+        "MemoryNode": 23
+      }, {
+        "CPUNode": 0,
+        "Latency": 390,
+        "MemoryNode": 24
+      }, {
+        "CPUNode": 0,
+        "Latency": 379,
+        "MemoryNode": 25
+      }, {
+        "CPUNode": 0,
+        "Latency": 383,
+        "MemoryNode": 26
+      }, {
+        "CPUNode": 0,
+        "Latency": 384,
+        "MemoryNode": 27
+      }]
+    }]
+  }],
+  "Types": {
+    "InputTypes": {
+      "CreateJexLog": {
+        "Description": "Create special log file for detailed analysis",
+        "Type": "boolean"
+      },
+      "LoadThreadsCPUNode": {
+        "Description": "LoadThreadsCPUNode",
+        "Type": "numeric"
+      },
+      "Loaded": {
+        "Description": "Loaded",
+        "Type": "boolean"
+      },
+      "MemNumaNode": {
+        "Description": "MemNumaNode",
+        "Type": "numeric"
+      },
+      "Memory": {
+        "Description": "Memory in KB",
+        "Type": "numeric",
+        "Unit": "KB"
+      },
+      "NvmBasePath": {
+        "Description": "Base path for non-volatile memory",
+        "Type": "string"
+      },
+      "StealingPolicy": {
+        "Constraints": "Values must be in range of [0,3]",
+        "Description": "Job executor's stealing policy determines how jobs added on a NUMA node are stolen by JobWorkers running on other NUMA nodes. StealingPolicy 0=default, 1=only own NN, 2=NUMA neighbors, 3=all NN",
+        "Type": "numeric"
+      },
+      "StopAfterWarmup": {
+        "Description": "Stop after warmup",
+        "Type": "boolean"
+      },
+      "Stride": {
+        "Description": "Stride",
+        "Type": "numeric",
+        "Unit": "bytes"
+      },
+      "TestTime": {
+        "Description": "Test time of timer in ms",
+        "Type": "numeric",
+        "Unit": "s"
+      },
+      "UseNvm": {
+        "Constraints": "Values must be in range of [0,2]",
+        "Description": "Use non-volatile memory 0=disabled, 1=enabled, 2=simulation mode",
+        "Type": "numeric"
+      },
+      "WarmUpCPUNode": {
+        "Description": "Warm up CPU node",
+        "Type": "string"
+      }
+    },
+    "ResultTypes": {
+      "MemoryLatency": {
+        "Description": "Memory latency measurement",
+        "TableTypes": {
+          "CPUNode": {
+            "Category": "dimension",
+            "Description": "CPU node Number.",
+            "Type": "numeric"
+          },
+          "Latency": {
+            "Category": "measure",
+            "Description": "Measured memory latency",
+            "ShortUnit": "ns",
+            "Type": "numeric",
+            "Unit": "nanoseconds"
+          },
+          "MemoryNode": {
+            "Category": "dimension",
+            "Description": "Memory node number.",
+            "Type": "numeric"
+          }
+        },
+        "Type": "table"
+      }
+    }
+  }
+}

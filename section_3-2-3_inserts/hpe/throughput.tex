@@ -1,0 +1,140 @@
+% This file was created by tikzplotlib v0.9.0.
+\definecolor{color0}{rgb}{0.945098039215686,0.345098039215686,0.329411764705882}
+\definecolor{color1}{rgb}{0.870588235294118,0.811764705882353,0.247058823529412}
+\definecolor{color2}{rgb}{0.980392156862745,0.643137254901961,0.227450980392157}
+\definecolor{color3}{rgb}{0.364705882352941,0.647058823529412,0.854901960784314}
+\definecolor{color4}{rgb}{0.698039215686274,0.462745098039216,0.698039215686274}
+\definecolor{color5}{rgb}{1,0,0.501960784313725}
+
+\begin{axis}[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={False},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=0, xmax=1075.15,
+xtick style={color=white!15!black},
+xtick={0,200,400,600,800,1000,1200},
+xticklabel style={align=left},
+xticklabels={−200,0,200,400,600,800,1000},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-19.4069042618104, ymax=2124.43323880268,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2, mark options={solid,draw=white}]
+table {%
+1 106.459198979695
+28 1467.3318488241
+56 1835.11202342353
+112 1303.92339412189
+168 995.171685714555
+224 665.476119373494
+448 496.54182442095
+896 400.666528619202
+1024 425.76365378547
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2, mark options={solid,draw=white}]
+table {%
+1 109.165538622768
+28 1468.54348373137
+56 1875.59821461342
+112 1262.0243946107
+168 988.718560401938
+224 731.805364824865
+448 504.294075341783
+896 454.579897467075
+1024 423.207092464506
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2, mark options={solid,draw=white}]
+table {%
+1 106.953244319713
+28 1456.87316453543
+56 1828.93618544512
+112 1260.57375496628
+168 1017.62899009397
+224 758.927191391398
+448 496.596390510719
+896 446.777685234404
+1024 420.890838216903
+};
+\addplot [line width=0.48pt, color3, mark=*, mark size=2, mark options={solid,draw=white}]
+table {%
+1 78.0403749683936
+28 1150.60253596862
+56 1476.48553437512
+112 956.48976415349
+168 703.378861229653
+224 496.299619664252
+448 292.532652580589
+896 202.388445337306
+1024 183.001261581056
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2, mark options={solid,draw=white}]
+table {%
+1 95.237551023518
+28 982.63433476291
+56 999.943803075332
+112 1013.20160218221
+168 626.748908774326
+224 340.653710700113
+448 262.824432343405
+896 214.197406177844
+1024 200.082347407488
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=*, mark size=2, mark options={solid,draw=white}]
+table {%
+1 213.408908541478
+28 1929.27979083611
+56 2026.98595957247
+112 1301.02445417387
+168 1197.64120827954
+224 752.239948587425
+448 549.415669870979
+896 485.209395121937
+1024 447.101213118244
+};
+\addplot [line width=0.48pt, color5, mark=square*, mark size=2, mark options={solid,draw=white}]
+table {%
+1 139.477600594733
+28 1631.11993560983
+56 1857.90900190519
+112 1368.53717911292
+168 996.056827480212
+224 671.962832902815
+448 516.588569303277
+896 423.315240314909
+1024 452.73948801366
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2, mark options={solid,draw=white}]
+table {%
+1 138.609744265022
+28 1627.56801680167
+56 1882.65691817593
+112 1370.82141410669
+168 992.373408804972
+224 726.296868987381
+448 519.09082738503
+896 468.186846246117
+1024 462.475664734014
+};
+\end{axis}
+

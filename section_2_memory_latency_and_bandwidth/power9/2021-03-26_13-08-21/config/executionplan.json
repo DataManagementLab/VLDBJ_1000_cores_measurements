@@ -1,0 +1,26 @@
+{
+  "ExecutionPlan": [{
+    "ExecutionVariants": [{
+      "Description": "Simple NUMA Memory Latency Check",
+      "InputVector": {
+        "CPUNumaNode": 0,
+        "LoadThreadsCPUNode": 3,
+        "Loaded": false,
+        "MemNumaNode": -1,
+        "Memory": 1000000,
+        "StealingPolicy": 3,
+        "Stride": 128,
+        "TestTime": 10
+      },
+      "RepeatCount": "1",
+      "ScaleOut": {
+        "ConcurrentExecution": true,
+        "Hosts": "",
+        "Port": "50000",
+        "Transcription": null
+      }
+    }],
+    "ID": "36324424-F9CC-44DF-820752124C6A5652",
+    "Note": "NUMA Memory Latency Test"
+  }]
+}

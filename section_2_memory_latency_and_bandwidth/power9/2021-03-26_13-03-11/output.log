@@ -1,0 +1,139 @@
++ cp benchmarks/hardware/run_hcmt.sh /root/lab20-DBx1000-2/results/2021-03-26_13-03-11
++ cp /root/lab20-DBx1000-2/benchmarks/hardware/numa.json /root/lab20-DBx1000-2/results/2021-03-26_13-03-11
++ pre_exec='nice --18'
++ export SEGFAULT_SIGNALS=all
++ SEGFAULT_SIGNALS=all
++ pre_exec='catchsegv nice --18'
++ echo 'Measuring only from CPU node 0'
+Measuring only from CPU node 0
++ pre_exec='catchsegv nice --18 numactl -N0'
++ mkdir -p /dev/shm/2021-03-26_13-03-11/hcmt
++ unzip ../hcmtsetup.zip -d /dev/shm/2021-03-26_13-03-11/hcmt
+Archive:  ../hcmtsetup.zip
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/hcmt  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/hcmtplugins/libfsperfrun.so  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/hcmtplugins/libnumaperfrun.so  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/hcmtplugins/libbiosrun.so  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/hcmtplugins/libnetworkrun.so  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/hcmtplugins/libcpuperfrun.so  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/config/executionplan.json  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/config/multivolume.json  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/config/full_executionplan.json  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/config/netserver.json  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/config/netclient.json  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/config/hciconsistency.json  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/config/quickcheck.json  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/lib/libhdbbasis.so  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/lib/librtebasecore.so  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/lib/librtebasesupp.so  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/lib/libhdblttbase.so  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/lib/libhdbversion.so  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/lib/libhcmtjson.so  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/lib/libstdc++.so.6.0.28  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/lib/libstdc++.so.6  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/lib/libstdc++.so  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/lib/libgcc_s.so.1  
+  inflating: /dev/shm/2021-03-26_13-03-11/hcmt/lib/libatomic.so.1  
++ retVal=0
++ '[' 0 -ne 0 ']'
++ chmod +x /dev/shm/2021-03-26_13-03-11/hcmt/hcmt
++ catchsegv nice --18 numactl -N0 /dev/shm/2021-03-26_13-03-11/hcmt/hcmt -v -p /root/lab20-DBx1000-2/benchmarks/hardware/numa.json -q -y
++ tee /root/lab20-DBx1000-2/results/2021-03-26_13-03-11/hcmt.log
+hcmt-2.00.056.00.1614850538 (2021-03-04 10:44:31)
+Loading executionplan
+Start execution of plan
+Executing Test 36324424-F9CC-44DF-820752124C6A5652
+Note: NUMA Memory Latency Test
+	Plan Variant: Simple NUMA Memory Latency Check
+	Repeat Count: 1
+	.
+Executing Test 113FE950-77A4-41CF-884BAF25F4EB27F0
+Note: NUMA Memory Bandwidth Test
+	Plan Variant: Simple NUMA Memory Bandwidth Check
+	Repeat Count: 1
+	.
+Query manifest data
+Query raw data
+Done
++ unzip '/dev/shm/2021-03-26_13-03-11/hcmt/hcmtresult-*.zip' -d /root/lab20-DBx1000-2/results/2021-03-26_13-03-11
+Archive:  /dev/shm/2021-03-26_13-03-11/hcmt/hcmtresult-20210326130313.zip
+  inflating: /root/lab20-DBx1000-2/results/2021-03-26_13-03-11/RawInfo/ticks  
+  inflating: /root/lab20-DBx1000-2/results/2021-03-26_13-03-11/Results/113FE950-77A4-41CF-884BAF25F4EB27F0.json  
+  inflating: /root/lab20-DBx1000-2/results/2021-03-26_13-03-11/Results/36324424-F9CC-44DF-820752124C6A5652.json  
+  inflating: /root/lab20-DBx1000-2/results/2021-03-26_13-03-11/config/executionplan.json  
+  inflating: /root/lab20-DBx1000-2/results/2021-03-26_13-03-11/manifest.json  
++ rm -v -r /dev/shm/2021-03-26_13-03-11/hcmt
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/hcmtresult-20210326130313.zip'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/lib/libatomic.so.1'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/lib/libgcc_s.so.1'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/lib/libstdc++.so'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/lib/libstdc++.so.6'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/lib/libstdc++.so.6.0.28'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/lib/libhcmtjson.so'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/lib/libhdbversion.so'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/lib/libhdblttbase.so'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/lib/librtebasesupp.so'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/lib/librtebasecore.so'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/lib/libhdbbasis.so'
+removed directory '/dev/shm/2021-03-26_13-03-11/hcmt/lib'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/config/quickcheck.json'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/config/hciconsistency.json'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/config/netclient.json'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/config/netserver.json'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/config/full_executionplan.json'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/config/multivolume.json'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/config/executionplan.json'
+removed directory '/dev/shm/2021-03-26_13-03-11/hcmt/config'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/hcmtplugins/libcpuperfrun.so'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/hcmtplugins/libnetworkrun.so'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/hcmtplugins/libbiosrun.so'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/hcmtplugins/libnumaperfrun.so'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/hcmtplugins/libfsperfrun.so'
+removed directory '/dev/shm/2021-03-26_13-03-11/hcmt/hcmtplugins'
+removed '/dev/shm/2021-03-26_13-03-11/hcmt/hcmt'
+removed directory '/dev/shm/2021-03-26_13-03-11/hcmt'
++ chmod -R a+rw /root/lab20-DBx1000-2/results/2021-03-26_13-03-11
++ tail -n +29 /root/lab20-DBx1000-2/results/2021-03-26_13-03-11/Results/36324424-F9CC-44DF-820752124C6A5652.json
++ head -n20
+    "Results": [{
+      "MemoryLatency": [{
+        "CPUNode": 0,
+        "Latency": 112,
+        "MemoryNode": 0
+      }, {
+        "CPUNode": 0,
+        "Latency": 215,
+        "MemoryNode": 1
+      }, {
+        "CPUNode": 0,
+        "Latency": 205,
+        "MemoryNode": 2
+      }, {
+        "CPUNode": 0,
+        "Latency": 214,
+        "MemoryNode": 3
+      }, {
+        "CPUNode": 0,
+        "Latency": 312,
++ tail -n +29 /root/lab20-DBx1000-2/results/2021-03-26_13-03-11/Results/113FE950-77A4-41CF-884BAF25F4EB27F0.json
++ head -n20
+    "Results": [{
+      "MemoryBandwidth": [{
+        "Bandwidth": 146774.30861542819,
+        "CPUNode": 0,
+        "MemoryNode": 0
+      }, {
+        "Bandwidth": 39499.064034656185,
+        "CPUNode": 0,
+        "MemoryNode": 1
+      }, {
+        "Bandwidth": 38913.03800684712,
+        "CPUNode": 0,
+        "MemoryNode": 2
+      }, {
+        "Bandwidth": 37211.162752546828,
+        "CPUNode": 0,
+        "MemoryNode": 3
+      }, {
+        "Bandwidth": 86996.496075962132,
+        "CPUNode": 0,

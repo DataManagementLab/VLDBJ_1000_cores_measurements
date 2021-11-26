@@ -1,0 +1,179 @@
+{
+  "Header": {
+    "Description": "Measures NUMA node memory access bandwidth",
+    "ID": "113FE950-77A4-41CF-884BAF25F4EB27F0",
+    "Name": "NUMA Memory Bandwidth Test",
+    "ResultSchema": "Measurement",
+    "Version": "1.0"
+  },
+  "Measures": [{
+    "ExecutionVariant": {
+      "Description": "Simple NUMA Memory Bandwidth Check",
+      "Hint": "",
+      "Host": "localhost"
+    },
+    "InputVector": {
+      "Contention": 1,
+      "CreateJexLog": false,
+      "LoadThreadsCPUNode": -1,
+      "Loaded": false,
+      "Memory": 1000000,
+      "NvmBasePath": "",
+      "StealingPolicy": 0,
+      "StopAfterWarmup": false,
+      "Stride": 64,
+      "TestTime": 20,
+      "UseNvm": false,
+      "WarmUpCPUNode": false
+    },
+    "Results": [{
+      "MemoryBandwidth": [{
+        "Bandwidth": 146774.30861542819,
+        "CPUNode": 0,
+        "MemoryNode": 0
+      }, {
+        "Bandwidth": 39499.064034656185,
+        "CPUNode": 0,
+        "MemoryNode": 1
+      }, {
+        "Bandwidth": 38913.03800684712,
+        "CPUNode": 0,
+        "MemoryNode": 2
+      }, {
+        "Bandwidth": 37211.162752546828,
+        "CPUNode": 0,
+        "MemoryNode": 3
+      }, {
+        "Bandwidth": 86996.496075962132,
+        "CPUNode": 0,
+        "MemoryNode": 4
+      }, {
+        "Bandwidth": 89295.063095843376,
+        "CPUNode": 0,
+        "MemoryNode": 5
+      }, {
+        "Bandwidth": 90261.279324333213,
+        "CPUNode": 0,
+        "MemoryNode": 6
+      }, {
+        "Bandwidth": 90346.164566502819,
+        "CPUNode": 0,
+        "MemoryNode": 7
+      }, {
+        "Bandwidth": 87763.999317028924,
+        "CPUNode": 0,
+        "MemoryNode": 8
+      }, {
+        "Bandwidth": 92682.492266234956,
+        "CPUNode": 0,
+        "MemoryNode": 9
+      }, {
+        "Bandwidth": 92492.028872411058,
+        "CPUNode": 0,
+        "MemoryNode": 10
+      }, {
+        "Bandwidth": 90646.311052772129,
+        "CPUNode": 0,
+        "MemoryNode": 11
+      }, {
+        "Bandwidth": 87697.229358444223,
+        "CPUNode": 0,
+        "MemoryNode": 12
+      }, {
+        "Bandwidth": 88356.701910435149,
+        "CPUNode": 0,
+        "MemoryNode": 13
+      }, {
+        "Bandwidth": 88457.696705914728,
+        "CPUNode": 0,
+        "MemoryNode": 14
+      }, {
+        "Bandwidth": 89214.805289677213,
+        "CPUNode": 0,
+        "MemoryNode": 15
+      }]
+    }]
+  }],
+  "Types": {
+    "InputTypes": {
+      "CreateJexLog": {
+        "Description": "Create special log file for detailed analysis",
+        "Type": "boolean"
+      },
+      "LoadThreadsCPUNode": {
+        "Description": "LoadThreadsCPUNode",
+        "Type": "numeric"
+      },
+      "Loaded": {
+        "Description": "Loaded",
+        "Type": "boolean"
+      },
+      "MemNumaNode": {
+        "Description": "MemNumaNode",
+        "Type": "numeric"
+      },
+      "Memory": {
+        "Description": "Memory in KB",
+        "Type": "numeric",
+        "Unit": "KB"
+      },
+      "NvmBasePath": {
+        "Description": "Base path for non-volatile memory",
+        "Type": "string"
+      },
+      "StealingPolicy": {
+        "Constraints": "Values must be in range of [0,3]",
+        "Description": "Job executor's stealing policy determines how jobs added on a NUMA node are stolen by JobWorkers running on other NUMA nodes. StealingPolicy 0=default, 1=only own NN, 2=NUMA neighbors, 3=all NN",
+        "Type": "numeric"
+      },
+      "StopAfterWarmup": {
+        "Description": "Stop after warmup",
+        "Type": "boolean"
+      },
+      "Stride": {
+        "Description": "Stride",
+        "Type": "numeric",
+        "Unit": "bytes"
+      },
+      "TestTime": {
+        "Description": "Test time of timer in ms",
+        "Type": "numeric",
+        "Unit": "s"
+      },
+      "UseNvm": {
+        "Constraints": "Values must be in range of [0,2]",
+        "Description": "Use non-volatile memory 0=disabled, 1=enabled, 2=simulation mode",
+        "Type": "numeric"
+      },
+      "WarmUpCPUNode": {
+        "Description": "Warm up CPU node",
+        "Type": "string"
+      }
+    },
+    "ResultTypes": {
+      "MemoryBandwidth": {
+        "Description": "Memory Bandwidth Measurement",
+        "TableTypes": {
+          "Bandwidth": {
+            "Category": "measure",
+            "Description": "Memory Bandwidth",
+            "ShortUnit": "Bytes/s",
+            "Type": "numeric",
+            "Unit": "Bytes per second"
+          },
+          "CPUNode": {
+            "Category": "dimension",
+            "Description": "CPU Node Number.",
+            "Type": "numeric"
+          },
+          "MemoryNode": {
+            "Category": "dimension",
+            "Description": "Memory Node Number.",
+            "Type": "numeric"
+          }
+        },
+        "Type": "table"
+      }
+    }
+  }
+}

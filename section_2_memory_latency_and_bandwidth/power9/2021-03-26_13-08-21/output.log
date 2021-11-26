@@ -1,0 +1,114 @@
++ cp benchmarks/hardware/run_hcmt.sh /root/lab20-DBx1000-2/results/2021-03-26_13-08-21
++ cp /root/lab20-DBx1000-2/benchmarks/hardware/numa.json /root/lab20-DBx1000-2/results/2021-03-26_13-08-21
++ pre_exec='nice --18'
++ export SEGFAULT_SIGNALS=all
++ SEGFAULT_SIGNALS=all
++ pre_exec='catchsegv nice --18'
++ echo 'Measuring only from CPU node 0'
+Measuring only from CPU node 0
++ pre_exec='catchsegv nice --18 numactl -N0'
++ mkdir -p /dev/shm/2021-03-26_13-08-21/hcmt
++ unzip ../hcmtsetup.zip -d /dev/shm/2021-03-26_13-08-21/hcmt
+Archive:  ../hcmtsetup.zip
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/hcmt  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/hcmtplugins/libfsperfrun.so  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/hcmtplugins/libnumaperfrun.so  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/hcmtplugins/libbiosrun.so  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/hcmtplugins/libnetworkrun.so  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/hcmtplugins/libcpuperfrun.so  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/config/executionplan.json  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/config/multivolume.json  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/config/full_executionplan.json  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/config/netserver.json  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/config/netclient.json  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/config/hciconsistency.json  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/config/quickcheck.json  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/lib/libhdbbasis.so  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/lib/librtebasecore.so  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/lib/librtebasesupp.so  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/lib/libhdblttbase.so  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/lib/libhdbversion.so  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/lib/libhcmtjson.so  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/lib/libstdc++.so.6.0.28  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/lib/libstdc++.so.6  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/lib/libstdc++.so  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/lib/libgcc_s.so.1  
+  inflating: /dev/shm/2021-03-26_13-08-21/hcmt/lib/libatomic.so.1  
++ retVal=0
++ '[' 0 -ne 0 ']'
++ chmod +x /dev/shm/2021-03-26_13-08-21/hcmt/hcmt
++ catchsegv nice --18 numactl -N0 /dev/shm/2021-03-26_13-08-21/hcmt/hcmt -v -p /root/lab20-DBx1000-2/benchmarks/hardware/numa.json -q -y
++ tee /root/lab20-DBx1000-2/results/2021-03-26_13-08-21/hcmt.log
+hcmt-2.00.056.00.1614850538 (2021-03-04 10:44:31)
+Loading executionplan
+Start execution of plan
+Executing Test 36324424-F9CC-44DF-820752124C6A5652
+Note: NUMA Memory Latency Test
+	Plan Variant: Simple NUMA Memory Latency Check
+	Repeat Count: 1
+	.
+Query manifest data
+Query raw data
+Done
++ unzip '/dev/shm/2021-03-26_13-08-21/hcmt/hcmtresult-*.zip' -d /root/lab20-DBx1000-2/results/2021-03-26_13-08-21
+Archive:  /dev/shm/2021-03-26_13-08-21/hcmt/hcmtresult-20210326130823.zip
+  inflating: /root/lab20-DBx1000-2/results/2021-03-26_13-08-21/RawInfo/ticks  
+  inflating: /root/lab20-DBx1000-2/results/2021-03-26_13-08-21/Results/36324424-F9CC-44DF-820752124C6A5652.json  
+  inflating: /root/lab20-DBx1000-2/results/2021-03-26_13-08-21/config/executionplan.json  
+  inflating: /root/lab20-DBx1000-2/results/2021-03-26_13-08-21/manifest.json  
++ rm -v -r /dev/shm/2021-03-26_13-08-21/hcmt
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/hcmtresult-20210326130823.zip'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/lib/libatomic.so.1'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/lib/libgcc_s.so.1'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/lib/libstdc++.so'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/lib/libstdc++.so.6'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/lib/libstdc++.so.6.0.28'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/lib/libhcmtjson.so'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/lib/libhdbversion.so'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/lib/libhdblttbase.so'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/lib/librtebasesupp.so'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/lib/librtebasecore.so'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/lib/libhdbbasis.so'
+removed directory '/dev/shm/2021-03-26_13-08-21/hcmt/lib'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/config/quickcheck.json'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/config/hciconsistency.json'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/config/netclient.json'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/config/netserver.json'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/config/full_executionplan.json'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/config/multivolume.json'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/config/executionplan.json'
+removed directory '/dev/shm/2021-03-26_13-08-21/hcmt/config'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/hcmtplugins/libcpuperfrun.so'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/hcmtplugins/libnetworkrun.so'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/hcmtplugins/libbiosrun.so'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/hcmtplugins/libnumaperfrun.so'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/hcmtplugins/libfsperfrun.so'
+removed directory '/dev/shm/2021-03-26_13-08-21/hcmt/hcmtplugins'
+removed '/dev/shm/2021-03-26_13-08-21/hcmt/hcmt'
+removed directory '/dev/shm/2021-03-26_13-08-21/hcmt'
++ chmod -R a+rw /root/lab20-DBx1000-2/results/2021-03-26_13-08-21
++ tail -n +29 /root/lab20-DBx1000-2/results/2021-03-26_13-08-21/Results/36324424-F9CC-44DF-820752124C6A5652.json
++ head -n20
+    "Results": [{
+      "MemoryLatency": [{
+        "CPUNode": 0,
+        "Latency": 118,
+        "MemoryNode": 0
+      }, {
+        "CPUNode": 0,
+        "Latency": 220,
+        "MemoryNode": 1
+      }, {
+        "CPUNode": 0,
+        "Latency": 214,
+        "MemoryNode": 2
+      }, {
+        "CPUNode": 0,
+        "Latency": 210,
+        "MemoryNode": 3
+      }, {
+        "CPUNode": 0,
+        "Latency": 301,
++ tail -n +29 /root/lab20-DBx1000-2/results/2021-03-26_13-08-21/Results/113FE950-77A4-41CF-884BAF25F4EB27F0.json
++ head -n20
+tail: cannot open '/root/lab20-DBx1000-2/results/2021-03-26_13-08-21/Results/113FE950-77A4-41CF-884BAF25F4EB27F0.json' for reading: No such file or directory

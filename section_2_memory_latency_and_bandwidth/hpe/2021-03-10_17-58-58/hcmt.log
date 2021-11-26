@@ -1,0 +1,16 @@
+hcmt-2.00.056.00.1614850538 (2021-03-04 10:59:48)
+Loading executionplan
+Start execution of plan
+Executing Test 36324424-F9CC-44DF-820752124C6A5652
+Note: NUMA Memory Latency Test
+	Plan Variant: Simple NUMA Memory Latency Check
+	Repeat Count: 1
+	.
+Executing Test 113FE950-77A4-41CF-884BAF25F4EB27F0
+Note: NUMA Memory Bandwidth Test
+	Plan Variant: Simple NUMA Memory Bandwidth Check
+	Repeat Count: 1
+	.
+Query manifest data
+Query raw data
+Done

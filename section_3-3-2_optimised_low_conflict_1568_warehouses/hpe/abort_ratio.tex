@@ -1,0 +1,137 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.945098039215686,0.345098039215686,0.329411764705882}
+\definecolor{color1}{rgb}{0.870588235294118,0.811764705882353,0.247058823529412}
+\definecolor{color2}{rgb}{0.980392156862745,0.643137254901961,0.227450980392157}
+\definecolor{color3}{rgb}{0.364705882352941,0.647058823529412,0.854901960784314}
+\definecolor{color4}{rgb}{0.698039215686274,0.462745098039216,0.698039215686274}
+\definecolor{color5}{rgb}{1,0,0.501960784313725}
+
+\begin{axis}[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=0, xmax=1645,
+xtick style={color=white!15!black},
+xtick={0,200,400,600,800,1000,1200,1400,1600,1800},
+xticklabel style={align=left},
+xticklabels={−200,0,200,400,600,800,1000,1200,1400,1600},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort/Total},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=0.0105077455303429,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={0,0.002,0.004,0.006,0.008,0.01,0.012},
+yticklabels={−0.002,0.000,0.002,0.004,0.006,0.008,0.010}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 0
+56 0
+112 0
+168 0
+224 0
+448 0
+896 3.4526131501005e-06
+1344 1.31743937051208e-05
+1568 2.73365674586221e-05
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 1.09652529409722e-06
+56 6.5551227555988e-06
+112 3.76542841504104e-06
+168 5.78198645926795e-06
+224 7.16216719082832e-06
+448 2.33557096516244e-05
+896 0.00016738665122454
+1344 0.000352185534885811
+1568 0.000384814963635649
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 1.08781613296594e-06
+56 4.9255125679926e-06
+112 3.99337647168759e-06
+168 8.33550084707401e-06
+224 1.42531400587107e-05
+448 3.01097471516403e-05
+896 0.000176825742986132
+1344 0.000359937668132147
+1568 0.000413182832569247
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 0
+112 1.37018102440214e-06
+448 1.24715998348428e-05
+896 1.99679374503917e-05
+1344 2.52611393832261e-05
+1568 1.93790806091111e-05
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 1.11322582787822e-06
+56 6.52175803408126e-06
+112 1.12114602051356e-05
+168 1.77535974585544e-05
+224 2.18406401497483e-05
+448 4.08526710925296e-05
+896 8.60256400102794e-05
+1568 0.000158514776726477
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 7.96343309499565e-05
+56 0.000212730430196409
+112 0.000404230363366051
+168 0.000567386017239998
+224 0.000701673659710614
+448 0.00133152120098716
+896 0.00173141291459902
+1344 0.00300507552968852
+1568 0.0100073766955647
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 1.11134037651471e-06
+56 3.28334082117448e-06
+112 3.57543584562958e-06
+224 6.20293817056766e-06
+448 1.18425908660465e-05
+896 2.39342481942525e-05
+1344 3.63831292549875e-05
+1568 4.745172463668e-05
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 7.20847745782951e-07
+56 1.28434145575334e-06
+112 3.11483784154197e-06
+168 5.99119987336495e-06
+224 6.04285436370108e-06
+448 1.28220123980745e-05
+896 2.55446490491798e-05
+1344 3.7796728826428e-05
+1568 4.77365861868074e-05
+};
+\end{axis}
+
