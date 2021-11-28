@@ -1,0 +1,125 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.347058823529412,0.458823529411765,0.641176470588235}
+
+\begin{groupplot}[group style={group size=1 by 3}]
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={Intel},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={SMT Degree},
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.5, xmax=3.5,
+xtick style={color=white!15!black},
+xtick={0,1,2,3},
+xticklabel style={align=left},
+xticklabels={SMT1,SMT2,SMT4,SMT8},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Speedup},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=3.53453981436757,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black}
+]
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,1);
+\addlegendimage{ybar,ybar legend,draw=white,fill=color0,line width=0.32pt};
+\addlegendentry{TICTOC}
+
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,1.50904593767059);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,nan);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,nan);
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={Power9},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={SMT Degree},
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.5, xmax=3.5,
+xtick style={color=white!15!black},
+xtick={0,1,2,3},
+xticklabel style={align=left},
+xticklabels={SMT1,SMT2,SMT4,SMT8},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Speedup},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=3.53453981436757,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black}
+]
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,1.74384251595041);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,2.43277433256969);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,3.36622839463578);
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={Power8},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={SMT Degree},
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.5, xmax=3.5,
+xtick style={color=white!15!black},
+xtick={0,1,2,3},
+xticklabel style={align=left},
+xticklabels={SMT1,SMT2,SMT4,SMT8},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Speedup},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=3.53453981436757,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black}
+]
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,1.4272366443014);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,1.97475421181726);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,2.25060469338619);
+\end{groupplot}
+

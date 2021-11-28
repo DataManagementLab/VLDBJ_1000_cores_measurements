@@ -1,0 +1,118 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.945098039215686,0.345098039215686,0.329411764705882}
+\definecolor{color1}{rgb}{0.870588235294118,0.811764705882353,0.247058823529412}
+\definecolor{color2}{rgb}{0.980392156862745,0.643137254901961,0.227450980392157}
+\definecolor{color3}{rgb}{0.364705882352941,0.647058823529412,0.854901960784314}
+\definecolor{color4}{rgb}{0.698039215686274,0.462745098039216,0.698039215686274}
+\definecolor{color5}{rgb}{1,0,0.501960784313725}
+
+\begin{axis}[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=0, xmax=788.5,
+xtick style={color=white!15!black},
+xtick={0,100,200,300,400,500,600,700,800},
+xticklabel style={align=left},
+xticklabels={−100,0,100,200,300,400,500,600,700},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort/Total},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=0.00293238302630629,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={0,0.0005,0.001,0.0015,0.002,0.0025,0.003},
+yticklabels={−0.0005,0.0000,0.0005,0.0010,0.0015,0.0020,0.0025}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+22 0
+44 0
+88 0
+184 0
+376 0
+752 0
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+22 9.30876378220658e-07
+44 9.69886714806994e-07
+88 2.4489024264215e-06
+184 5.3749272075288e-06
+376 1.04995380082687e-05
+752 2.16991039578575e-05
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+22 9.33818420875698e-07
+44 1.20453744437145e-06
+88 3.67664718241329e-06
+184 6.49535194893605e-06
+376 1.27821926384522e-05
+752 2.94345522636198e-05
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+22 6.91699422477096e-07
+44 4.6080316147833e-07
+88 1.0626918006956e-06
+184 1.70092856525258e-06
+376 4.57264851767035e-06
+752 8.40195585815889e-06
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+22 3.26026763071228e-06
+44 1.93638772678731e-06
+88 4.85584572201206e-06
+184 1.45622900201118e-05
+376 3.16666555204612e-05
+752 6.38549240137659e-05
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+22 0.000103558810566852
+44 0.000193339467474698
+88 0.000378479013567293
+184 0.000833006535007628
+376 0.00149000115687931
+752 0.00279274573933933
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+22 1.47050276484804e-06
+44 2.25902884840361e-06
+88 3.03176360140739e-06
+184 6.42891705220753e-06
+376 1.3348279693433e-05
+752 2.40041234080714e-05
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+22 9.28591758098133e-07
+44 1.4095263779941e-06
+88 2.42909993131363e-06
+184 5.68098746755171e-06
+376 1.21559161010436e-05
+752 2.33938687494729e-05
+};
+\end{axis}
+

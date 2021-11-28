@@ -1,0 +1,31 @@
+\begin{tabular}{llrrrr}
+\toprule
+       & Numa Distance &  Local &  1 Hop &  2 Hop &  Remote \\
+CC & Comparison &        &        &        &         \\
+\midrule
+DL DETECT & Intel & 103.14 &  68.86 &  62.09 &   45.12 \\
+       & Power9 &  64.09 &  43.80 &    nan &   28.63 \\
+       & Power8 &  34.18 &  27.85 &    nan &   22.81 \\
+WAIT DIE & Intel & 101.49 &  70.26 &  62.61 &   43.93 \\
+       & Power9 & 111.66 &  72.35 &    nan &   50.33 \\
+       & Power8 &  35.26 &  27.55 &    nan &   23.00 \\
+NO WAIT & Intel &  99.85 &  70.37 &  61.92 &   43.89 \\
+       & Power9 & 113.89 &  75.81 &    nan &   50.82 \\
+       & Power8 &  34.53 &  28.62 &    nan &   22.86 \\
+MVCC & Intel &  97.02 &  70.20 &  56.75 &   34.50 \\
+       & Power9 &  40.15 &  35.59 &    nan &   31.30 \\
+       & Power8 &  18.73 &  17.65 &    nan &   16.74 \\
+OCC & Intel & 101.25 &  78.82 &  63.88 &   38.93 \\
+       & Power9 &  68.99 &  61.63 &    nan &   44.63 \\
+       & Power8 &  32.95 &  25.99 &    nan &   20.40 \\
+HSTORE & Intel & 191.94 & 165.02 & 158.91 &   89.48 \\
+       & Power9 &  80.51 &  69.06 &    nan &   59.80 \\
+       & Power8 &  44.20 &  43.02 &    nan &   37.01 \\
+SILO & Intel & 177.84 &  99.05 &  66.42 &   37.51 \\
+       & Power9 & 104.10 &  62.77 &    nan &   41.94 \\
+       & Power8 &  42.42 &  23.34 &    nan &   16.61 \\
+TICTOC & Intel & 233.98 & 127.84 &  78.28 &   41.05 \\
+       & Power9 & 125.35 &  74.68 &    nan &   52.10 \\
+       & Power8 &  46.96 &  27.31 &    nan &   19.77 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,207 @@
+<html>
+            <head>
+                <style>
+                    .my_table {}
+                </style>
+            </head>
+            <body>
+            
+        <object style="width:1000px;" data="throughput.svg" type="image/svg+xml"></object>
+<table border="1" class="dataframe my_table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Threads</th>
+      <th>24</th>
+      <th>48</th>
+      <th>96</th>
+      <th>192</th>
+      <th>464</th>
+      <th>928</th>
+      <th>1504</th>
+    </tr>
+    <tr>
+      <th>CC</th>
+      <th>Comparison</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="2" valign="top">DL DETECT</th>
+      <th>NewOrder &amp; Payment - Orig</th>
+      <td>4.94</td>
+      <td>6.82</td>
+      <td>9.10</td>
+      <td>12.63</td>
+      <td>21.35</td>
+      <td>40.09</td>
+      <td>70.08</td>
+    </tr>
+    <tr>
+      <th>NewOrder &amp; Payment - Replicated</th>
+      <td>4.88</td>
+      <td>6.79</td>
+      <td>9.07</td>
+      <td>12.85</td>
+      <td>21.35</td>
+      <td>39.72</td>
+      <td>69.67</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">WAIT DIE</th>
+      <th>NewOrder &amp; Payment - Orig</th>
+      <td>4.90</td>
+      <td>6.92</td>
+      <td>9.01</td>
+      <td>12.70</td>
+      <td>21.36</td>
+      <td>39.57</td>
+      <td>78.43</td>
+    </tr>
+    <tr>
+      <th>NewOrder &amp; Payment - Replicated</th>
+      <td>4.83</td>
+      <td>6.75</td>
+      <td>8.99</td>
+      <td>12.59</td>
+      <td>21.31</td>
+      <td>38.21</td>
+      <td>75.38</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">NO WAIT</th>
+      <th>NewOrder &amp; Payment - Orig</th>
+      <td>4.94</td>
+      <td>7.05</td>
+      <td>9.35</td>
+      <td>12.80</td>
+      <td>21.10</td>
+      <td>40.60</td>
+      <td>81.09</td>
+    </tr>
+    <tr>
+      <th>NewOrder &amp; Payment - Replicated</th>
+      <td>4.93</td>
+      <td>6.85</td>
+      <td>9.13</td>
+      <td>12.81</td>
+      <td>21.42</td>
+      <td>41.43</td>
+      <td>77.95</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">MVCC</th>
+      <th>NewOrder &amp; Payment - Orig</th>
+      <td>2.62</td>
+      <td>3.45</td>
+      <td>4.92</td>
+      <td>7.96</td>
+      <td>13.17</td>
+      <td>21.43</td>
+      <td>29.84</td>
+    </tr>
+    <tr>
+      <th>NewOrder &amp; Payment - Replicated</th>
+      <td>2.64</td>
+      <td>3.56</td>
+      <td>4.88</td>
+      <td>7.91</td>
+      <td>13.10</td>
+      <td>21.38</td>
+      <td>29.18</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">OCC</th>
+      <th>NewOrder &amp; Payment - Orig</th>
+      <td>4.50</td>
+      <td>6.19</td>
+      <td>8.27</td>
+      <td>12.12</td>
+      <td>19.24</td>
+      <td>35.38</td>
+      <td>59.02</td>
+    </tr>
+    <tr>
+      <th>NewOrder &amp; Payment - Replicated</th>
+      <td>4.47</td>
+      <td>6.16</td>
+      <td>8.20</td>
+      <td>11.93</td>
+      <td>19.09</td>
+      <td>33.97</td>
+      <td>57.14</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">HSTORE</th>
+      <th>NewOrder &amp; Payment - Orig</th>
+      <td>7.32</td>
+      <td>10.96</td>
+      <td>16.19</td>
+      <td>19.49</td>
+      <td>30.41</td>
+      <td>41.88</td>
+      <td>55.78</td>
+    </tr>
+    <tr>
+      <th>NewOrder &amp; Payment - Replicated</th>
+      <td>7.28</td>
+      <td>10.59</td>
+      <td>16.15</td>
+      <td>19.36</td>
+      <td>30.16</td>
+      <td>41.94</td>
+      <td>56.35</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">SILO</th>
+      <th>NewOrder &amp; Payment - Orig</th>
+      <td>4.76</td>
+      <td>6.56</td>
+      <td>8.95</td>
+      <td>9.92</td>
+      <td>16.83</td>
+      <td>36.45</td>
+      <td>82.05</td>
+    </tr>
+    <tr>
+      <th>NewOrder &amp; Payment - Replicated</th>
+      <td>4.69</td>
+      <td>6.67</td>
+      <td>9.07</td>
+      <td>9.97</td>
+      <td>16.89</td>
+      <td>36.67</td>
+      <td>83.64</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">TICTOC</th>
+      <th>NewOrder &amp; Payment - Orig</th>
+      <td>5.57</td>
+      <td>7.83</td>
+      <td>10.76</td>
+      <td>11.88</td>
+      <td>19.61</td>
+      <td>43.23</td>
+      <td>93.59</td>
+    </tr>
+    <tr>
+      <th>NewOrder &amp; Payment - Replicated</th>
+      <td>5.52</td>
+      <td>7.63</td>
+      <td>10.76</td>
+      <td>11.89</td>
+      <td>19.62</td>
+      <td>43.57</td>
+      <td>92.65</td>
+    </tr>
+  </tbody>
+</table>
+            </body>
+        </html>

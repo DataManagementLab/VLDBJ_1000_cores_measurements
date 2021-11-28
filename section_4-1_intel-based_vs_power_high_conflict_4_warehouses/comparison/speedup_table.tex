@@ -1,0 +1,31 @@
+\begin{tabular}{llrrrrrrrrrrrrrrrrrrr}
+\toprule
+       & Threads &  1   &  2   &  4   &  8   &  16  &   22  &   24  &   28  &   44  &   48  &   56  &  88  &   96  &  112 &  184 &  192 &  224 &  279 &  288 \\
+CC & Comparison &      &      &      &      &      &       &       &       &       &       &       &      &       &      &      &      &      &      &      \\
+\midrule
+DL DETECT & Intel & 1.00 & 1.47 & 2.81 & 4.77 & 5.80 &   nan &   nan &  4.55 &   nan &   nan &  2.54 &  nan &   nan & 1.01 &  nan &  nan & 0.06 &  nan &  nan \\
+       & Power9 & 1.00 & 1.80 & 3.50 & 5.34 & 3.25 &   nan &  2.17 &   nan &   nan &  1.89 &   nan &  nan &  1.53 &  nan &  nan & 0.35 &  nan &  nan & 0.26 \\
+       & Power8 & 1.00 & 1.35 & 2.75 & 4.77 & 4.83 &  3.58 &   nan &   nan &  2.42 &   nan &   nan & 1.42 &   nan &  nan & 0.54 &  nan &  nan & 0.00 &  nan \\
+WAIT DIE & Intel & 1.00 & 1.41 & 2.80 & 5.20 & 7.46 &   nan &   nan &  8.39 &   nan &   nan &  6.65 &  nan &   nan & 1.23 &  nan &  nan & 0.53 &  nan &  nan \\
+       & Power9 & 1.00 & 1.78 & 3.44 & 6.29 & 8.82 &   nan &  9.52 &   nan &   nan &  7.67 &   nan &  nan &  2.20 &  nan &  nan & 0.58 &  nan &  nan & 0.33 \\
+       & Power8 & 1.00 & 1.37 & 2.78 & 5.32 & 8.12 &  8.57 &   nan &   nan &  5.87 &   nan &   nan & 2.06 &   nan &  nan & 0.90 &  nan &  nan & 0.60 &  nan \\
+NO WAIT & Intel & 1.00 & 1.44 & 2.87 & 5.31 & 7.93 &   nan &   nan &  9.41 &   nan &   nan &  3.94 &  nan &   nan & 0.92 &  nan &  nan & 0.38 &  nan &  nan \\
+       & Power9 & 1.00 & 1.78 & 3.46 & 6.34 & 8.85 &   nan &  9.81 &   nan &   nan &  8.89 &   nan &  nan &  1.21 &  nan &  nan & 0.29 &  nan &  nan & 0.15 \\
+       & Power8 & 1.00 & 1.36 & 2.76 & 5.34 & 8.11 &  8.76 &   nan &   nan &  6.42 &   nan &   nan & 1.22 &   nan &  nan & 0.43 &  nan &  nan & 0.29 &  nan \\
+MVCC & Intel & 1.00 & 1.46 & 2.80 & 4.91 & 7.50 &   nan &   nan &  8.96 &   nan &   nan &  8.91 &  nan &   nan & 4.51 &  nan &  nan & 2.56 &  nan &  nan \\
+       & Power9 & 1.00 & 1.79 & 3.38 & 5.85 & 9.04 &   nan & 10.56 &   nan &   nan &  9.57 &   nan &  nan &  6.65 &  nan &  nan & 3.34 &  nan &  nan & 2.29 \\
+       & Power8 & 1.00 & 1.51 & 2.97 & 5.17 & 8.74 &  9.96 &   nan &   nan &  9.35 &   nan &   nan & 5.97 &   nan &  nan & 3.65 &  nan &  nan & 2.62 &  nan \\
+OCC & Intel & 1.00 & 1.38 & 2.71 & 4.74 & 7.45 &   nan &   nan &  9.69 &   nan &   nan &  8.79 &  nan &   nan & 4.84 &  nan &  nan & 3.38 &  nan &  nan \\
+       & Power9 & 1.00 & 1.88 & 3.65 & 6.25 & 9.77 &   nan & 11.37 &   nan &   nan &  7.27 &   nan &  nan &  3.04 &  nan &  nan & 1.28 &  nan &  nan & 0.99 \\
+       & Power8 & 1.00 & 1.32 & 2.69 & 4.80 & 7.79 &  8.88 &   nan &   nan &  6.20 &   nan &   nan & 2.89 &   nan &  nan & 2.11 &  nan &  nan & 2.12 &  nan \\
+HSTORE & Intel & 1.00 & 1.56 & 2.65 & 2.38 & 2.28 &   nan &   nan &  2.12 &   nan &   nan &  1.79 &  nan &   nan & 1.08 &  nan &  nan & 0.69 &  nan &  nan \\
+       & Power9 & 1.00 & 1.72 & 2.73 & 2.71 & 2.60 &   nan &  2.48 &   nan &   nan &  1.93 &   nan &  nan &  1.58 &  nan &  nan & 1.11 &  nan &  nan & 1.04 \\
+       & Power8 & 1.00 & 1.39 & 2.49 & 2.65 & 2.82 &  2.75 &   nan &   nan &  2.26 &   nan &   nan & 1.51 &   nan &  nan & 1.18 &  nan &  nan & 1.12 &  nan \\
+SILO & Intel & 1.00 & 1.45 & 2.80 & 5.46 & 9.39 &   nan &   nan & 13.30 &   nan &   nan & 16.56 &  nan &   nan & 4.95 &  nan &  nan & 2.61 &  nan &  nan \\
+       & Power9 & 1.00 & 1.81 & 3.50 & 6.00 & 9.77 &   nan & 12.03 &   nan &   nan & 12.84 &   nan &  nan & 12.37 &  nan &  nan & 6.75 &  nan &  nan & 5.30 \\
+       & Power8 & 1.00 & 1.33 & 2.70 & 4.72 & 8.27 &  9.97 &   nan &   nan &  9.72 &   nan &   nan & 7.17 &   nan &  nan & 5.75 &  nan &  nan & 5.34 &  nan \\
+TICTOC & Intel & 1.00 & 1.53 & 2.98 & 5.60 & 9.31 &   nan &   nan & 12.59 &   nan &   nan & 16.57 &  nan &   nan & 6.12 &  nan &  nan & 3.35 &  nan &  nan \\
+       & Power9 & 1.00 & 1.83 & 3.55 & 6.05 & 9.81 &   nan & 11.86 &   nan &   nan & 12.35 &   nan &  nan & 11.58 &  nan &  nan & 6.06 &  nan &  nan & 4.48 \\
+       & Power8 & 1.00 & 1.41 & 2.87 & 5.10 & 8.74 & 10.34 &   nan &   nan & 10.43 &   nan &   nan & 7.98 &   nan &  nan & 5.64 &  nan &  nan & 4.99 &  nan \\
+\bottomrule
+\end{tabular}

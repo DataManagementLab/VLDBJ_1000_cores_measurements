@@ -1,0 +1,52 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{axis}[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=26.6, xmax=57.4,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=5032.34643893357, ymax=8089.3083882493,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black}
+]
+\path [draw=white!63.1372549019608!black, line width=0.48pt]
+(axis cs:28,5171.29925481156)
+--(axis cs:28,5330.58733245989);
+
+\path [draw=white!63.1372549019608!black, line width=0.48pt]
+(axis cs:56,7897.47372002794)
+--(axis cs:56,7950.35557237131);
+
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 5250.94329363573
+56 7923.91464619963
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black]
+table {%
+28 5250.94329363573
+56 7923.91464619963
+};
+\end{axis}
+

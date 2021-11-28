@@ -1,9 +1,10 @@
 # General Structure
 
-In the following data collection, we provide for all experiments discussed in __[paper](paper)__: __1.__ The configuration (".conf") and scripts (".sh") for the experimental setup, raw logs ("log.out", ".log"), and extracted measurements (".results.csv") compressed into measurements.zip; __2.__ accumulated measurements ("result.csv") and resulting plots (".svg", ".tex").
+In the following data collection, we provide for all experiments discussed in __[paper](paper)__: __1.__ The configuration (".conf") and scripts (".sh") for the experimental setup, raw logs ("log.out", ".log"), profiling output ("\*.perf.\*"), and extracted measurements (".results.csv") compressed into measurements.zip; __2.__ accumulated measurements ("result.csv") and resulting plots (".svg", ".tex", ".html").
 
 The data collection is first organized as the experiments appear in the paper and
-second by hardware platforms (HPE, Power8, and Power9).
+second by hardware platforms (HPE, Power8, and Power9) and a directory for combined plots.
+Moreover, along the directories for tha hardware platforms there is a directory ("__comparison__") containing plots comparing their performance.
 
 # Memory latency and bandwidth by NUMA (Section 2, Table 2)
 
@@ -49,3 +50,63 @@ For the speedup in Fig. 8 the measurements of Section 3.2.1 were used, i.e., [se
 [section_3-3-2_optimised_high_conflict_1568_warehouses](section_3-3-2_optimised_high_conflict_1568_warehouses) contains the measurements when all optimisations are applied for the high conflict workload with 4 warehouses, Fig. 11a and Fig. 12a.
 
 [section_3-3-2_optimised_low_conflict_1568_warehouses](section_3-3-2_optimised_low_conflict_1568_warehouses) contains the measurements when all optimisations are applied for the low conflict workload with 1568 warehouses, Fig. 11b and Fig. 12b.
+
+# Broadening the Evaluation (Section 4)
+
+## Intel-based vs. IBM Power 8/9 Platforms (Section 4.1)
+
+[section_4-1_intel-based_vs_power_high_conflict_4_warehouses](section_4-1_intel-based_vs_power_high_conflict_4_warehouses) contains the measurements comparing the scalability of the three hardware platforms (HPE, Power8, Power9) for the high conflict optimisations, Fig. 13 and Fig. 14.
+
+[section_4-1_intel-based_vs_power_low_conflict_1568_warehouses](section_4-1_intel-based_vs_power_low_conflict_1568_warehouses) contains the measurements comparing the scalability of the three hardware platforms (HPE, Power8, Power9) for the low conflict optimisations, Fig. 15 and Fig. 16.
+Power9 has measurements with __replicated internal__ data structures and for the __original__ implementation without this additional optimisation as well as plots comparing these.
+
+The measurements for HPE correspond to those of Section 3.3.2 ([section_3-3-2_optimised_low_conflict_1568_warehouses](section_3-3-2_optimised_low_conflict_1568_warehouses), [section_3-3-2_optimised_high_conflict_1568_warehouses](section_3-3-2_optimised_high_conflict_1568_warehouses)).
+
+## Zooming into Hardware Aspects (Section 4.2)
+
+### Simultaneous Multithreading (Section 4.2.1)
+
+[section_4-2-1_simultaneous_multithreading_low_conflict_1568_warehouses](section_4-2-1_simultaneous_multithreading_low_conflict_1568_warehouses) contains the measurements detailing the benefit of SMT on all hadware platforms for the low conflict workload, Fig. 17.
+The measurements of the limited SMT of the Intel processor in the HPE platform are omitted from Fig. 17.
+
+[section_4-2-1_simultaneous_multithreading_high_conflict_4_warehouses](section_4-2-1_simultaneous_multithreading_high_conflict_4_warehouses) contains the measurements detailing the benefit of SMT on all hadware platforms for the high conflict workload, Fig. 18.
+
+### Non-uniform Memory Access (4.2.2)
+
+[section_4-2-2_non-uniform_memory_access_isolated_effect](section_4-2-2_non-uniform_memory_access_isolated_effect) contains the measurements for the NUMA effect when operating across the distinct NUMA distances of the hardware platforms, Fig. 19.
+
+[section_4-2-2_non-uniform_memory_access_workload-imposed_effect](section_4-2-2_non-uniform_memory_access_workload-imposed_effect) contains the measurements for the NUMA effect imposed by the workload (TPC-C remote transactions), Fig. 20.
+
+[z_extra_non-uniform_memory_access_workload-imposed_effect_all_distances](z_extra_non-uniform_memory_access_workload-imposed_effect_all_distances) contains extra measurements for additional NUMA distances.
+
+## The Full TPC-C Benchmark (Section 4.3)
+The following measurements concern the performance for the full TPC-C transaction mix beyond the commonly used narrow transaction mix of only *NewOrder* and *Payment*.
+
+### Full TPC-C under High Conflict
+
+[section_4-3-1_full_TPC-C_high_conflict_4_warehouses](section_4-3-1_full_TPC-C_high_conflict_4_warehouses)
+contains the measurements with the full TPC-C transaction mix under high conflict, Fig. 21 and Fig. 22.
+
+### Full TPC-C under Low Conflict
+
+[section_4-3-1_full_TPC-C_low_conflict_1568_warehouses](section_4-3-1_full_TPC-C_low_conflict_1568_warehouses) contains the measurements with the full TPC-C transaction mix under low conflict, Fig. 23 and Fig. 24.
+
+Power9 has measurements with __replicated internal__ data structures and for the __original__ implementation without this additional optimisation as well as plots comparing these.
+
+# Extra measurements
+
+## Full TPC-C with Remote Transactions under Low Conflict
+
+[z_extra_full_TPC-C_with_remote_transactions_low_conflict_1568_warehouses](z_extra_full_TPC-C_with_remote_transactions_low_conflict_1568_warehouses)
+
+## Scalability for a Range of Warehouses with narrow TPC-C
+
+[z_extra_scaling_for_range_of_warehouses](z_extra_scaling_for_range_of_warehouses)
+
+## Scalability for a Range of Warehouses with full TPC-C
+
+[z_extra_scaling_for_range_of_warehouses_with_full_TPC-C](z_extra_scaling_for_range_of_warehouses_with_full_TPC-C)
+
+## Scalability for a Range of Warehouses with Range of Remote Transactions
+
+[z_extra_scaling_for_range_of_warehouses_with_range_of_remote_transactions](z_extra_scaling_for_range_of_warehouses_with_range_of_remote_transactions)

@@ -1,0 +1,54 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{axis}[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=26.6, xmax=57.4,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort Ratio (Abort/Total)},
+ymajorgrids,
+ymajorticks=false,
+ymin=6.85195685010735e-07, ymax=1.48937688980798e-06,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={6e-07,8e-07,1e-06,1.2e-06,1.4e-06,1.6e-06},
+yticklabels={0.6,0.8,1.0,1.2,1.4,1.6}
+]
+\path [draw=white!63.1372549019608!black, line width=0.48pt]
+(axis cs:28,7.21749376137883e-07)
+--(axis cs:28,1.45137301701626e-06);
+
+\path [draw=white!63.1372549019608!black, line width=0.48pt]
+(axis cs:56,9.04315302190523e-07)
+--(axis cs:56,1.45282319868084e-06);
+
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 1.08656119657707e-06
+56 1.17856925043568e-06
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black]
+table {%
+28 1.08656119657707e-06
+56 1.17856925043568e-06
+};
+\end{axis}
+

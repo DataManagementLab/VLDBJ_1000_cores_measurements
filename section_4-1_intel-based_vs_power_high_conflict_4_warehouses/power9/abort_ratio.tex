@@ -1,0 +1,150 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.945098039215686,0.345098039215686,0.329411764705882}
+\definecolor{color1}{rgb}{0.870588235294118,0.811764705882353,0.247058823529412}
+\definecolor{color2}{rgb}{0.980392156862745,0.643137254901961,0.227450980392157}
+\definecolor{color3}{rgb}{0.364705882352941,0.647058823529412,0.854901960784314}
+\definecolor{color4}{rgb}{0.698039215686274,0.462745098039216,0.698039215686274}
+\definecolor{color5}{rgb}{1,0,0.501960784313725}
+
+\begin{axis}[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=0, xmax=302.35,
+xtick style={color=white!15!black},
+xtick={0,50,100,150,200,250,300,350},
+xticklabel style={align=left},
+xticklabels={−50,0,50,100,150,200,250,300},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort/Total},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=1.0272660874151,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={0,0.2,0.4,0.6,0.8,1,1.2},
+yticklabels={−0.2,0.0,0.2,0.4,0.6,0.8,1.0}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+1 0
+2 0
+4 0
+8 3.88271992499357e-06
+16 2.27825566588614e-05
+24 3.96242036290588e-05
+48 0.000215900677256508
+96 0.0013079454022228
+192 0.560301721148055
+288 0.732061324102708
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+1 0
+2 1.30842384268267e-05
+4 3.26124475259629e-05
+8 0.16075459332618
+16 0.356832178714724
+24 0.473136492506073
+48 0.714519765193525
+96 0.887469770142506
+192 0.93425642739476
+288 0.952591501167003
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+1 0
+2 1.31877587666862e-05
+4 4.9492201366006e-05
+8 0.187559119716906
+16 0.403878085594122
+24 0.504767713003738
+48 0.704585938560442
+96 0.938327658532174
+192 0.968210526360176
+288 0.978348654681043
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+1 0
+2 1.31540667662093e-05
+4 1.05961167338156e-05
+8 0.00192988299274696
+16 0.0203775519644542
+24 0.0608061892921286
+48 0.212699843798294
+96 0.393571051181136
+192 0.540431229484321
+288 0.606548224398124
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+1 0
+2 3.9259209870383e-05
+4 0.000111476196739819
+8 0.137997407132857
+16 0.330774952735397
+24 0.45512648353949
+48 0.719507649503444
+96 0.811262531111608
+192 0.8300970617831
+288 0.832637039239092
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+1 0
+2 0.00127459092297647
+4 0.00475622475077976
+8 0.000893600218959095
+16 0.000210962210715351
+24 3.6621876069256e-05
+48 8.78269731904753e-06
+96 1.46054903615847e-06
+192 7.56018833820694e-07
+288 1.18116467976172e-06
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+1 0
+2 3.89382211229444e-05
+4 6.22742364225657e-05
+8 0.125168306004499
+16 0.296727627391732
+24 0.397696608376716
+48 0.5900687492667
+96 0.767186697039712
+192 0.923433914451365
+288 0.948456291708163
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+1 0
+2 1.83902483489341e-05
+4 4.9526972554752e-05
+8 0.125117382464479
+16 0.296951072002867
+24 0.393312559619148
+48 0.582900381135575
+96 0.763066972305261
+192 0.923485462966534
+288 0.951631188157894
+};
+\end{axis}
+
