@@ -1,0 +1,325 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.945098039215686,0.345098039215686,0.329411764705882}
+\definecolor{color1}{rgb}{0.870588235294118,0.811764705882353,0.247058823529412}
+\definecolor{color2}{rgb}{0.980392156862745,0.643137254901961,0.227450980392157}
+\definecolor{color3}{rgb}{0.364705882352941,0.647058823529412,0.854901960784314}
+\definecolor{color4}{rgb}{0.698039215686274,0.462745098039216,0.698039215686274}
+\definecolor{color5}{rgb}{1,0,0.501960784313725}
+
+\begin{groupplot}[group style={group size=1 by 3}]
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={Intel - Remote},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-5, xmax=105,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Speedup},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=1.11404838914583,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={0,0.2,0.4,0.6,0.8,1,1.2},
+yticklabels={−0.2,0.0,0.2,0.4,0.6,0.8,1.0}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.765814112128441
+25 0.414788093471685
+50 0.34102162989629
+100 0.262984295340937
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.06110607702389
+25 0.805715311607018
+50 0.634458875405555
+100 0.450659694939095
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 1.04322942621445
+25 0.836933199277204
+50 0.646800160112604
+100 0.457667647169552
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.943922271153695
+25 0.592765680586072
+50 0.399630654778131
+100 0.374023046374559
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.986314734648044
+25 0.778352718659643
+50 0.568406508804058
+100 0.383694257598372
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.483691608200415
+25 0.0575490087155965
+50 0.021607557693762
+100 0.00225983458508878
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.922392776820052
+25 0.633677798759762
+50 0.372570782591697
+100 0.222243965631411
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.938726177490331
+25 0.554369723053659
+50 0.31405294932664
+100 0.18662803235945
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={Power9 - Remote},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-5, xmax=105,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Speedup},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=1.11404838914583,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={0,0.2,0.4,0.6,0.8,1,1.2},
+yticklabels={−0.2,0.0,0.2,0.4,0.6,0.8,1.0}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+1 1
+5 0.648870866686237
+25 0.314949548204747
+50 0.230899726182691
+100 0.191929232731521
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.724880176631472
+5 0.694567398329814
+25 0.603467348274135
+50 0.515210121477278
+100 0.459359392693698
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.716572745920079
+5 0.680332355051789
+25 0.589359282306668
+50 0.506619779034895
+100 0.421867010956065
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.829348020931647
+5 0.801000950834894
+25 0.66283499077787
+50 0.578219728007152
+100 0.738282379094642
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.828267392620078
+5 0.881161654047249
+25 0.798694368564991
+50 0.757657915857335
+100 0.704553112844657
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.69622155149576
+5 0.385556334468435
+25 0.0910254026087125
+50 0.033893089955355
+100 0.0125417537508697
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.794386389895375
+5 0.736098893007976
+25 0.563450520684972
+50 0.453621635166022
+100 0.391703299675023
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.767464136072351
+5 0.720672964057195
+25 0.558190380816727
+50 0.504140521488246
+100 0.434759076136356
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={Power8 - Remote},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-5, xmax=105,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Speedup},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=1.11404838914583,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={0,0.2,0.4,0.6,0.8,1,1.2},
+yticklabels={−0.2,0.0,0.2,0.4,0.6,0.8,1.0}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.722933415153446
+5 0.709256294275461
+25 0.723046931586117
+50 0.716936342420421
+100 0.63029702303542
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.692691799007234
+5 0.699524767277422
+25 0.700920708865812
+50 0.697300458651044
+100 0.611048701256359
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.720199532228455
+5 0.706896011609595
+25 0.726107768852394
+50 0.721252433027781
+100 0.630842486112132
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.963886768925255
+5 0.935953578212203
+25 0.892510994023265
+50 0.748257625010656
+100 0.874841875992452
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.683386515809396
+5 0.676226094797783
+25 0.688590086801912
+50 0.67149816476417
+100 0.577980004376865
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.874467351825264
+5 0.741594384861564
+25 0.198576085451101
+50 0.0695430840256892
+100 0.0266729477956235
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.467941314274117
+5 0.474833432008495
+25 0.461613176372962
+50 0.456774956756467
+100 0.366542309983647
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1
+1 0.5004611645729
+5 0.507668092663545
+25 0.498070624364804
+50 0.4766754305063
+100 0.385207269809117
+};
+\end{groupplot}
+

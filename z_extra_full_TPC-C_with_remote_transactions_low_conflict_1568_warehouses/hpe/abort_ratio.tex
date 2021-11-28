@@ -1,0 +1,50 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{1,0,0.501960784313725}
+
+\begin{axis}[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-1.45, xmax=52.45,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort Ratio (Abort/Total)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-4.19346416747715e-05, ymax=0.00104412187567277,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={-0.0002,0,0.0002,0.0004,0.0006,0.0008,0.001,0.0012},
+yticklabels={−0.0002,0.0000,0.0002,0.0004,0.0006,0.0008,0.0010,0.0012}
+]
+\addplot [line width=0.48pt, color0, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+1 7.43156365920781e-06
+25 0.000435539917897961
+50 0.000808229839139294
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+1 2.85931128039729e-05
+25 0.0005527856091704
+50 0.000994755670338795
+};
+\end{axis}
+

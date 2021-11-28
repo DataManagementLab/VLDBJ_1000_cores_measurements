@@ -1,0 +1,622 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.931269222332537,0.820192179608212,0.797148097466359}
+\definecolor{color1}{rgb}{0.784044088059945,0.529266054426589,0.620056892694176}
+\definecolor{color2}{rgb}{0.175086564895221,0.118400233069168,0.242159891378365}
+
+\begin{groupplot}[group style={group size=7 by 1}]
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = DL DETECT},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-12.506706602881, ymax=3453.47846177449,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,145.038073777908)
+--(axis cs:5,438.549852334973);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,165.454410456932)
+--(axis cs:10,501.7280272009);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,166.095772932731)
+--(axis cs:25,502.448988058744);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,151.533613469668)
+--(axis cs:5,889.862517353975);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,213.292836133513)
+--(axis cs:10,778.34591977671);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,146.984935316232)
+--(axis cs:25,775.643235218695);
+
+\path [draw=color2, line width=0.48pt]
+(axis cs:5,215.037577816723)
+--(axis cs:5,1467.12245656525);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 260.197875336882
+10 259.391323128468
+25 259.816667220779
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 402.80824047471
+10 402.744525728847
+25 401.636355281632
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 915.924324325581
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 260.197875336882
+10 259.391323128468
+25 259.816667220779
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 402.80824047471
+10 402.744525728847
+25 401.636355281632
+};
+\addplot [line width=0.48pt, color2]
+table {%
+5 915.924324325581
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = WAIT DIE},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-12.506706602881, ymax=3453.47846177449,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,220.482898272667)
+--(axis cs:5,842.296544721048);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,219.642042637989)
+--(axis cs:10,835.438382516006);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,216.902713915401)
+--(axis cs:25,836.752874225211);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,701.957396333734)
+--(axis cs:5,1511.38960921691);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,703.585894310906)
+--(axis cs:10,1623.7414087264);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,454.709950599762)
+--(axis cs:25,1507.50342886598);
+
+\path [draw=color2, line width=0.48pt]
+(axis cs:5,743.295829198221)
+--(axis cs:5,2706.73863818656);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 450.118414667964
+10 450.344461774608
+25 449.135578632721
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 1223.73185801272
+10 1222.83497629638
+25 1220.47748687594
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 2138.99945557995
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 450.118414667964
+10 450.344461774608
+25 449.135578632721
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 1223.73185801272
+10 1222.83497629638
+25 1220.47748687594
+};
+\addplot [line width=0.48pt, color2]
+table {%
+5 2138.99945557995
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = NO WAIT},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-12.506706602881, ymax=3453.47846177449,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,189.695497781406)
+--(axis cs:5,838.502960150644);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,187.937978580907)
+--(axis cs:10,698.719685837602);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,185.818283711291)
+--(axis cs:25,844.911423985335);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,528.144860674194)
+--(axis cs:5,1551.82616611578);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,372.782945179661)
+--(axis cs:10,1549.78119700946);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,370.374130561658)
+--(axis cs:25,1538.1120350503);
+
+\path [draw=color2, line width=0.48pt]
+(axis cs:5,762.815397445)
+--(axis cs:5,2923.89009789786);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 319.892625110129
+10 320.675635669636
+25 320.498907176987
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 1193.47639493511
+10 1187.26989679906
+25 1188.80940463157
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 1721.2293912413
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 319.892625110129
+10 320.675635669636
+25 320.498907176987
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 1193.47639493511
+10 1187.26989679906
+25 1188.80940463157
+};
+\addplot [line width=0.48pt, color2]
+table {%
+5 1721.2293912413
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = OCC},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-12.506706602881, ymax=3453.47846177449,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,202.603667374459)
+--(axis cs:5,730.862729541882);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,199.498065925914)
+--(axis cs:10,729.706956379067);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,192.609370649274)
+--(axis cs:25,749.646925701251);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,201.045840462084)
+--(axis cs:5,1381.95519777699);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,191.932316987738)
+--(axis cs:10,1399.5913496461);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,189.941099265118)
+--(axis cs:25,1406.38474110668);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 713.820617114631
+10 718.540018219992
+25 713.845088346143
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 1151.01442995402
+10 1154.2113857471
+25 1164.35614621339
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 713.820617114631
+10 718.540018219992
+25 713.845088346143
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 1151.01442995402
+10 1154.2113857471
+25 1164.35614621339
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = HSTORE},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-12.506706602881, ymax=3453.47846177449,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,307.825900028589)
+--(axis cs:5,389.282403181221);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,230.147806539683)
+--(axis cs:10,343.803865272402);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,181.550155306052)
+--(axis cs:25,300.090898827845);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,408.010592767467)
+--(axis cs:5,522.938423325661);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,316.606764457767)
+--(axis cs:10,392.649328361281);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,208.026332296747)
+--(axis cs:25,308.644289368733);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 325.400430624869
+10 258.972371279619
+25 201.203423535971
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 463.431258518144
+10 362.322644841979
+25 235.734867242904
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 325.400430624869
+10 258.972371279619
+25 201.203423535971
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 463.431258518144
+10 362.322644841979
+25 235.734867242904
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = SILO},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-12.506706602881, ymax=3453.47846177449,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,769.678822226122)
+--(axis cs:5,1892.14216841489);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,760.430566487807)
+--(axis cs:10,1897.27277446835);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,913.598414347029)
+--(axis cs:25,1908.47414593892);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,886.652561558288)
+--(axis cs:5,3186.09031935126);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,1325.32757708334)
+--(axis cs:10,3191.09509713979);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,877.068578953198)
+--(axis cs:25,3184.68708417131);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 1506.99507892172
+10 1512.41032859826
+25 1546.6466858847
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 2368.97153411022
+10 2378.3142421687
+25 2381.8278855471
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 1506.99507892172
+10 1512.41032859826
+25 1546.6466858847
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 2368.97153411022
+10 2378.3142421687
+25 2381.8278855471
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = TICTOC},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-12.506706602881, ymax=3453.47846177449,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,908.465881822093)
+--(axis cs:5,1836.78980455283);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,807.370694903661)
+--(axis cs:10,1957.38195890909);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,795.51219139711)
+--(axis cs:25,1959.60825801445);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,1409.37289826691)
+--(axis cs:5,3295.9336813937);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,1562.54278475107)
+--(axis cs:10,3267.97667636344);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,1391.4556191768)
+--(axis cs:25,3294.33673441327);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 1540.25255680938
+10 1520.47616092564
+25 1555.55172142378
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 2511.1053367896
+10 2506.69053225722
+25 2496.82585646294
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 1540.25255680938
+10 1520.47616092564
+25 1555.55172142378
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 2511.1053367896
+10 2506.69053225722
+25 2496.82585646294
+};
+\end{groupplot}
+

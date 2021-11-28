@@ -1,0 +1,279 @@
+<html>
+            <head>
+                <style>
+                    .my_table {}
+                </style>
+            </head>
+            <body>
+            
+        <object style="width:1000px;" data="combined-all-txn-scaling-1568WH-comp-power9-investigation-throughput-per-core.svg" type="image/svg+xml"></object>
+<table border="1" class="dataframe my_table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Threads</th>
+      <th>24</th>
+      <th>48</th>
+      <th>96</th>
+      <th>192</th>
+      <th>384</th>
+      <th>464</th>
+      <th>752</th>
+      <th>928</th>
+      <th>1120</th>
+      <th>1312</th>
+      <th>1504</th>
+    </tr>
+    <tr>
+      <th>CC</th>
+      <th>Comparison</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="2" valign="top">DL DETECT</th>
+      <th>All - Orig</th>
+      <td>0.07</td>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>All - Replicated Internals</th>
+      <td>0.07</td>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">WAIT DIE</th>
+      <th>All - Orig</th>
+      <td>0.07</td>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>All - Replicated Internals</th>
+      <td>0.07</td>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">NO WAIT</th>
+      <th>All - Orig</th>
+      <td>0.07</td>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>All - Replicated Internals</th>
+      <td>0.07</td>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">MVCC</th>
+      <th>All - Orig</th>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>nan</td>
+      <td>nan</td>
+      <td>0.01</td>
+      <td>0.02</td>
+      <td>nan</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>All - Replicated Internals</th>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>nan</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">OCC</th>
+      <th>All - Orig</th>
+      <td>0.05</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>All - Replicated Internals</th>
+      <td>0.05</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">HSTORE</th>
+      <th>All - Orig</th>
+      <td>0.17</td>
+      <td>0.14</td>
+      <td>0.10</td>
+      <td>0.07</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>All - Replicated Internals</th>
+      <td>0.18</td>
+      <td>0.14</td>
+      <td>0.10</td>
+      <td>0.07</td>
+      <td>0.06</td>
+      <td>0.05</td>
+      <td>0.04</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">SILO</th>
+      <th>All - Orig</th>
+      <td>0.09</td>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>All - Replicated Internals</th>
+      <td>0.10</td>
+      <td>0.07</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">TICTOC</th>
+      <th>All - Orig</th>
+      <td>0.10</td>
+      <td>0.07</td>
+      <td>0.05</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>All - Replicated Internals</th>
+      <td>0.10</td>
+      <td>0.07</td>
+      <td>0.05</td>
+      <td>0.04</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.04</td>
+    </tr>
+  </tbody>
+</table>
+            </body>
+        </html>

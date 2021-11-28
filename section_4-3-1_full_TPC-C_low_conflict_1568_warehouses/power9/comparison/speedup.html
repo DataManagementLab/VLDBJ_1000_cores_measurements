@@ -1,0 +1,157 @@
+<html>
+            <head>
+                <style>
+                    .my_table {}
+                </style>
+            </head>
+            <body>
+            
+        <object style="width:1000px;" data="speedup.svg" type="image/svg+xml"></object>
+<table border="1" class="dataframe my_table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Threads</th>
+      <th>24</th>
+      <th>48</th>
+      <th>96</th>
+      <th>192</th>
+      <th>384</th>
+      <th>464</th>
+      <th>752</th>
+      <th>928</th>
+      <th>1120</th>
+      <th>1504</th>
+    </tr>
+    <tr>
+      <th>CC</th>
+      <th>Comparison</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>DL DETECT</th>
+      <th>All - Replicated Internals</th>
+      <td>1.00</td>
+      <td>1.49</td>
+      <td>2.01</td>
+      <td>3.74</td>
+      <td>6.62</td>
+      <td>6.94</td>
+      <td>10.57</td>
+      <td>11.83</td>
+      <td>14.17</td>
+      <td>15.79</td>
+    </tr>
+    <tr>
+      <th>WAIT DIE</th>
+      <th>All - Replicated Internals</th>
+      <td>1.00</td>
+      <td>1.48</td>
+      <td>2.01</td>
+      <td>3.75</td>
+      <td>6.76</td>
+      <td>7.13</td>
+      <td>11.75</td>
+      <td>13.98</td>
+      <td>16.39</td>
+      <td>24.71</td>
+    </tr>
+    <tr>
+      <th>NO WAIT</th>
+      <th>All - Replicated Internals</th>
+      <td>1.00</td>
+      <td>1.49</td>
+      <td>2.02</td>
+      <td>3.77</td>
+      <td>6.76</td>
+      <td>7.13</td>
+      <td>11.72</td>
+      <td>14.28</td>
+      <td>16.93</td>
+      <td>24.98</td>
+    </tr>
+    <tr>
+      <th>MVCC</th>
+      <th>All - Replicated Internals</th>
+      <td>1.00</td>
+      <td>1.43</td>
+      <td>2.05</td>
+      <td>3.66</td>
+      <td>5.66</td>
+      <td>6.38</td>
+      <td>9.57</td>
+      <td>10.60</td>
+      <td>nan</td>
+      <td>15.41</td>
+    </tr>
+    <tr>
+      <th>OCC</th>
+      <th>All - Replicated Internals</th>
+      <td>1.00</td>
+      <td>1.42</td>
+      <td>1.84</td>
+      <td>3.56</td>
+      <td>6.57</td>
+      <td>7.17</td>
+      <td>11.40</td>
+      <td>13.45</td>
+      <td>16.20</td>
+      <td>22.15</td>
+    </tr>
+    <tr>
+      <th>HSTORE</th>
+      <th>All - Replicated Internals</th>
+      <td>1.00</td>
+      <td>1.51</td>
+      <td>2.26</td>
+      <td>3.19</td>
+      <td>5.76</td>
+      <td>5.46</td>
+      <td>7.18</td>
+      <td>7.73</td>
+      <td>8.26</td>
+      <td>10.79</td>
+    </tr>
+    <tr>
+      <th>SILO</th>
+      <th>All - Replicated Internals</th>
+      <td>1.00</td>
+      <td>1.37</td>
+      <td>1.87</td>
+      <td>2.83</td>
+      <td>4.69</td>
+      <td>4.93</td>
+      <td>7.98</td>
+      <td>9.43</td>
+      <td>10.82</td>
+      <td>19.63</td>
+    </tr>
+    <tr>
+      <th>TICTOC</th>
+      <th>All - Replicated Internals</th>
+      <td>1.00</td>
+      <td>1.42</td>
+      <td>2.01</td>
+      <td>3.30</td>
+      <td>5.91</td>
+      <td>6.00</td>
+      <td>9.55</td>
+      <td>11.46</td>
+      <td>14.04</td>
+      <td>23.02</td>
+    </tr>
+  </tbody>
+</table>
+            </body>
+        </html>

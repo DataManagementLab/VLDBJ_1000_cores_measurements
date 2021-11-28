@@ -1,0 +1,338 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.945098039215686,0.345098039215686,0.329411764705882}
+\definecolor{color1}{rgb}{0.870588235294118,0.811764705882353,0.247058823529412}
+\definecolor{color2}{rgb}{0.980392156862745,0.643137254901961,0.227450980392157}
+\definecolor{color3}{rgb}{0.364705882352941,0.647058823529412,0.854901960784314}
+\definecolor{color4}{rgb}{0.698039215686274,0.462745098039216,0.698039215686274}
+\definecolor{color5}{rgb}{1,0,0.501960784313725}
+
+\begin{groupplot}[group style={group size=4 by 1}]
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={Numa Distance = Local},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=0, xmax=105,
+xtick style={color=white!15!black},
+xtick={0,20,40,60,80,100,120},
+xticklabel style={align=left},
+xticklabels={−20,0,20,40,60,80,100},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-9778.54330312442, ymax=239222.254859517,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1647.8464924765
+5 66996.3723599333
+25 48560.0521712589
+50 43209.0451976223
+100 48752.115649781
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1652.05116048271
+5 100910.852314073
+25 99664.6240065243
+50 97380.731140509
+100 95060.19859944
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1646.80338512095
+5 98943.6998423427
+25 95049.1661917822
+50 97272.1862800564
+100 94512.1878542705
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 98494.0918069706
+1 97648.4147494078
+5 96651.6384426735
+25 97464.2083495064
+50 97365.3557560261
+100 97850.3381363221
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 34845.750476818
+25 81712.5944936117
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 195637.998140174
+1 154172.091093326
+5 116113.711273801
+25 38868.3183941461
+50 19410.0542223741
+100 10975.2742872425
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 176758.098057425
+1 178710.657957204
+5 177325.221383067
+25 178227.409847806
+50 176803.452421553
+100 178680.302347804
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 227904.036761215
+1 226748.125600769
+5 227158.360172555
+25 226661.791619119
+50 227726.748196173
+100 226882.76659894
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={Numa Distance = 1 Hop},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=0, xmax=105,
+xtick style={color=white!15!black},
+xtick={0,20,40,60,80,100,120},
+xticklabel style={align=left},
+xticklabels={−20,0,20,40,60,80,100},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-9778.54330312442, ymax=239222.254859517,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1614.17657351858
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1602.54344015303
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1580.68223280543
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 70108.8950793918
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 167727.871767346
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 95354.1590102918
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 119771.725430075
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={Numa Distance = 2 Hop},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=0, xmax=105,
+xtick style={color=white!15!black},
+xtick={0,20,40,60,80,100,120},
+xticklabel style={align=left},
+xticklabels={−20,0,20,40,60,80,100},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-9778.54330312442, ymax=239222.254859517,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1606.85148788989
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1604.49085997957
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1626.76090828353
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 55428.6642233638
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 148915.907448617
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 65589.4706169777
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 77030.0445941921
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={Numa Distance = Remote},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=0, xmax=105,
+xtick style={color=white!15!black},
+xtick={0,20,40,60,80,100,120},
+xticklabel style={align=left},
+xticklabels={−20,0,20,40,60,80,100},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Throughput (Million txn/s)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-9778.54330312442, ymax=239222.254859517,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+1 43692.983185397
+5 39447.7515431289
+25 31566.8487496405
+50 30173.4838154642
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1539.67479517746
+1 44207.9062612671
+5 44770.0479846399
+25 44884.8570857444
+50 44849.3686702172
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 1542.65814856161
+1 44441.603780786
+5 43848.9882308914
+25 44476.3778319024
+50 44053.2755522294
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 34914.8765788075
+1 35277.1817098475
+5 34967.3448039322
+25 35226.7703744256
+50 35214.5841563872
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 30701.3831619115
+25 37654.7408419188
+50 37269.5577449873
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 85970.3270720512
+1 83148.8646051477
+5 78001.0643143776
+25 20730.3618457914
+50 10880.2099399327
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 36940.8923019064
+1 37287.1743596102
+5 37759.144060105
+25 37975.5859069457
+50 38187.3893409067
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+0 40741.645458987
+1 40359.6185069231
+5 40645.6700991741
+25 41050.3782680599
+50 41895.9353233041
+};
+\end{groupplot}
+

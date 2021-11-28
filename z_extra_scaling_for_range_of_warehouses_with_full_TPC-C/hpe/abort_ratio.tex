@@ -1,0 +1,158 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.931269222332537,0.820192179608212,0.797148097466359}
+\definecolor{color1}{rgb}{0.888866374366088,0.710679313985647,0.715866145141121}
+\definecolor{color2}{rgb}{0.831479314394964,0.598704192165218,0.653006270923539}
+\definecolor{color3}{rgb}{0.758895101951773,0.498171177463942,0.605872381451027}
+\definecolor{color4}{rgb}{0.667256575265259,0.406718381464196,0.562001646643329}
+\definecolor{color5}{rgb}{0.552921568952747,0.321792456426395,0.509371805452185}
+\definecolor{color6}{rgb}{0.425095302722268,0.246753874306665,0.440503972610066}
+\definecolor{color7}{rgb}{0.29794615023641,0.181459076256149,0.353177814050348}
+\definecolor{color8}{rgb}{0.175086564895221,0.118400233069168,0.242159891378365}
+
+\begin{groupplot}[group style={group size=2 by 1}]
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = SILO},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=18.2, xmax=233.8,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort Ratio (Abort/Total)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-0.0399417251477778, ymax=0.838784227413939,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={-0.2,0,0.2,0.4,0.6,0.8,1},
+yticklabels={−0.2,0.0,0.2,0.4,0.6,0.8,1.0}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 0.132589354386033
+56 0.275735097317089
+112 0.438688203648439
+224 0.798842138661134
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 0.0466490142005153
+56 0.133334373374443
+112 0.253634913233552
+224 0.428504225261495
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 2.86870170186636e-05
+56 0.0471721589022599
+112 0.133882315862234
+224 0.249783140561261
+};
+\addplot [line width=0.48pt, color3, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 1.76929798588895e-05
+56 3.25764143140764e-05
+112 0.0461821493777625
+224 0.1285398505961
+};
+\addplot [line width=0.48pt, color4, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 7.62692843253546e-06
+56 1.65431715877754e-05
+112 3.07388940062293e-05
+224 0.045289105320805
+};
+\addplot [line width=0.48pt, color5, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 2.5383968790773e-06
+56 6.35891920175579e-06
+112 1.38006280097546e-05
+224 2.53457977393242e-05
+};
+\addplot [line width=0.48pt, color6, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 2.52367295361669e-06
+56 3.79460078902399e-06
+112 8.00959041996209e-06
+224 1.35451474815725e-05
+};
+\addplot [line width=0.48pt, color7, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 1.08907627454596e-06
+56 2.00805192311133e-06
+112 3.38644163180513e-06
+224 5.42838410807058e-06
+};
+\addplot [line width=0.48pt, color8, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 7.25491447906812e-07
+56 1.28057088581845e-06
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = TICTOC},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=18.2, xmax=233.8,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort Ratio (Abort/Total)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-0.0399417251477778, ymax=0.838784227413939,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\addplot [line width=0.48pt, color6, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 7.22428254746986e-07
+56 3.61672024234919e-06
+112 6.97653859834762e-06
+224 1.26089476118401e-05
+};
+\addplot [line width=0.48pt, color8, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+28 3.63605027493994e-07
+56 3.65459875520712e-07
+112 1.41229216733685e-06
+224 3.55261058440084e-06
+};
+\end{groupplot}
+

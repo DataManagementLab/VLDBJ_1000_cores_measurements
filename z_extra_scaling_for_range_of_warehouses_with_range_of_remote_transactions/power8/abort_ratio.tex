@@ -1,0 +1,624 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.931269222332537,0.820192179608212,0.797148097466359}
+\definecolor{color1}{rgb}{0.784044088059945,0.529266054426589,0.620056892694176}
+\definecolor{color2}{rgb}{0.175086564895221,0.118400233069168,0.242159891378365}
+
+\begin{groupplot}[group style={group size=7 by 1}]
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = DL DETECT},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort Ratio (Abort/Total)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-0.0474432934692678, ymax=0.996309162854625,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={-0.2,0,0.2,0.4,0.6,0.8,1},
+yticklabels={−0.2,0.0,0.2,0.4,0.6,0.8,1.0}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,9.99481350218265e-06)
+--(axis cs:5,0.303163540252658);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,1.08865043815459e-05)
+--(axis cs:10,0.303494826708416);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,9.33665469262933e-06)
+--(axis cs:25,0.308390844608099);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,4.13251103251305e-06)
+--(axis cs:5,0.258621518279087);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,6.69468133316854e-06)
+--(axis cs:10,0.260895771941181);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,4.11627869882372e-06)
+--(axis cs:25,0.259000757223344);
+
+\path [draw=color2, line width=0.48pt]
+(axis cs:5,0)
+--(axis cs:5,3.08762576819472e-05);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 6.44452477911349e-05
+10 6.18795681860251e-05
+25 5.59782310258459e-05
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 2.4516758980351e-05
+10 1.78486022804643e-05
+25 1.91946590728237e-05
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 9.04344031139774e-06
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 6.44452477911349e-05
+10 6.18795681860251e-05
+25 5.59782310258459e-05
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 2.4516758980351e-05
+10 1.78486022804643e-05
+25 1.91946590728237e-05
+};
+\addplot [line width=0.48pt, color2]
+table {%
+5 9.04344031139774e-06
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = WAIT DIE},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort Ratio (Abort/Total)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-0.0474432934692678, ymax=0.996309162854625,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,0.307763864852141)
+--(axis cs:5,0.928889269383301);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,0.307966928007137)
+--(axis cs:10,0.928892745030124);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,0.307319928486837)
+--(axis cs:25,0.928899107919107);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,0.137342775236811)
+--(axis cs:5,0.834990984384066);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,0.137264957667553)
+--(axis cs:10,0.83480635571255);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,0.274388102244726)
+--(axis cs:25,0.835063121563362);
+
+\path [draw=color2, line width=0.48pt]
+(axis cs:5,0.0478432113019908)
+--(axis cs:5,0.749882305494871);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0.826142030649357
+10 0.826415545509915
+25 0.826226000146821
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0.626666016640029
+10 0.625818375023812
+25 0.626169929924076
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0.27779113344619
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 0.826142030649357
+10 0.826415545509915
+25 0.826226000146821
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 0.626666016640029
+10 0.625818375023812
+25 0.626169929924076
+};
+\addplot [line width=0.48pt, color2]
+table {%
+5 0.27779113344619
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = NO WAIT},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort Ratio (Abort/Total)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-0.0474432934692678, ymax=0.996309162854625,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,0.667209001139216)
+--(axis cs:5,0.948845452327145);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,0.333660063617666)
+--(axis cs:10,0.948865869385357);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,0.465894475422646)
+--(axis cs:25,0.933521874732009);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,0.170821423294777)
+--(axis cs:5,0.877946773012594);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,0.338697976765211)
+--(axis cs:10,0.907614034121211);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,0.334394958322639)
+--(axis cs:25,0.878200890794202);
+
+\path [draw=color2, line width=0.48pt]
+(axis cs:5,0.115827922472703)
+--(axis cs:5,0.691399466858035);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0.868068452479971
+10 0.867978181403845
+25 0.86761322591785
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0.677855668588413
+10 0.677503373171612
+25 0.678107457461238
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0.344892414138834
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 0.868068452479971
+10 0.867978181403845
+25 0.86761322591785
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 0.677855668588413
+10 0.677503373171612
+25 0.678107457461238
+};
+\addplot [line width=0.48pt, color2]
+table {%
+5 0.344892414138834
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = OCC},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort Ratio (Abort/Total)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-0.0474432934692678, ymax=0.996309162854625,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,0)
+--(axis cs:5,0.785497546116406);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,0)
+--(axis cs:10,0.786796218657265);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,0)
+--(axis cs:25,0.782247287461277);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,0)
+--(axis cs:5,0.780896016225319);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,0)
+--(axis cs:10,0.623302257781754);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,0.116881000694519)
+--(axis cs:25,0.624094976517031);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0.466990698651503
+10 0.467528193516116
+25 0.465606041612033
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0.351732313410668
+10 0.350615685945697
+25 0.351160814552955
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 0.466990698651503
+10 0.467528193516116
+25 0.465606041612033
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 0.351732313410668
+10 0.350615685945697
+25 0.351160814552955
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = HSTORE},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort Ratio (Abort/Total)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-0.0474432934692678, ymax=0.996309162854625,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,0)
+--(axis cs:5,3.40987401765792e-07);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,0)
+--(axis cs:10,3.41848840097254e-07);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,0)
+--(axis cs:25,2.28708429962389e-07);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,0)
+--(axis cs:5,2.57552454576258e-06);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,0)
+--(axis cs:10,2.16901251961539e-06);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,0)
+--(axis cs:25,6.87165264620472e-07);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0
+10 8.40010906095561e-08
+25 0
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0
+10 0
+25 0
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 0
+10 8.40010906095561e-08
+25 0
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 0
+10 0
+25 0
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = SILO},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort Ratio (Abort/Total)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-0.0474432934692678, ymax=0.996309162854625,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,0.208030276527163)
+--(axis cs:5,0.87254387789107);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,0.413445984457398)
+--(axis cs:10,0.872806315596454);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,0.207852063704579)
+--(axis cs:25,0.819952602929962);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,0.105717213216365)
+--(axis cs:5,0.651030213788112);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,0.10546912271224)
+--(axis cs:10,0.65114684727208);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,0.210539815432133)
+--(axis cs:25,0.753246549121811);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0.648011936947601
+10 0.647207558761952
+25 0.647132245386455
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0.414811810122995
+10 0.413850447454165
+25 0.414475141563382
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 0.648011936947601
+10 0.647207558761952
+25 0.647132245386455
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 0.414811810122995
+10 0.413850447454165
+25 0.414475141563382
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={CC = TICTOC},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={\% Remote Transactions},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=4, xmax=26,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Abort Ratio (Abort/Total)},
+ymajorgrids,
+ymajorticks=false,
+ymin=-0.0474432934692678, ymax=0.996309162854625,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\path [draw=color0, line width=0.48pt]
+(axis cs:5,0.325572100079481)
+--(axis cs:5,0.872282029741056);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:10,0.323037691528751)
+--(axis cs:10,0.872574519055026);
+
+\path [draw=color0, line width=0.48pt]
+(axis cs:25,0.210204035368466)
+--(axis cs:25,0.818611532862874);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:5,0.209669014504053)
+--(axis cs:5,0.657170063775659);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:10,0.106527009798304)
+--(axis cs:10,0.757394466049707);
+
+\path [draw=color1, line width=0.48pt]
+(axis cs:25,0.106879360931873)
+--(axis cs:25,0.756594593992018);
+
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0.651278435888011
+10 0.652284738984171
+25 0.651135944067416
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+5 0.419373152811433
+10 0.419243711055468
+25 0.418251519491021
+};
+\addplot [line width=0.48pt, color0]
+table {%
+5 0.651278435888011
+10 0.652284738984171
+25 0.651135944067416
+};
+\addplot [line width=0.48pt, color1]
+table {%
+5 0.419373152811433
+10 0.419243711055468
+25 0.418251519491021
+};
+\end{groupplot}
+

@@ -1,0 +1,2887 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.875,0.125,0.125}
+\definecolor{color1}{rgb}{0.875,0.610294117647059,0.125}
+\definecolor{color2}{rgb}{0.875,0.875,0.125}
+\definecolor{color3}{rgb}{0.763725490196078,0.607843137254902,0.216666666666667}
+\definecolor{color4}{rgb}{0.0627450980392157,0.43921568627451,0.0627450980392157}
+\definecolor{color5}{rgb}{0.125,0.125,0.875}
+
+\begin{groupplot}[group style={group size=8 by 1}]
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={DL DETECT},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.5, xmax=9.5,
+xtick style={color=white!15!black},
+xtick={0,1,2,3,4,5,6,7,8,9},
+xticklabel style={align=left},
+xticklabels={1,2,4,8,16,22,44,88,184,279},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Relative Time Spent},
+ymajorgrids,
+ymajorticks=false,
+ymin=0, ymax=1.05,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={0,0.2,0.4,0.6,0.8,1,1.2},
+yticklabels={0.0,0.2,0.4,0.6,0.8,1.0,1.2}
+]
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,1);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.78745780411038);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.812026066950396);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.807833599352457);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.810750276466723);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.755957404163772);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.762346162616027);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.904680831390582);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.971665613692879);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.979925910954515);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.999831038346965);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.78745780411038);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.812026066950396);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.807833599352457);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.810750276466723);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.755957404163772);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.762346162616027);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.904680831390582);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.971665613692879);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.979925910954515);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.999831038346965);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.791004003310507);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.814479291377277);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.810354497425905);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.812774992251403);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.758212099434178);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.764668611521208);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.892127899570829);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.722890464153196);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.244396081961351);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.00776956609490257);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.78745780411038);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.812026066950396);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.807833599352457);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.810327804110801);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.755070439406887);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.761408632981086);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.890648503745223);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.722476332699263);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.244053007693035);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.00769852445554945);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.69218621855629);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.710697504220735);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.709375976945173);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.731498942668866);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.717944169251289);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.737232453537351);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.877470690077046);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.716205590234785);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.242066682780765);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.00764200233542765);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.69218621855629);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.71062826421304);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.709121532945552);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.583517668111183);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.319502796019271);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.215398850720174);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.140029685416518);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.0874474210072194);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0374402516964085);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.00205324191735472);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.317467032584977);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.32834637596371);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.327940058271253);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.271724463190122);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.139892489487164);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.091633735121215);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.0635768064024921);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.043896342641546);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0307468784093503);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0258277826893591);
+\draw (axis cs:-0.4,0.280717032584977) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.32/+0.32};
+\draw (axis cs:-0.4,0.655436218556291) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.69/+0.37};
+\draw (axis cs:-0.4,0.75070780411038) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.79/+0.10};
+\draw (axis cs:-0.4,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.21};
+\draw (axis cs:0.6,0.29159637596371) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.33/+0.33};
+\draw (axis cs:0.6,0.67387826421304) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.71/+0.38};
+\draw (axis cs:0.6,0.775276066950396) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.81/+0.10};
+\draw (axis cs:0.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.19};
+\draw (axis cs:1.6,0.291190058271253) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.33/+0.33};
+\draw (axis cs:1.6,0.672371532945552) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.71/+0.38};
+\draw (axis cs:1.6,0.771083599352457) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.81/+0.10};
+\draw (axis cs:1.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.19};
+\draw (axis cs:2.6,0.234974463190122) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.27/+0.27};
+\draw (axis cs:2.6,0.546767668111183) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.58/+0.31};
+\draw (axis cs:2.6,0.694748942668866) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.73/+0.15};
+\draw (axis cs:2.6,0.773577804110801) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.81/+0.08};
+\draw (axis cs:2.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.19};
+\draw (axis cs:3.6,0.103142489487164) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.14/+0.14};
+\draw (axis cs:3.6,0.282752796019271) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.32/+0.18};
+\draw (axis cs:3.6,0.681194169251289) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.72/+0.40};
+\draw (axis cs:3.6,0.718320439406887) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.76/+0.04};
+\draw (axis cs:3.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.24};
+\draw (axis cs:4.6,0.054883735121215) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.09/+0.09};
+\draw (axis cs:4.6,0.178648850720174) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.22/+0.12};
+\draw (axis cs:4.6,0.700482453537351) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.74/+0.52};
+\draw (axis cs:4.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.24};
+\draw (axis cs:5.6,0.0268268064024921) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.06/+0.06};
+\draw (axis cs:5.6,0.103279685416518) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.14/+0.08};
+\draw (axis cs:5.6,0.840720690077046) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.88/+0.74};
+\draw (axis cs:5.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.10};
+\draw (axis cs:6.6,0.00714634264154603) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.04/+0.04};
+\draw (axis cs:6.6,0.0506974210072194) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.09/+0.04};
+\draw (axis cs:6.6,0.679455590234785) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.72/+0.63};
+\draw (axis cs:6.6,0.934915613692879) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.97/+0.25};
+\draw (axis cs:7.6,-0.00600312159064968) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.03/+0.03};
+\draw (axis cs:7.6,0.205316682780765) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.24/+0.20};
+\draw (axis cs:7.6,0.943175910954515) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.98/+0.74};
+\draw (axis cs:8.6,0.963081038346965) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.97};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={WAIT DIE},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.5, xmax=9.5,
+xtick style={color=white!15!black},
+xtick={0,1,2,3,4,5,6,7,8,9},
+xticklabel style={align=left},
+xticklabels={1,2,4,8,16,22,44,88,184,279},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymin=0, ymax=1.05,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,1);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.787805354357932);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.809282471532825);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.804455506880289);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.810610818920417);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.827631923429681);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.832842920535018);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.897774403831867);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.974794656035142);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.991792704523479);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.995627213372042);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.779172199062771);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.805225142909347);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.800236092147768);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.806481285704213);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.823954246047314);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.829994072584002);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.896744171006889);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.974515930294891);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.991710778587292);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.995585930603463);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.793383903597792);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.813332025797778);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.808738379636877);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.803257900122738);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.814273998120699);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.841326656106581);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.866634501339147);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.546559570947121);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.376276481413576);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.341911117311141);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.779172199062771);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.805191684991718);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.800132863463059);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.793749649291767);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.770954705984893);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.684659434999253);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.4315448354158);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.424268687169146);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.366543878673822);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.336248602402189);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.684568853010708);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.703727245630865);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.701819054325003);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.704368943438362);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.704817648373441);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.633852202302535);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.410819665771686);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.416572937839894);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.363899161485492);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.334812270315569);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.684568853010708);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.703720279240804);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.701789993331767);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.667555701417638);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.553242930520889);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.424482177532444);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.212748432152627);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.146992052524678);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.100547025663317);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0850534725100709);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.310239742436952);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.324756010715176);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.323793421756642);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.311931295975468);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.259545957982837);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.198569161821501);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.097582330373493);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.060783211717153);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0332496189905935);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0248206533876418);
+\draw (axis cs:-0.4,0.273489742436952) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.31/+0.31};
+\draw (axis cs:-0.4,0.647818853010708) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.68/+0.37};
+\draw (axis cs:-0.4,0.742422199062771) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.78/+0.09};
+\draw (axis cs:-0.4,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.21};
+\draw (axis cs:0.6,0.288006010715176) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.32/+0.32};
+\draw (axis cs:0.6,0.666970279240804) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.70/+0.38};
+\draw (axis cs:0.6,0.768441684991718) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.81/+0.10};
+\draw (axis cs:0.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.19};
+\draw (axis cs:1.6,0.287043421756642) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.32/+0.32};
+\draw (axis cs:1.6,0.665039993331767) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.70/+0.38};
+\draw (axis cs:1.6,0.76338286346306) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.80/+0.10};
+\draw (axis cs:1.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.19};
+\draw (axis cs:2.6,0.275181295975468) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.31/+0.31};
+\draw (axis cs:2.6,0.630805701417638) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.67/+0.36};
+\draw (axis cs:2.6,0.667618943438362) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.70/+0.04};
+\draw (axis cs:2.6,0.756999649291767) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.79/+0.09};
+\draw (axis cs:2.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.19};
+\draw (axis cs:3.6,0.222795957982837) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.26/+0.26};
+\draw (axis cs:3.6,0.516492930520889) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.55/+0.29};
+\draw (axis cs:3.6,0.668067648373441) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.70/+0.15};
+\draw (axis cs:3.6,0.734204705984893) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.77/+0.07};
+\draw (axis cs:3.6,0.777523998120699) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.81/+0.04};
+\draw (axis cs:3.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.17};
+\draw (axis cs:4.6,0.161819161821501) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.20/+0.20};
+\draw (axis cs:4.6,0.387732177532444) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.42/+0.23};
+\draw (axis cs:4.6,0.597102202302535) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.63/+0.21};
+\draw (axis cs:4.6,0.647909434999253) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.68/+0.05};
+\draw (axis cs:4.6,0.793244072584002) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.83/+0.15};
+\draw (axis cs:4.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.16};
+\draw (axis cs:5.6,0.0608323303734929) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.10/+0.10};
+\draw (axis cs:5.6,0.175998432152627) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.21/+0.12};
+\draw (axis cs:5.6,0.374069665771686) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.41/+0.20};
+\draw (axis cs:5.6,0.829884501339147) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.87/+0.44};
+\draw (axis cs:5.6,0.859994171006889) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.90/+0.03};
+\draw (axis cs:5.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.10};
+\draw (axis cs:6.6,0.024033211717153) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.06/+0.06};
+\draw (axis cs:6.6,0.110242052524678) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.15/+0.09};
+\draw (axis cs:6.6,0.379822937839894) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.42/+0.27};
+\draw (axis cs:6.6,0.509809570947121) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.55/+0.12};
+\draw (axis cs:6.6,0.937765930294891) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.97/+0.43};
+\draw (axis cs:7.6,-0.00350038100940652) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.03/+0.03};
+\draw (axis cs:7.6,0.0637970256633173) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.10/+0.07};
+\draw (axis cs:7.6,0.327149161485492) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.36/+0.26};
+\draw (axis cs:7.6,0.954960778587292) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.99/+0.62};
+\draw (axis cs:8.6,0.0483034725100709) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.09/+0.06};
+\draw (axis cs:8.6,0.298062270315569) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.33/+0.25};
+\draw (axis cs:8.6,0.958835930603464) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.65};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={NO WAIT},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.5, xmax=9.5,
+xtick style={color=white!15!black},
+xtick={0,1,2,3,4,5,6,7,8,9},
+xticklabel style={align=left},
+xticklabels={1,2,4,8,16,22,44,88,184,279},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymin=0, ymax=1.05,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,1);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.78524616551651);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.809436890831618);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.805011724491038);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.807371564819665);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.810724448737748);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.819184401422098);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.878180339400189);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.967955655226732);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.99243891083173);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.996757258311287);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.78524616551651);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.809436890831618);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.805011724491038);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.807371564819665);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.810724448737748);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.819184401422098);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.878180339400189);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.967955655226732);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.99243891083173);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.996757258311287);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.788808216094195);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.811852393263982);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.807410984149173);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.783234589098055);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.738088203870391);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.741697654973999);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.752019898049562);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.197590145523735);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0682073353168479);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0463518382654978);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.78524616551651);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.809364621612593);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.804775604220351);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.779042337373958);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.679244072047056);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.592288946209484);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.402997055351658);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.170770794967401);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0597760078116732);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0351777215148311);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.68883012875091);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.707060629698461);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.705056305804628);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.687223580916942);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.60660692441005);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.530034082803402);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.366497870114483);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.161142453011131);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0574242658950312);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0341832217435839);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.68883012875091);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.707060629698461);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.705056305804628);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.687223580916942);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.60660692441005);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.530034082803402);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.366497870114483);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.161142453011131);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0574242658950312);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0341832217435839);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.312548404353673);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.329191000244912);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.327704090689964);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.328355033478151);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.307222733928862);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.274593198099475);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.206375537770852);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.0996671260657215);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0320783282507838);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.01911694845215);
+\draw (axis cs:-0.4,0.275798404353673) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.31/+0.31};
+\draw (axis cs:-0.4,0.65208012875091) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.69/+0.38};
+\draw (axis cs:-0.4,0.74849616551651) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.79/+0.10};
+\draw (axis cs:-0.4,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.21};
+\draw (axis cs:0.6,0.292441000244912) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.33/+0.33};
+\draw (axis cs:0.6,0.670310629698461) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.71/+0.38};
+\draw (axis cs:0.6,0.772614621612594) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.81/+0.10};
+\draw (axis cs:0.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.19};
+\draw (axis cs:1.6,0.290954090689964) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.33/+0.33};
+\draw (axis cs:1.6,0.668306305804628) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.71/+0.38};
+\draw (axis cs:1.6,0.768025604220351) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.80/+0.10};
+\draw (axis cs:1.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.19};
+\draw (axis cs:2.6,0.291605033478151) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.33/+0.33};
+\draw (axis cs:2.6,0.650473580916942) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.69/+0.36};
+\draw (axis cs:2.6,0.742292337373958) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.78/+0.09};
+\draw (axis cs:2.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.19};
+\draw (axis cs:3.6,0.270472733928862) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.31/+0.31};
+\draw (axis cs:3.6,0.56985692441005) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.61/+0.30};
+\draw (axis cs:3.6,0.642494072047056) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.68/+0.07};
+\draw (axis cs:3.6,0.701338203870391) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.74/+0.06};
+\draw (axis cs:3.6,0.773974448737748) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.81/+0.07};
+\draw (axis cs:3.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.19};
+\draw (axis cs:4.6,0.237843198099475) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.27/+0.27};
+\draw (axis cs:4.6,0.493284082803402) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.53/+0.26};
+\draw (axis cs:4.6,0.555538946209484) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.59/+0.06};
+\draw (axis cs:4.6,0.704947654973999) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.74/+0.15};
+\draw (axis cs:4.6,0.782434401422099) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.82/+0.08};
+\draw (axis cs:4.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.18};
+\draw (axis cs:5.6,0.169625537770852) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.21/+0.21};
+\draw (axis cs:5.6,0.329747870114483) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.37/+0.16};
+\draw (axis cs:5.6,0.366247055351658) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.40/+0.04};
+\draw (axis cs:5.6,0.715269898049562) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.75/+0.35};
+\draw (axis cs:5.6,0.841430339400189) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.88/+0.13};
+\draw (axis cs:5.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.12};
+\draw (axis cs:6.6,0.0629171260657215) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.10/+0.10};
+\draw (axis cs:6.6,0.124392453011131) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.16/+0.06};
+\draw (axis cs:6.6,0.931205655226732) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.97/+0.77};
+\draw (axis cs:6.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.03};
+\draw (axis cs:7.6,-0.00467167174921621) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.03/+0.03};
+\draw (axis cs:7.6,0.95568891083173) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.99/+0.92};
+\draw (axis cs:8.6,0.960007258311287) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.95};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={MVCC},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.5, xmax=9.5,
+xtick style={color=white!15!black},
+xtick={0,1,2,3,4,5,6,7,8,9},
+xticklabel style={align=left},
+xticklabels={1,2,4,8,16,22,44,88,184,279},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymin=0, ymax=1.05,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,1);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.744966345403627);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.746070325323249);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.73888833418478);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.726674744159892);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.756805375186242);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.779599424681159);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.856616921134771);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.924107616291674);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.979876221891173);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.990984052085334);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.738048333359726);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.742275545341121);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.734871123207935);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.722205313696385);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.752479602105781);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.775623122829254);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.854056453271403);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.922853095828447);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.97938003392343);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.990720029895419);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.740842680261202);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.744673734533895);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.737633359823514);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.724808821188167);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.750279455820188);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.76315948853531);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.750454942855556);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.566684400119257);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.328350319704728);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.244632337776926);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.738048333359726);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.742260141819776);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.734839363418566);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.721632349677815);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.747204407717125);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.760158289699684);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.748293446173739);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.565237146180896);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.327838859781416);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.24436685188996);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.654069788063261);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.639485910776346);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.635184612524802);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.626506721236424);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.670541766392496);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.689902283621669);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.699585715896818);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.540878040125725);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.320381074438371);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.240941570800528);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.654069788063261);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.639469212771825);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.635159691663283);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.58742714305504);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.544550749115957);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.49836936865436);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.360459911132731);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.192693108478841);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0589351454397408);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0295125144381194);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.186099442824172);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.171876137692553);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.169887127537129);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.161222344033625);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.144989977537495);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.135042823942826);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.108956614051877);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.0667975058083477);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0271105244932605);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0175784895368066);
+\draw (axis cs:-0.4,0.149349442824172) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.19/+0.19};
+\draw (axis cs:-0.4,0.617319788063261) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.65/+0.47};
+\draw (axis cs:-0.4,0.701298333359726) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.74/+0.08};
+\draw (axis cs:-0.4,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.26};
+\draw (axis cs:0.6,0.135126137692553) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.17/+0.17};
+\draw (axis cs:0.6,0.602719212771825) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.64/+0.47};
+\draw (axis cs:0.6,0.705510141819776) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.74/+0.10};
+\draw (axis cs:0.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.25};
+\draw (axis cs:1.6,0.133137127537129) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.17/+0.17};
+\draw (axis cs:1.6,0.598409691663283) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.64/+0.47};
+\draw (axis cs:1.6,0.698089363418566) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.73/+0.10};
+\draw (axis cs:1.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.26};
+\draw (axis cs:2.6,0.124472344033625) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.16/+0.16};
+\draw (axis cs:2.6,0.55067714305504) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.59/+0.43};
+\draw (axis cs:2.6,0.589756721236425) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.63/+0.04};
+\draw (axis cs:2.6,0.684882349677815) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.72/+0.10};
+\draw (axis cs:2.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.27};
+\draw (axis cs:3.6,0.108239977537495) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.14/+0.14};
+\draw (axis cs:3.6,0.507800749115958) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.54/+0.40};
+\draw (axis cs:3.6,0.633791766392496) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.67/+0.13};
+\draw (axis cs:3.6,0.710454407717125) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.75/+0.08};
+\draw (axis cs:3.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.24};
+\draw (axis cs:4.6,0.0982928239428265) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.14/+0.14};
+\draw (axis cs:4.6,0.46161936865436) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.50/+0.36};
+\draw (axis cs:4.6,0.653152283621669) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.69/+0.19};
+\draw (axis cs:4.6,0.723408289699684) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.76/+0.07};
+\draw (axis cs:4.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.22};
+\draw (axis cs:5.6,0.0722066140518769) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.11/+0.11};
+\draw (axis cs:5.6,0.323709911132731) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.36/+0.25};
+\draw (axis cs:5.6,0.662835715896818) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.70/+0.34};
+\draw (axis cs:5.6,0.71154344617374) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.75/+0.05};
+\draw (axis cs:5.6,0.817306453271403) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.85/+0.10};
+\draw (axis cs:5.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.14};
+\draw (axis cs:6.6,0.0300475058083477) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.07/+0.07};
+\draw (axis cs:6.6,0.155943108478841) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.19/+0.13};
+\draw (axis cs:6.6,0.504128040125725) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.54/+0.35};
+\draw (axis cs:6.6,0.886103095828447) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.92/+0.36};
+\draw (axis cs:6.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.08};
+\draw (axis cs:7.6,0.0221851454397408) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.06/+0.03};
+\draw (axis cs:7.6,0.283631074438371) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.32/+0.26};
+\draw (axis cs:7.6,0.94263003392343) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.98/+0.65};
+\draw (axis cs:8.6,0.204191570800528) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.24/+0.21};
+\draw (axis cs:8.6,0.953970029895419) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.99/+0.75};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={OCC},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.5, xmax=9.5,
+xtick style={color=white!15!black},
+xtick={0,1,2,3,4,5,6,7,8,9},
+xticklabel style={align=left},
+xticklabels={1,2,4,8,16,22,44,88,184,279},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymin=0, ymax=1.05,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,1);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.858762272199485);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.860489552177849);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.853048164644902);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.88024213974208);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.917382061522698);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.931444832587631);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.960003285204945);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.975345432177097);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.986596428146882);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.990512414197047);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.846519588405392);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.854517675105179);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.84663547530828);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.874465602425319);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.912853635725647);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.927557267970387);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.958057043444093);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.97453972279889);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.986068787986107);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.990078226638321);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.849037902968849);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.855380202332114);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.845696004264431);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.658885028946919);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.465588591356218);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.388823113872893);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.253746217197586);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.158504888505609);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0903412299373715);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0650072026760183);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.846519588405392);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.853329493045559);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.843371644655893);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.656529338080723);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.463528209616806);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.386978256871243);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.252609711836095);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.157758679294988);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0898254996481117);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0645681934127221);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.77395539569056);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.776207727469077);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.766387365606337);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.599792306203691);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.427849866708179);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.357453649724115);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.235286620805861);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.148490066217646);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0842625049384987);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0606024666526984);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.77395539569056);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.776207727469077);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.766387365606337);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.599792306203691);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.427849866708179);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.357453649724115);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.235286620805861);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.148490066217646);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0842625049384987);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.0606024666526984);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.284084435950704);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.347858915806981);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.347479183189276);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.307269279232785);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.279981413124539);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.271829305242077);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.288300136993959);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.305790594342588);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.305645762744385);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.301491944412412);
+\draw (axis cs:-0.4,0.247334435950704) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.28/+0.28};
+\draw (axis cs:-0.4,0.73720539569056) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.77/+0.49};
+\draw (axis cs:-0.4,0.809769588405392) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.85/+0.07};
+\draw (axis cs:-0.4,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.14};
+\draw (axis cs:0.6,0.311108915806981) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.35/+0.35};
+\draw (axis cs:0.6,0.739457727469077) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.78/+0.43};
+\draw (axis cs:0.6,0.816579493045559) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.85/+0.08};
+\draw (axis cs:0.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.14};
+\draw (axis cs:1.6,0.310729183189276) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.35/+0.35};
+\draw (axis cs:1.6,0.729637365606337) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.77/+0.42};
+\draw (axis cs:1.6,0.806621644655893) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.84/+0.08};
+\draw (axis cs:1.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.15};
+\draw (axis cs:2.6,0.270519279232785) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.31/+0.31};
+\draw (axis cs:2.6,0.563042306203691) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.60/+0.29};
+\draw (axis cs:2.6,0.619779338080723) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.66/+0.06};
+\draw (axis cs:2.6,0.837715602425319) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.87/+0.22};
+\draw (axis cs:2.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.12};
+\draw (axis cs:3.6,0.243231413124539) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.28/+0.28};
+\draw (axis cs:3.6,0.391099866708179) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.43/+0.15};
+\draw (axis cs:3.6,0.426778209616806) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.46/+0.04};
+\draw (axis cs:3.6,0.876103635725647) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.91/+0.45};
+\draw (axis cs:3.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.08};
+\draw (axis cs:4.6,0.235079305242077) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.27/+0.27};
+\draw (axis cs:4.6,0.320703649724115) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.36/+0.09};
+\draw (axis cs:4.6,0.890807267970386) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.93/+0.54};
+\draw (axis cs:4.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.07};
+\draw (axis cs:5.6,0.198536620805861) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.24/+0.24};
+\draw (axis cs:5.6,0.251550136993959) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.29/+0.03};
+\draw (axis cs:5.6,0.921307043444093) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.96/+0.67};
+\draw (axis cs:5.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.04};
+\draw (axis cs:6.6,0.111740066217646) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.15/+0.15};
+\draw (axis cs:6.6,0.269040594342588) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.31/+0.15};
+\draw (axis cs:6.6,0.93778972279889) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.97/+0.67};
+\draw (axis cs:7.6,0.0475125049384987) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.08/+0.08};
+\draw (axis cs:7.6,0.268895762744385) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.31/+0.22};
+\draw (axis cs:7.6,0.949318787986107) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.99/+0.68};
+\draw (axis cs:8.6,0.0238524666526984) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.06/+0.06};
+\draw (axis cs:8.6,0.264741944412412) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.30/+0.24};
+\draw (axis cs:8.6,0.953328226638321) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.99/+0.69};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={HSTORE},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.5, xmax=9.5,
+xtick style={color=white!15!black},
+xtick={0,1,2,3,4,5,6,7,8,9},
+xticklabel style={align=left},
+xticklabels={1,2,4,8,16,22,44,88,184,279},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymin=0, ymax=1.05,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,1);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.528635853187642);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.565733458503616);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.605972919058906);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.804249396014404);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.907289294821951);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.935696939482771);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.969973130132086);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.986246317117643);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.993664368993106);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.995946684060976);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.503463403368274);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.552468785518964);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.593807846838871);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.797989718405007);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.904605976771076);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.93382636757292);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.969226291787545);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.985976745605155);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.99356134839586);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.995885866368925);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.513615582982882);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.559725000570145);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.601026102940004);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.802136379390554);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.906700372957068);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.93532688627803);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.969704083059533);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.986188552203198);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.99364696000359);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.995938265643412);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.503463403368274);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.552180965657587);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.593311560626702);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.79788854158711);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.904539469608868);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.933802198711988);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.969224267750966);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.985973325582676);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.993561312630596);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.995885866106508);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.237420610957284);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.274276764942565);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.356165571821196);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.68650491761943);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.856434856487618);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.900501694837651);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.954711466715463);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.978896197455855);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.990517389303561);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.994008329810259);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.237420610957284);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.225478092773464);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.213405000408031);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.121619582320448);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.0587643835945686);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.0412792116990333);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.0185077381822637);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.00786274232698297);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.00378571811532913);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.00247132880235578);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.17808641682091);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.175291041572456);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.157840653350582);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.0834191239015928);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.0390612984675294);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.0276185114259538);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.0126903182246528);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.00499181645429402);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.0021106387596261);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.00126601058306398);
+\draw (axis cs:-0.4,0.14133641682091) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.18/+0.18};
+\draw (axis cs:-0.4,0.200670610957284) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.24/+0.06};
+\draw (axis cs:-0.4,0.466713403368274) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.50/+0.27};
+\draw (axis cs:-0.4,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.47};
+\draw (axis cs:0.6,0.138541041572456) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.18/+0.18};
+\draw (axis cs:0.6,0.188728092773464) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.23/+0.05};
+\draw (axis cs:0.6,0.237526764942565) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.27/+0.05};
+\draw (axis cs:0.6,0.515430965657587) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.55/+0.28};
+\draw (axis cs:0.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.43};
+\draw (axis cs:1.6,0.121090653350582) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.16/+0.16};
+\draw (axis cs:1.6,0.176655000408031) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.21/+0.06};
+\draw (axis cs:1.6,0.319415571821196) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.36/+0.14};
+\draw (axis cs:1.6,0.556561560626702) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.59/+0.24};
+\draw (axis cs:1.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.39};
+\draw (axis cs:2.6,0.0466691239015928) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.08/+0.08};
+\draw (axis cs:2.6,0.0848695823204477) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.12/+0.04};
+\draw (axis cs:2.6,0.64975491761943) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.69/+0.56};
+\draw (axis cs:2.6,0.76113854158711) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.80/+0.11};
+\draw (axis cs:2.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.20};
+\draw (axis cs:3.6,0.0023112984675294) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.04/+0.04};
+\draw (axis cs:3.6,0.819684856487618) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.86/+0.80};
+\draw (axis cs:3.6,0.867789469608867) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.90/+0.05};
+\draw (axis cs:3.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.09};
+\draw (axis cs:4.6,0.863751694837651) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.90/+0.86};
+\draw (axis cs:4.6,0.897052198711988) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.93/+0.03};
+\draw (axis cs:4.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.06};
+\draw (axis cs:5.6,0.917961466715463) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.95/+0.94};
+\draw (axis cs:5.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.03};
+\draw (axis cs:6.6,0.942146197455855) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.98/+0.97};
+\draw (axis cs:7.6,0.953767389303561) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.99/+0.99};
+\draw (axis cs:8.6,0.957258329810259) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.99/+0.99};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={SILO},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.5, xmax=9.5,
+xtick style={color=white!15!black},
+xtick={0,1,2,3,4,5,6,7,8,9},
+xticklabel style={align=left},
+xticklabels={1,2,4,8,16,22,44,88,184,279},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymin=0, ymax=1.05,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,1);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.608585360489885);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.675378076048904);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.671797675477371);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.672409763362893);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.688489052833029);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.703802018374619);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.780195420706267);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.840971787233154);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.921921177296226);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.951754826321663);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.608585360489885);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.675378076048904);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.671797675477371);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.672409763362893);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.688489052833029);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.703802018374619);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.780195420706267);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.840971787233154);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.921921177296226);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.951754826321663);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.613987147483084);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.679155042792357);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.675721191948968);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.647891178240058);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.608505608748181);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.580857544812308);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.551931319048084);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.445280434040728);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.267952143392766);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.17104472672372);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.608585360489885);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.675359862700774);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.671750047653358);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.643271540580258);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.602616207690315);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.574178400935311);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.544350367404922);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.438565643875387);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.246254695946501);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.159655092722052);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.453246762078119);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.514919750140196);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.518617994459232);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.502595700688745);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.482889483094927);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.461850251103206);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.454285636266696);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.383245529061574);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.216323435760609);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.140464821351389);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.453246762078119);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.514919750140196);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.518617994459232);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.502595700688745);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.482889483094927);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.461850251103206);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.454285636266696);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.383245529061574);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.216323435760609);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.140464821351389);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.224099813614075);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.244214516452845);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.243385769715749);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.238943235649897);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.225360416003414);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.217862665350097);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.21096009490886);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.19700314032019);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.185457890991031);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.19112376873169);
+\draw (axis cs:-0.4,0.187349813614075) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.22/+0.22};
+\draw (axis cs:-0.4,0.416496762078119) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.45/+0.23};
+\draw (axis cs:-0.4,0.571835360489885) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.61/+0.16};
+\draw (axis cs:-0.4,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.39};
+\draw (axis cs:0.6,0.207464516452845) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.24/+0.24};
+\draw (axis cs:0.6,0.478169750140196) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.51/+0.27};
+\draw (axis cs:0.6,0.638609862700774) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.68/+0.16};
+\draw (axis cs:0.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.32};
+\draw (axis cs:1.6,0.206635769715749) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.24/+0.24};
+\draw (axis cs:1.6,0.481867994459232) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.52/+0.28};
+\draw (axis cs:1.6,0.635000047653358) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.67/+0.15};
+\draw (axis cs:1.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.32};
+\draw (axis cs:2.6,0.202193235649897) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.24/+0.24};
+\draw (axis cs:2.6,0.465845700688745) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.50/+0.26};
+\draw (axis cs:2.6,0.606521540580258) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.64/+0.14};
+\draw (axis cs:2.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.33};
+\draw (axis cs:3.6,0.188610416003414) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.23/+0.23};
+\draw (axis cs:3.6,0.446139483094927) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.48/+0.26};
+\draw (axis cs:3.6,0.565866207690315) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.60/+0.12};
+\draw (axis cs:3.6,0.651739052833029) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.69/+0.08};
+\draw (axis cs:3.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.31};
+\draw (axis cs:4.6,0.181112665350097) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.22/+0.22};
+\draw (axis cs:4.6,0.425100251103206) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.46/+0.24};
+\draw (axis cs:4.6,0.537428400935311) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.57/+0.11};
+\draw (axis cs:4.6,0.667052018374619) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.70/+0.12};
+\draw (axis cs:4.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.30};
+\draw (axis cs:5.6,0.17421009490886) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.21/+0.21};
+\draw (axis cs:5.6,0.417535636266696) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.45/+0.24};
+\draw (axis cs:5.6,0.507600367404922) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.54/+0.09};
+\draw (axis cs:5.6,0.743445420706267) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.78/+0.23};
+\draw (axis cs:5.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.22};
+\draw (axis cs:6.6,0.16025314032019) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.20/+0.20};
+\draw (axis cs:6.6,0.346495529061574) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.38/+0.19};
+\draw (axis cs:6.6,0.401815643875387) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.44/+0.06};
+\draw (axis cs:6.6,0.804221787233154) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.84/+0.40};
+\draw (axis cs:6.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.16};
+\draw (axis cs:7.6,0.148707890991031) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.19/+0.19};
+\draw (axis cs:7.6,0.179573435760609) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.22/+0.03};
+\draw (axis cs:7.6,0.885171177296226) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.92/+0.65};
+\draw (axis cs:7.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.08};
+\draw (axis cs:8.6,0.103714821351389) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.14/+0.14};
+\draw (axis cs:8.6,0.915004826321663) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.95/+0.76};
+\draw (axis cs:8.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.05};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={bursted,partitioned,baseline},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks=manual:{}{\pgfmathparse{#1}},
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={TICTOC},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorticks=false,
+xmajorticks=true,
+xmin=-0.5, xmax=9.5,
+xtick style={color=white!15!black},
+xtick={0,1,2,3,4,5,6,7,8,9},
+xticklabel style={align=left},
+xticklabels={1,2,4,8,16,22,44,88,184,279},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ymajorgrids,
+ymajorticks=false,
+ymin=0, ymax=1.05,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+yticklabels={}
+]
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,1);
+\draw[draw=white,fill=color0,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,1);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.653934739297407);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.705698153582856);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.704043556202098);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.709558872752267);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.719936712955582);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.728953130745881);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.796645435400611);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.848208812932219);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.93023208616697);
+\draw[draw=white,fill=color1,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.956704691799394);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.653934739297407);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.705698153582856);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.704043556202098);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.709558872752267);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.719936712955582);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.728953130745881);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.796645435400611);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.848208812932219);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.93023208616697);
+\draw[draw=white,fill=color2,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.956704691799394);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.659503018226657);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.709694811065243);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.708161067561551);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.690792476470644);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.65677978094621);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.631470860160379);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.597306050950516);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.477857687224903);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.295318382069123);
+\draw[draw=white,fill=color3,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.180093455376594);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.653934739297407);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.70568457920618);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.704006952622915);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.685992905580455);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.650567013435657);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.6240145143198);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.587866370591941);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.46856008076001);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.24679345532859);
+\draw[draw=white,fill=color4,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.162796872269938);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.497865615180752);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.543074708825393);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.548463287602668);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.543675050968443);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.526697106515947);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.506295828697456);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.493410078154318);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.410738460459135);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.219461944679266);
+\draw[draw=white,fill=color5,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.145405179886021);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.497865615180752);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.543074708825393);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.548463287602668);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.543675050968443);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.526697106515947);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.506295828697456);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.493410078154318);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.410738460459135);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.219461944679266);
+\draw[draw=white,fill=black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.145405179886021);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:-0.4,0) rectangle (axis cs:0.4,0.268807474748358);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:0.6,0) rectangle (axis cs:1.4,0.281995280419756);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:1.6,0) rectangle (axis cs:2.4,0.280590736060515);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:2.6,0) rectangle (axis cs:3.4,0.283224660524112);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:3.6,0) rectangle (axis cs:4.4,0.267305861958361);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:4.6,0) rectangle (axis cs:5.4,0.256903913585814);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:5.6,0) rectangle (axis cs:6.4,0.242780828378316);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:6.6,0) rectangle (axis cs:7.4,0.223452393467869);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:7.6,0) rectangle (axis cs:8.4,0.214252238810092);
+\draw[draw=white,fill=white!41.1764705882353!black,line width=0.32pt] (axis cs:8.6,0) rectangle (axis cs:9.4,0.213122570436546);
+\draw (axis cs:-0.4,0.232057474748358) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.27/+0.27};
+\draw (axis cs:-0.4,0.461115615180752) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.50/+0.23};
+\draw (axis cs:-0.4,0.617184739297407) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.65/+0.16};
+\draw (axis cs:-0.4,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.34};
+\draw (axis cs:0.6,0.245245280419756) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.28/+0.28};
+\draw (axis cs:0.6,0.506324708825393) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.54/+0.26};
+\draw (axis cs:0.6,0.66893457920618) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.71/+0.16};
+\draw (axis cs:0.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.29};
+\draw (axis cs:1.6,0.243840736060515) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.28/+0.28};
+\draw (axis cs:1.6,0.511713287602668) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.55/+0.27};
+\draw (axis cs:1.6,0.667256952622915) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.70/+0.16};
+\draw (axis cs:1.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.29};
+\draw (axis cs:2.6,0.246474660524112) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.28/+0.28};
+\draw (axis cs:2.6,0.506925050968444) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.54/+0.26};
+\draw (axis cs:2.6,0.649242905580455) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.69/+0.14};
+\draw (axis cs:2.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.29};
+\draw (axis cs:3.6,0.230555861958361) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.27/+0.27};
+\draw (axis cs:3.6,0.489947106515947) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.53/+0.26};
+\draw (axis cs:3.6,0.613817013435657) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.65/+0.12};
+\draw (axis cs:3.6,0.683186712955582) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.72/+0.06};
+\draw (axis cs:3.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.28};
+\draw (axis cs:4.6,0.220153913585814) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.26/+0.26};
+\draw (axis cs:4.6,0.469545828697456) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.51/+0.25};
+\draw (axis cs:4.6,0.5872645143198) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.62/+0.12};
+\draw (axis cs:4.6,0.69220313074588) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.73/+0.10};
+\draw (axis cs:4.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.27};
+\draw (axis cs:5.6,0.206030828378316) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.24/+0.24};
+\draw (axis cs:5.6,0.456660078154318) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.49/+0.25};
+\draw (axis cs:5.6,0.551116370591941) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.59/+0.09};
+\draw (axis cs:5.6,0.759895435400611) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.80/+0.20};
+\draw (axis cs:5.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.20};
+\draw (axis cs:6.6,0.186702393467869) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.22/+0.22};
+\draw (axis cs:6.6,0.373988460459135) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.41/+0.19};
+\draw (axis cs:6.6,0.43181008076001) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.47/+0.06};
+\draw (axis cs:6.6,0.811458812932219) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.85/+0.37};
+\draw (axis cs:6.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.15};
+\draw (axis cs:7.6,0.177502238810092) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.21/+0.21};
+\draw (axis cs:7.6,0.258568382069123) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.30/+0.05};
+\draw (axis cs:7.6,0.89348208616697) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.93/+0.63};
+\draw (axis cs:7.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.07};
+\draw (axis cs:8.6,0.108655179886021) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.15/+0.15};
+\draw (axis cs:8.6,0.176372570436546) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.21/+0.03};
+\draw (axis cs:8.6,0.919954691799394) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{0.96/+0.74};
+\draw (axis cs:8.6,0.96325) node[
+  scale=0.3125,
+  anchor=base west,
+  text=white,
+  rotate=0.0
+]{1.00/+0.04};
+\end{groupplot}
+
