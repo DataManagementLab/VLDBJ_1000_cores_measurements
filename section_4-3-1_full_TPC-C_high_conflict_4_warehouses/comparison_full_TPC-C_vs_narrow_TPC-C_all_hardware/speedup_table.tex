@@ -1,0 +1,55 @@
+\begin{tabular}{llrrrrrrrrrrrrrrrrrrr}
+\toprule
+       & Threads &  1   &  2   &  4   &  8   &   16  &   22  &   24  &   28  &   44  &   48  &   56  &   88  &   96  &   112 &   184 &   192 &  224 &   279 &   288 \\
+CC & Comparison &      &      &      &      &       &       &       &       &       &       &       &       &       &       &       &       &      &       &       \\
+\midrule
+DL DETECT & Intel - All Txn & 1.00 & 1.38 & 2.66 & 4.27 &  4.61 &   nan &   nan &  3.40 &   nan &   nan &  2.44 &   nan &   nan &  1.10 &   nan &   nan & 0.96 &   nan &   nan \\
+       & Power9 - All Txn & 1.00 & 1.82 & 3.60 & 4.63 &  3.46 &   nan &  2.71 &   nan &   nan &  2.49 &   nan &   nan &  2.22 &   nan &   nan &  0.45 &  nan &   nan &  0.43 \\
+       & Power8 - All Txn & 1.00 & 1.31 & 2.69 & 4.53 &  4.48 &  3.85 &   nan &   nan &  2.92 &   nan &   nan &  2.00 &   nan &   nan &  0.95 &   nan &  nan &  0.03 &   nan \\
+       & Intel - NewOrder + Payment & 1.00 & 1.47 & 2.81 & 4.77 &  5.80 &   nan &   nan &  4.55 &   nan &   nan &  2.54 &   nan &   nan &  1.01 &   nan &   nan & 0.06 &   nan &   nan \\
+       & Power8 - NewOrder \& Payment & 1.00 & 1.35 & 2.75 & 4.77 &  4.83 &  3.58 &   nan &   nan &  2.42 &   nan &   nan &  1.42 &   nan &   nan &  0.54 &   nan &  nan &  0.00 &   nan \\
+       & Power9 - NewOrder \& Payment & 1.00 & 1.80 & 3.50 & 5.34 &  3.25 &   nan &  2.17 &   nan &   nan &  1.89 &   nan &   nan &  1.53 &   nan &   nan &  0.35 &  nan &   nan &  0.26 \\
+WAIT DIE & Intel - All Txn & 1.00 & 1.36 & 2.62 & 4.94 &  8.23 &   nan &   nan &  8.66 &   nan &   nan &  8.48 &   nan &   nan &  3.82 &   nan &   nan & 2.08 &   nan &   nan \\
+       & Power9 - All Txn & 1.00 & 1.81 & 3.59 & 6.89 & 11.43 &   nan & 11.83 &   nan &   nan &  9.34 &   nan &   nan &  4.38 &   nan &   nan &  1.47 &  nan &   nan &  0.87 \\
+       & Power8 - All Txn & 1.00 & 1.31 & 2.72 & 5.31 &  9.42 & 10.07 &   nan &   nan &  7.17 &   nan &   nan &  3.58 &   nan &   nan &  2.00 &   nan &  nan &  1.54 &   nan \\
+       & Intel - NewOrder + Payment & 1.00 & 1.41 & 2.80 & 5.20 &  7.46 &   nan &   nan &  8.39 &   nan &   nan &  6.65 &   nan &   nan &  1.23 &   nan &   nan & 0.53 &   nan &   nan \\
+       & Power8 - NewOrder \& Payment & 1.00 & 1.37 & 2.78 & 5.32 &  8.12 &  8.57 &   nan &   nan &  5.87 &   nan &   nan &  2.06 &   nan &   nan &  0.90 &   nan &  nan &  0.60 &   nan \\
+       & Power9 - NewOrder \& Payment & 1.00 & 1.78 & 3.44 & 6.29 &  8.82 &   nan &  9.52 &   nan &   nan &  7.67 &   nan &   nan &  2.20 &   nan &   nan &  0.58 &  nan &   nan &  0.33 \\
+NO WAIT & Intel - All Txn & 1.00 & 1.38 & 2.64 & 5.07 &  8.99 &   nan &   nan & 11.62 &   nan &   nan & 14.28 &   nan &   nan &  4.52 &   nan &   nan & 2.03 &   nan &   nan \\
+       & Power9 - All Txn & 1.00 & 1.81 & 3.60 & 7.16 & 13.12 &   nan & 15.94 &   nan &   nan & 16.86 &   nan &   nan &  4.02 &   nan &   nan &  0.98 &  nan &   nan &  0.51 \\
+       & Power8 - All Txn & 1.00 & 1.31 & 2.70 & 5.37 & 10.70 & 12.72 &   nan &   nan & 12.02 &   nan &   nan &  3.63 &   nan &   nan &  1.43 &   nan &  nan &  0.96 &   nan \\
+       & Intel - NewOrder + Payment & 1.00 & 1.44 & 2.87 & 5.31 &  7.93 &   nan &   nan &  9.41 &   nan &   nan &  3.94 &   nan &   nan &  0.92 &   nan &   nan & 0.38 &   nan &   nan \\
+       & Power8 - NewOrder \& Payment & 1.00 & 1.36 & 2.76 & 5.34 &  8.11 &  8.76 &   nan &   nan &  6.42 &   nan &   nan &  1.22 &   nan &   nan &  0.43 &   nan &  nan &  0.29 &   nan \\
+       & Power9 - NewOrder \& Payment & 1.00 & 1.78 & 3.46 & 6.34 &  8.85 &   nan &  9.81 &   nan &   nan &  8.89 &   nan &   nan &  1.21 &   nan &   nan &  0.29 &  nan &   nan &  0.15 \\
+MVCC & Intel - All Txn & 1.00 & 1.66 & 3.16 & 6.87 & 11.93 &   nan &   nan & 16.21 &   nan &   nan & 18.46 &   nan &   nan & 10.50 &   nan &   nan & 5.69 &   nan &   nan \\
+       & Power9 - All Txn & 1.00 & 1.96 & 3.63 & 8.37 & 14.94 &   nan & 19.31 &   nan &   nan & 21.01 &   nan &   nan & 15.84 &   nan &   nan &  7.73 &  nan &   nan &  5.28 \\
+       & Power8 - All Txn & 1.00 & 1.51 & 3.24 & 7.17 & 13.76 & 17.09 &   nan &   nan & 18.31 &   nan &   nan & 13.43 &   nan &   nan &  8.22 &   nan &  nan &  5.81 &   nan \\
+       & Intel - NewOrder + Payment & 1.00 & 1.46 & 2.80 & 4.91 &  7.50 &   nan &   nan &  8.96 &   nan &   nan &  8.91 &   nan &   nan &  4.51 &   nan &   nan & 2.56 &   nan &   nan \\
+       & Power8 - NewOrder \& Payment & 1.00 & 1.51 & 2.97 & 5.17 &  8.74 &  9.96 &   nan &   nan &  9.35 &   nan &   nan &  5.97 &   nan &   nan &  3.65 &   nan &  nan &  2.62 &   nan \\
+       & Power9 - NewOrder \& Payment & 1.00 & 1.79 & 3.38 & 5.85 &  9.04 &   nan & 10.56 &   nan &   nan &  9.57 &   nan &   nan &  6.65 &   nan &   nan &  3.34 &  nan &   nan &  2.29 \\
+OCC & Intel - All Txn & 1.00 & 1.46 & 2.86 & 5.00 &  6.79 &   nan &   nan &  7.59 &   nan &   nan &  7.99 &   nan &   nan &  4.63 &   nan &   nan &  nan &   nan &   nan \\
+       & Power9 - All Txn & 1.00 & 1.89 & 3.81 & 6.40 &  9.31 &   nan & 10.97 &   nan &   nan & 10.64 &   nan &   nan &  9.38 &   nan &   nan &  8.73 &  nan &   nan &  8.77 \\
+       & Power8 - All Txn & 1.00 & 1.40 & 3.06 & 5.33 &  7.96 &  9.13 &   nan &   nan &  7.85 &   nan &   nan &  5.45 &   nan &   nan &  6.01 &   nan &  nan &  6.44 &   nan \\
+       & Intel - NewOrder + Payment & 1.00 & 1.38 & 2.71 & 4.74 &  7.45 &   nan &   nan &  9.69 &   nan &   nan &  8.79 &   nan &   nan &  4.84 &   nan &   nan & 3.38 &   nan &   nan \\
+       & Power8 - NewOrder \& Payment & 1.00 & 1.32 & 2.69 & 4.80 &  7.79 &  8.88 &   nan &   nan &  6.20 &   nan &   nan &  2.89 &   nan &   nan &  2.11 &   nan &  nan &  2.12 &   nan \\
+       & Power9 - NewOrder \& Payment & 1.00 & 1.88 & 3.65 & 6.25 &  9.77 &   nan & 11.37 &   nan &   nan &  7.27 &   nan &   nan &  3.04 &   nan &   nan &  1.28 &  nan &   nan &  0.99 \\
+HSTORE & Intel - All Txn & 1.00 & 1.57 & 2.74 & 2.49 &  2.28 &   nan &   nan &  2.08 &   nan &   nan &  1.85 &   nan &   nan &  1.28 &   nan &   nan & 0.98 &   nan &   nan \\
+       & Power9 - All Txn & 1.00 & 1.71 & 2.87 & 2.66 &  2.44 &   nan &  2.28 &   nan &   nan &  1.73 &   nan &   nan &  1.38 &   nan &   nan &  0.96 &  nan &   nan &  0.83 \\
+       & Power8 - All Txn & 1.00 & 1.35 & 2.42 & 2.38 &  2.38 &  2.28 &   nan &   nan &  1.79 &   nan &   nan &  1.26 &   nan &   nan &  1.00 &   nan &  nan &  0.90 &   nan \\
+       & Intel - NewOrder + Payment & 1.00 & 1.56 & 2.65 & 2.38 &  2.28 &   nan &   nan &  2.12 &   nan &   nan &  1.79 &   nan &   nan &  1.08 &   nan &   nan & 0.69 &   nan &   nan \\
+       & Power8 - NewOrder \& Payment & 1.00 & 1.39 & 2.49 & 2.65 &  2.82 &  2.75 &   nan &   nan &  2.26 &   nan &   nan &  1.51 &   nan &   nan &  1.18 &   nan &  nan &  1.12 &   nan \\
+       & Power9 - NewOrder \& Payment & 1.00 & 1.72 & 2.73 & 2.71 &  2.60 &   nan &  2.48 &   nan &   nan &  1.93 &   nan &   nan &  1.58 &   nan &   nan &  1.11 &  nan &   nan &  1.04 \\
+SILO & Intel - All Txn & 1.00 & 1.40 & 2.77 & 5.61 & 10.89 &   nan &   nan & 18.08 &   nan &   nan & 29.07 &   nan &   nan & 14.12 &   nan &   nan & 6.91 &   nan &   nan \\
+       & Power9 - All Txn & 1.00 & 1.76 & 3.46 & 6.79 & 12.87 &   nan & 18.00 &   nan &   nan & 23.11 &   nan &   nan & 26.57 &   nan &   nan & 16.89 &  nan &   nan & 13.92 \\
+       & Power8 - All Txn & 1.00 & 1.31 & 2.66 & 5.21 & 10.65 & 14.05 &   nan &   nan & 16.23 &   nan &   nan & 12.28 &   nan &   nan & 14.81 &   nan &  nan & 13.23 &   nan \\
+       & Intel - NewOrder + Payment & 1.00 & 1.45 & 2.80 & 5.46 &  9.39 &   nan &   nan & 13.30 &   nan &   nan & 16.56 &   nan &   nan &  4.95 &   nan &   nan & 2.61 &   nan &   nan \\
+       & Power8 - NewOrder \& Payment & 1.00 & 1.33 & 2.70 & 4.72 &  8.27 &  9.97 &   nan &   nan &  9.72 &   nan &   nan &  7.17 &   nan &   nan &  5.75 &   nan &  nan &  5.34 &   nan \\
+       & Power9 - NewOrder \& Payment & 1.00 & 1.81 & 3.50 & 6.00 &  9.77 &   nan & 12.03 &   nan &   nan & 12.84 &   nan &   nan & 12.37 &   nan &   nan &  6.75 &  nan &   nan &  5.30 \\
+TICTOC & Intel - All Txn & 1.00 & 1.38 & 2.77 & 5.52 & 10.78 &   nan &   nan & 17.82 &   nan &   nan & 29.72 &   nan &   nan & 18.62 &   nan &   nan & 8.55 &   nan &   nan \\
+       & Power9 - All Txn & 1.00 & 1.78 & 3.50 & 6.86 & 13.42 &   nan & 19.24 &   nan &   nan & 25.04 &   nan &   nan & 28.74 &   nan &   nan & 17.70 &  nan &   nan & 13.62 \\
+       & Power8 - All Txn & 1.00 & 1.36 & 2.75 & 5.40 & 11.25 & 15.11 &   nan &   nan & 18.07 &   nan &   nan & 14.84 &   nan &   nan & 15.07 &   nan &  nan & 13.07 &   nan \\
+       & Intel - NewOrder + Payment & 1.00 & 1.53 & 2.98 & 5.60 &  9.31 &   nan &   nan & 12.59 &   nan &   nan & 16.57 &   nan &   nan &  6.12 &   nan &   nan & 3.35 &   nan &   nan \\
+       & Power8 - NewOrder \& Payment & 1.00 & 1.41 & 2.87 & 5.10 &  8.74 & 10.34 &   nan &   nan & 10.43 &   nan &   nan &  7.98 &   nan &   nan &  5.64 &   nan &  nan &  4.99 &   nan \\
+       & Power9 - NewOrder \& Payment & 1.00 & 1.83 & 3.55 & 6.05 &  9.81 &   nan & 11.86 &   nan &   nan & 12.35 &   nan &   nan & 11.58 &   nan &   nan &  6.06 &  nan &   nan &  4.48 \\
+\bottomrule
+\end{tabular}

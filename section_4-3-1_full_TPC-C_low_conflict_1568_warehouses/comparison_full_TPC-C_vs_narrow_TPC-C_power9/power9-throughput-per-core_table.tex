@@ -1,0 +1,39 @@
+\begin{tabular}{llrrrrrrrrrrr}
+\toprule
+       & Threads &  24   &  48   &  96   &  192  &  384  &  464  &  752  &  928  &  1120 &  1312 &  1504 \\
+CC & Comparison &       &       &       &       &       &       &       &       &       &       &       \\
+\midrule
+DL DETECT & All Txn &  0.07 &  0.06 &  0.04 &  0.03 &  0.03 &  0.02 &  0.02 &  0.02 &  0.02 &  0.01 &  0.01 \\
+       & All Txn (Replicated Internals) &  0.07 &  0.06 &  0.04 &  0.03 &  0.03 &  0.03 &  0.03 &  0.02 &  0.02 &  0.02 &  0.02 \\
+       & NewOrder \& Payment &  0.21 &  0.14 &  0.09 &  0.07 &   nan &  0.05 &   nan &  0.04 &   nan &  0.04 &  0.05 \\
+       & NewOrder \& Payment (Replicated Internals) &  0.21 &  0.14 &  0.09 &  0.07 &   nan &  0.05 &   nan &  0.04 &   nan &  0.04 &  0.05 \\
+WAIT DIE & All Txn &  0.07 &  0.06 &  0.04 &  0.03 &  0.03 &  0.02 &  0.02 &  0.02 &  0.02 &  0.01 &  0.01 \\
+       & All Txn (Replicated Internals) &  0.07 &  0.06 &  0.04 &  0.03 &  0.03 &  0.03 &  0.03 &  0.03 &  0.03 &  0.03 &  0.03 \\
+       & NewOrder \& Payment &  0.20 &  0.14 &  0.09 &  0.07 &   nan &  0.05 &   nan &  0.04 &   nan &  0.04 &  0.05 \\
+       & NewOrder \& Payment (Replicated Internals) &  0.20 &  0.14 &  0.09 &  0.07 &   nan &  0.05 &   nan &  0.04 &   nan &  0.04 &  0.05 \\
+NO WAIT & All Txn &  0.07 &  0.06 &  0.04 &  0.04 &  0.03 &  0.02 &  0.02 &  0.02 &  0.02 &  0.01 &  0.01 \\
+       & All Txn (Replicated Internals) &  0.07 &  0.06 &  0.04 &  0.04 &  0.03 &  0.03 &  0.03 &  0.03 &  0.03 &  0.03 &  0.03 \\
+       & NewOrder \& Payment &  0.21 &  0.15 &  0.10 &  0.07 &   nan &  0.05 &   nan &  0.04 &   nan &  0.04 &  0.05 \\
+       & NewOrder \& Payment (Replicated Internals) &  0.21 &  0.15 &  0.10 &  0.07 &   nan &  0.05 &   nan &  0.04 &   nan &  0.04 &  0.05 \\
+MVCC & All Txn &  0.06 &  0.04 &  0.03 &  0.03 &   nan &   nan &  0.01 &  0.02 &   nan &  0.01 &  0.01 \\
+       & All Txn (Replicated Internals) &  0.06 &  0.04 &  0.03 &  0.03 &  0.02 &  0.02 &  0.02 &  0.02 &   nan &  0.01 &  0.01 \\
+       & NewOrder \& Payment &  0.11 &  0.07 &  0.05 &  0.04 &   nan &  0.03 &   nan &  0.02 &   nan &  0.02 &  0.02 \\
+       & NewOrder \& Payment (Replicated Internals) &  0.11 &  0.07 &  0.05 &  0.04 &   nan &  0.03 &   nan &  0.02 &   nan &  0.02 &  0.02 \\
+OCC & All Txn &  0.05 &  0.04 &  0.03 &  0.02 &  0.02 &  0.02 &  0.01 &  0.02 &  0.02 &  0.01 &  0.01 \\
+       & All Txn (Replicated Internals) &  0.05 &  0.04 &  0.03 &  0.02 &  0.02 &  0.02 &  0.02 &  0.02 &  0.02 &  0.02 &  0.02 \\
+       & NewOrder \& Payment &  0.19 &  0.13 &  0.09 &  0.06 &   nan &  0.04 &   nan &  0.04 &   nan &  0.03 &  0.04 \\
+       & NewOrder \& Payment (Replicated Internals) &  0.19 &  0.13 &  0.09 &  0.06 &   nan &  0.04 &   nan &  0.04 &   nan &  0.03 &  0.04 \\
+HSTORE & All Txn &  0.17 &  0.14 &  0.10 &  0.07 &  0.04 &  0.03 &  0.02 &  0.03 &  0.03 &  0.01 &  0.01 \\
+       & All Txn (Replicated Internals) &  0.18 &  0.14 &  0.10 &  0.07 &  0.06 &  0.05 &  0.04 &  0.04 &  0.03 &  0.03 &  0.03 \\
+       & NewOrder \& Payment &  0.30 &  0.23 &  0.17 &  0.10 &   nan &  0.07 &   nan &  0.05 &   nan &  0.04 &  0.04 \\
+       & NewOrder \& Payment (Replicated Internals) &  0.30 &  0.23 &  0.17 &  0.10 &   nan &  0.07 &   nan &  0.05 &   nan &  0.04 &  0.04 \\
+SILO & All Txn &  0.09 &  0.06 &  0.04 &  0.03 &  0.03 &  0.02 &  0.02 &  0.02 &  0.02 &  0.01 &  0.01 \\
+       & All Txn (Replicated Internals) &  0.10 &  0.07 &  0.04 &  0.03 &  0.03 &  0.02 &  0.02 &  0.02 &  0.02 &  0.02 &  0.03 \\
+       & NewOrder \& Payment &  0.20 &  0.14 &  0.09 &  0.05 &   nan &  0.04 &   nan &  0.04 &   nan &  0.03 &  0.05 \\
+       & NewOrder \& Payment (Replicated Internals) &  0.20 &  0.14 &  0.09 &  0.05 &   nan &  0.04 &   nan &  0.04 &   nan &  0.03 &  0.05 \\
+TICTOC & All Txn &  0.10 &  0.07 &  0.05 &  0.04 &  0.03 &  0.02 &  0.02 &  0.03 &  0.02 &  0.01 &  0.01 \\
+       & All Txn (Replicated Internals) &  0.10 &  0.07 &  0.05 &  0.04 &  0.04 &  0.03 &  0.03 &  0.03 &  0.03 &  0.03 &  0.04 \\
+       & NewOrder \& Payment &  0.23 &  0.16 &  0.11 &  0.06 &   nan &  0.04 &   nan &  0.05 &   nan &  0.04 &  0.06 \\
+       & NewOrder \& Payment (Replicated Internals) &  0.23 &  0.16 &  0.11 &  0.06 &   nan &  0.04 &   nan &  0.05 &   nan &  0.04 &  0.06 \\
+\bottomrule
+\end{tabular}

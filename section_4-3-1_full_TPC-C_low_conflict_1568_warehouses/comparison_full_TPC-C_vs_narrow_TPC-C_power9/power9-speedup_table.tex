@@ -1,0 +1,39 @@
+\begin{tabular}{llrrrrrrrrrrr}
+\toprule
+       & Threads &  24   &  48   &  96   &  192  &  384  &  464  &  752  &  928  &  1120 &  1312 &  1504 \\
+CC & Comparison &       &       &       &       &       &       &       &       &       &       &       \\
+\midrule
+DL DETECT & All Txn &  1.00 &  1.51 &  2.03 &  3.73 &  5.90 &  5.48 &  6.39 & 11.04 & 12.81 &  8.82 &  8.87 \\
+       & All Txn (Replicated Internals) &  1.00 &  1.49 &  2.01 &  3.74 &  6.62 &  6.94 & 10.57 & 11.83 & 14.17 & 14.50 & 15.79 \\
+       & NewOrder \& Payment &  1.00 &  1.38 &  1.84 &  2.56 &   nan &  4.32 &   nan &  8.12 &   nan &  9.84 & 14.19 \\
+       & NewOrder \& Payment (Replicated Internals) &  1.00 &  1.38 &  1.84 &  2.56 &   nan &  4.32 &   nan &  8.12 &   nan &  9.84 & 14.19 \\
+WAIT DIE & All Txn &  1.00 &  1.49 &  2.02 &  3.75 &  6.02 &  5.53 &  6.40 & 12.53 & 14.31 &  9.17 &  9.39 \\
+       & All Txn (Replicated Internals) &  1.00 &  1.48 &  2.01 &  3.75 &  6.76 &  7.13 & 11.75 & 13.98 & 16.39 & 18.57 & 24.71 \\
+       & NewOrder \& Payment &  1.00 &  1.41 &  1.84 &  2.59 &   nan &  4.36 &   nan &  8.07 &   nan & 10.24 & 16.00 \\
+       & NewOrder \& Payment (Replicated Internals) &  1.00 &  1.41 &  1.84 &  2.59 &   nan &  4.36 &   nan &  8.07 &   nan & 10.24 & 16.00 \\
+NO WAIT & All Txn &  1.00 &  1.51 &  2.04 &  3.78 &  5.97 &  5.53 &  6.37 & 12.49 & 14.42 &  9.11 &  9.37 \\
+       & All Txn (Replicated Internals) &  1.00 &  1.49 &  2.02 &  3.77 &  6.76 &  7.13 & 11.72 & 14.28 & 16.93 & 18.87 & 24.98 \\
+       & NewOrder \& Payment &  1.00 &  1.43 &  1.89 &  2.59 &   nan &  4.27 &   nan &  8.21 &   nan & 10.47 & 16.40 \\
+       & NewOrder \& Payment (Replicated Internals) &  1.00 &  1.43 &  1.89 &  2.59 &   nan &  4.27 &   nan &  8.21 &   nan & 10.47 & 16.40 \\
+MVCC & All Txn &  1.00 &  1.42 &  2.06 &  3.66 &   nan &   nan &  7.14 & 10.39 &   nan &  9.40 & 10.14 \\
+       & All Txn (Replicated Internals) &  1.00 &  1.43 &  2.05 &  3.66 &  5.66 &  6.38 &  9.57 & 10.60 &   nan & 12.71 & 15.41 \\
+       & NewOrder \& Payment &  1.00 &  1.31 &  1.88 &  3.03 &   nan &  5.02 &   nan &  8.17 &   nan &  9.93 & 11.37 \\
+       & NewOrder \& Payment (Replicated Internals) &  1.00 &  1.31 &  1.88 &  3.03 &   nan &  5.02 &   nan &  8.17 &   nan &  9.93 & 11.37 \\
+OCC & All Txn &  1.00 &  1.40 &  1.85 &  3.58 &  6.38 &  6.31 &  7.96 & 12.96 & 14.97 & 11.48 & 11.87 \\
+       & All Txn (Replicated Internals) &  1.00 &  1.42 &  1.84 &  3.56 &  6.57 &  7.17 & 11.40 & 13.45 & 16.20 & 18.15 & 22.15 \\
+       & NewOrder \& Payment &  1.00 &  1.38 &  1.84 &  2.69 &   nan &  4.27 &   nan &  7.86 &   nan &  8.94 & 13.11 \\
+       & NewOrder \& Payment (Replicated Internals) &  1.00 &  1.38 &  1.84 &  2.69 &   nan &  4.27 &   nan &  7.86 &   nan &  8.94 & 13.11 \\
+HSTORE & All Txn &  1.00 &  1.55 &  2.31 &  3.21 &  4.06 &  2.99 &  3.23 &  6.62 &  6.99 &  4.33 &  4.18 \\
+       & All Txn (Replicated Internals) &  1.00 &  1.51 &  2.26 &  3.19 &  5.76 &  5.46 &  7.18 &  7.73 &  8.26 &  8.63 & 10.79 \\
+       & NewOrder \& Payment &  1.00 &  1.50 &  2.21 &  2.66 &   nan &  4.16 &   nan &  5.72 &   nan &  6.54 &  7.62 \\
+       & NewOrder \& Payment (Replicated Internals) &  1.00 &  1.50 &  2.21 &  2.66 &   nan &  4.16 &   nan &  5.72 &   nan &  6.54 &  7.62 \\
+SILO & All Txn &  1.00 &  1.37 &  1.88 &  2.80 &  4.37 &  4.17 &  5.00 &  8.57 &  9.40 &  6.60 &  7.17 \\
+       & All Txn (Replicated Internals) &  1.00 &  1.37 &  1.87 &  2.83 &  4.69 &  4.93 &  7.98 &  9.43 & 10.82 & 11.57 & 19.63 \\
+       & NewOrder \& Payment &  1.00 &  1.38 &  1.88 &  2.08 &   nan &  3.54 &   nan &  7.66 &   nan &  9.13 & 17.24 \\
+       & NewOrder \& Payment (Replicated Internals) &  1.00 &  1.38 &  1.88 &  2.08 &   nan &  3.54 &   nan &  7.66 &   nan &  9.13 & 17.24 \\
+TICTOC & All Txn &  1.00 &  1.41 &  2.01 &  3.31 &  5.04 &  4.50 &  5.20 & 10.15 & 11.18 &  7.21 &  7.54 \\
+       & All Txn (Replicated Internals) &  1.00 &  1.42 &  2.01 &  3.30 &  5.91 &  6.00 &  9.55 & 11.46 & 14.04 & 15.14 & 23.02 \\
+       & NewOrder \& Payment &  1.00 &  1.40 &  1.93 &  2.13 &   nan &  3.52 &   nan &  7.76 &   nan &  9.55 & 16.79 \\
+       & NewOrder \& Payment (Replicated Internals) &  1.00 &  1.40 &  1.93 &  2.13 &   nan &  3.52 &   nan &  7.76 &   nan &  9.55 & 16.79 \\
+\bottomrule
+\end{tabular}

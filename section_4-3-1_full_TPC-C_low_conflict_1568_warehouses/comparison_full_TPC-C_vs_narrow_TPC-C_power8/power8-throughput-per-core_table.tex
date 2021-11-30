@@ -1,0 +1,23 @@
+\begin{tabular}{llrrrrrrr}
+\toprule
+       & Threads &  22  &  44  &  88  &  184 &  376 &  560 &  752 \\
+CC & Comparison &      &      &      &      &      &      &      \\
+\midrule
+DL DETECT & All Txn & 0.02 & 0.02 & 0.02 & 0.02 & 0.02 &  nan & 0.02 \\
+       & NewOrder \& Payment & 0.06 & 0.06 & 0.06 & 0.05 & 0.03 &  nan & 0.03 \\
+WAIT DIE & All Txn & 0.02 & 0.02 & 0.02 & 0.02 & 0.02 &  nan & 0.02 \\
+       & NewOrder \& Payment & 0.06 & 0.06 & 0.05 & 0.05 & 0.03 &  nan & 0.03 \\
+NO WAIT & All Txn & 0.02 & 0.02 & 0.02 & 0.02 & 0.02 &  nan & 0.02 \\
+       & NewOrder \& Payment & 0.06 & 0.06 & 0.05 & 0.05 & 0.03 &  nan & 0.03 \\
+MVCC & All Txn & 0.05 & 0.03 & 0.02 & 0.02 & 0.02 & 0.01 & 0.01 \\
+       & NewOrder \& Payment &  nan & 0.03 & 0.02 & 0.03 & 0.02 &  nan & 0.03 \\
+OCC & All Txn & 0.01 & 0.01 & 0.01 & 0.01 & 0.01 &  nan & 0.01 \\
+       & NewOrder \& Payment & 0.06 & 0.06 & 0.05 & 0.04 & 0.03 &  nan & 0.03 \\
+HSTORE & All Txn & 0.07 & 0.07 & 0.06 & 0.06 & 0.05 &  nan & 0.04 \\
+       & NewOrder \& Payment & 0.14 & 0.13 & 0.11 & 0.11 & 0.08 &  nan & 0.05 \\
+SILO & All Txn & 0.03 & 0.03 & 0.02 & 0.02 & 0.01 &  nan & 0.01 \\
+       & NewOrder \& Payment & 0.07 & 0.06 & 0.05 & 0.04 & 0.03 &  nan & 0.03 \\
+TICTOC & All Txn & 0.03 & 0.03 & 0.02 & 0.02 & 0.02 &  nan & 0.01 \\
+       & NewOrder \& Payment & 0.08 & 0.08 & 0.05 & 0.05 & 0.03 &  nan & 0.03 \\
+\bottomrule
+\end{tabular}

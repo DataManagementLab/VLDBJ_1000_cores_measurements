@@ -1,0 +1,237 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.945098039215686,0.345098039215686,0.329411764705882}
+\definecolor{color1}{rgb}{0.870588235294118,0.811764705882353,0.247058823529412}
+\definecolor{color2}{rgb}{0.980392156862745,0.643137254901961,0.227450980392157}
+\definecolor{color3}{rgb}{0.364705882352941,0.647058823529412,0.854901960784314}
+\definecolor{color4}{rgb}{0.698039215686274,0.462745098039216,0.698039215686274}
+\definecolor{color5}{rgb}{1,0,0.501960784313725}
+
+\begin{groupplot}[group style={group size=1 by 2}]
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={NewOrder \& Payment},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=0, xmax=1578,
+xtick style={color=white!15!black},
+xtick={0,200,400,600,800,1000,1200,1400,1600},
+xticklabel style={align=left},
+xticklabels={−200,0,200,400,600,800,1000,1200,1400},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Million txn/s},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=98137.001219492,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={0,20000,40000,60000,80000,100000},
+yticklabels={−20000,0,20000,40000,60000,80000}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 4937.26479282873
+48 6820.2556591693
+96 9103.93337803378
+192 12629.3222794162
+464 21353.2115247982
+928 40085.6000884226
+1504 70077.5261882259
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 4901.48344175204
+48 6921.9927880003
+96 9010.19166352133
+192 12696.1682887283
+464 21356.6949297607
+928 39566.5204359809
+1504 78430.5246722623
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 4944.71551238423
+48 7054.00138089097
+96 9351.39532084878
+192 12800.0341596313
+464 21098.5072823171
+928 40600.0970181581
+1504 81085.1188308552
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 2623.37508684379
+48 3446.47420373413
+96 4922.32953650252
+192 7955.4198324163
+464 13166.6275172403
+928 21425.4959494955
+1504 29839.0217194937
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 4502.36484379555
+48 6191.65470901845
+96 8271.65066924609
+192 12117.0280115827
+464 19235.1125952877
+928 35379.6634529392
+1504 59018.3658762429
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 7319.30133630782
+48 10961.85195662
+96 16194.0894596033
+192 19493.9301261481
+464 30412.1338013862
+928 41879.8360319566
+1504 55783.3068579526
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 4759.01956940461
+48 6559.07186917945
+96 8952.06509801027
+192 9921.41447363343
+464 16828.1273408585
+928 36448.1283843919
+1504 82051.0960857019
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 5574.09628995725
+48 7828.07630532717
+96 10756.117314488
+192 11877.5324085614
+464 19605.032106607
+928 43228.9937410566
+1504 93588.7333084135
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={All Txn},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=0, xmax=1578,
+xtick style={color=white!15!black},
+xtick={0,200,400,600,800,1000,1200,1400,1600},
+xticklabel style={align=left},
+xticklabels={−200,0,200,400,600,800,1000,1200,1400},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Million txn/s},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=0, ymax=98137.001219492,
+yminorticks=false,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={0,20000,40000,60000,80000,100000},
+yticklabels={−20000,0,20000,40000,60000,80000}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+192 6647.43346723232
+384 10502.3210011685
+464 9755.52941467211
+752 11375.1549866683
+928 19661.0932689419
+1504 15795.0936224739
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+192 6680.42761769607
+384 10730.1472339415
+464 9860.01646786728
+752 11398.1745322224
+928 22322.1777121807
+1504 16726.9478461132
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+192 6793.95573299115
+384 10732.3431223697
+464 9941.11985147709
+752 11449.6626953694
+928 22455.4025802365
+1504 16846.2303779584
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+192 5111.04334071862
+752 9972.61128412226
+928 14516.8999336468
+1504 14168.3423218242
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+192 4665.6655408815
+384 8303.36268794654
+464 8208.41429532378
+752 10367.5178614057
+928 16876.7685688631
+1504 15445.4197359547
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+192 13447.1196696532
+384 17729.9915239879
+464 12646.0173175619
+752 13722.9816434837
+928 28221.4264383829
+1120 31124.4850709835
+1504 17521.9089010426
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+192 6370.00166995045
+384 9925.0012693464
+464 9488.50198955631
+752 11375.5611619163
+928 19475.8365270376
+1504 16308.222541922
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+192 7809.29217311004
+384 11890.4548459794
+464 10614.9730759968
+752 12275.477277197
+928 23965.9125862383
+1504 17789.501856234
+};
+\end{groupplot}
+

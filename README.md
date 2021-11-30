@@ -1,10 +1,13 @@
 # General Structure
 
-In the following data collection, we provide for all experiments discussed in __[paper](paper)__: __1.__ The configuration (".conf") and scripts (".sh") for the experimental setup, raw logs ("log.out", ".log"), profiling output ("\*.perf.\*"), and extracted measurements (".results.csv") compressed into measurements.zip; __2.__ accumulated measurements ("result.csv") and resulting plots (".svg", ".tex", ".html").
+In the following data collection, we provide for all experiments discussed in "__The Tale of 1000 Cores: An Evaluation of Concurrency Control on Real(ly) Large Multi-Socket Hardware__"[1] "__The Full Story of 1000 Cores: A Dissection of Concurrency Control on Real(ly) Large Multi-Socket Hardware__"[2]: __1.__ The configuration (".conf") and scripts (".sh") for the experimental setup, raw logs ("log.out", ".log"), profiling output ("\*.perf.\*"), and extracted measurements (".results.csv") compressed into measurements.zip; __2.__ accumulated measurements ("result.csv") and resulting plots (".svg", ".tex", ".html").
 
 The data collection is first organized as the experiments appear in the paper and
 second by hardware platforms (HPE, Power8, and Power9) and a directory for combined plots.
 Moreover, along the directories for tha hardware platforms there is a directory ("__comparison__") containing plots comparing their performance.
+
+[1] Tiemo Bang, Norman May, Ilia Petrov, and Carsten Binnig. 2020. The Tale of 1000 Cores: An Evaluation of Concurrency Control on Real(ly) Large Multi-Socket Hardware. In International Workshop on Data Management on New Hardware (DAMON’20), June 15, 2020, Portland, OR, USA. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3399666.3399910
+[2] *publication outstanding*
 
 # Memory latency and bandwidth by NUMA (Section 2, Table 2)
 

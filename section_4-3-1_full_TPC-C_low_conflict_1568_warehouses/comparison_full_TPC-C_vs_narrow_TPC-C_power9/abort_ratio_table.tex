@@ -1,0 +1,23 @@
+\begin{tabular}{llrrrrrrrrrr}
+\toprule
+       & Threads &  24   &  48   &  96   &  192  &  384  &  464  &  752  &  928  &  1120 &  1504 \\
+CC & Comparison &       &       &       &       &       &       &       &       &       &       \\
+\midrule
+DL DETECT & NewOrder \& Payment & 0.00\% & 0.00\% & 0.00\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.00\% \\
+       & All Txn &  nan\% &  nan\% &  nan\% & 0.00\% & 0.00\% & 0.00\% & 0.00\% & 0.00\% &  nan\% & 0.00\% \\
+WAIT DIE & NewOrder \& Payment & 0.00\% & 0.00\% & 0.00\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.00\% \\
+       & All Txn &  nan\% &  nan\% &  nan\% & 0.00\% & 0.00\% & 0.00\% & 0.01\% & 0.01\% &  nan\% & 0.01\% \\
+NO WAIT & NewOrder \& Payment & 0.00\% & 0.00\% & 0.00\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.01\% \\
+       & All Txn &  nan\% &  nan\% &  nan\% & 0.00\% & 0.00\% & 0.00\% & 0.01\% & 0.01\% &  nan\% & 0.01\% \\
+MVCC & NewOrder \& Payment & 0.00\% & 0.00\% & 0.00\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.00\% \\
+       & All Txn &  nan\% &  nan\% &  nan\% & 0.00\% &  nan\% &  nan\% & 0.00\% & 0.00\% &  nan\% & 0.00\% \\
+OCC & NewOrder \& Payment & 0.00\% & 0.00\% & 0.00\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.01\% &  nan\% & 0.01\% \\
+       & All Txn &  nan\% &  nan\% &  nan\% & 0.01\% & 0.01\% & 0.01\% & 0.02\% & 0.02\% &  nan\% & 0.03\% \\
+HSTORE & NewOrder \& Payment & 0.01\% & 0.02\% & 0.04\% & 0.08\% &  nan\% & 0.19\% &  nan\% & 0.29\% &  nan\% & 0.42\% \\
+       & All Txn &  nan\% &  nan\% &  nan\% & 0.04\% & 0.05\% & 0.05\% & 0.06\% & 0.18\% & 0.10\% & 0.09\% \\
+SILO & NewOrder \& Payment & 0.00\% & 0.00\% & 0.00\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.00\% \\
+       & All Txn &  nan\% &  nan\% &  nan\% & 0.00\% & 0.00\% & 0.00\% & 0.00\% & 0.00\% &  nan\% & 0.00\% \\
+TICTOC & NewOrder \& Payment & 0.00\% & 0.00\% & 0.00\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.00\% &  nan\% & 0.00\% \\
+       & All Txn &  nan\% &  nan\% &  nan\% & 0.03\% & 0.02\% & 0.02\% & 0.02\% & 0.03\% &  nan\% & 0.03\% \\
+\bottomrule
+\end{tabular}

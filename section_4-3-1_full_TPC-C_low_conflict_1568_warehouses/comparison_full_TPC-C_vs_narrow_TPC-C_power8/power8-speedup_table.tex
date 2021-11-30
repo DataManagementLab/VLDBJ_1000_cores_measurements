@@ -1,0 +1,23 @@
+\begin{tabular}{llrrrrrrr}
+\toprule
+       & Threads &  22  &  44  &  88  &  184 &   376 &  560 &   752 \\
+CC & Comparison &      &      &      &      &       &      &       \\
+\midrule
+DL DETECT & All Txn & 1.00 & 2.00 & 3.49 & 7.83 & 15.10 &  nan & 27.58 \\
+       & NewOrder \& Payment & 1.00 & 1.89 & 3.52 & 6.34 &  9.25 &  nan & 17.67 \\
+WAIT DIE & All Txn & 1.00 & 1.95 & 3.54 & 7.79 & 14.96 &  nan & 27.48 \\
+       & NewOrder \& Payment & 1.00 & 1.96 & 3.46 & 6.10 &  9.40 &  nan & 17.85 \\
+NO WAIT & All Txn & 1.00 & 1.94 & 3.29 & 7.57 & 14.67 &  nan & 26.98 \\
+       & NewOrder \& Payment & 1.00 & 1.93 & 3.31 & 5.89 &  9.18 &  nan & 17.54 \\
+MVCC & All Txn & 1.00 & 1.39 & 1.61 & 3.20 &  5.84 & 6.97 &  8.55 \\
+       & NewOrder \& Payment &  nan & 1.00 & 1.37 & 3.92 &  6.29 &  nan & 13.67 \\
+OCC & All Txn & 1.00 & 1.94 & 2.99 & 6.44 & 13.04 &  nan & 28.21 \\
+       & NewOrder \& Payment & 1.00 & 1.90 & 3.28 & 5.76 &  9.27 &  nan & 16.90 \\
+HSTORE & All Txn & 1.00 & 1.91 & 3.47 & 7.08 & 12.82 &  nan & 17.44 \\
+       & NewOrder \& Payment & 1.00 & 1.89 & 3.22 & 6.49 &  9.63 &  nan & 12.24 \\
+SILO & All Txn & 1.00 & 1.92 & 2.94 & 5.45 &  8.70 &  nan & 14.91 \\
+       & NewOrder \& Payment & 1.00 & 1.92 & 3.15 & 4.87 &  6.85 &  nan & 13.12 \\
+TICTOC & All Txn & 1.00 & 2.03 & 3.19 & 5.68 &  9.38 &  nan & 16.37 \\
+       & NewOrder \& Payment & 1.00 & 1.92 & 2.36 & 4.83 &  6.45 &  nan & 12.56 \\
+\bottomrule
+\end{tabular}

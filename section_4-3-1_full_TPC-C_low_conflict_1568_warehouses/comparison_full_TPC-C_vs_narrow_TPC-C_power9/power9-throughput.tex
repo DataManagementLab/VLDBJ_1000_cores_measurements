@@ -1,0 +1,310 @@
+% This file was created by tikzplotlib v0.9.8.
+\definecolor{color0}{rgb}{0.945098039215686,0.345098039215686,0.329411764705882}
+\definecolor{color1}{rgb}{0.870588235294118,0.811764705882353,0.247058823529412}
+\definecolor{color2}{rgb}{0.980392156862745,0.643137254901961,0.227450980392157}
+\definecolor{color3}{rgb}{0.364705882352941,0.647058823529412,0.854901960784314}
+\definecolor{color4}{rgb}{0.698039215686274,0.462745098039216,0.698039215686274}
+\definecolor{color5}{rgb}{1,0,0.501960784313725}
+
+\begin{groupplot}[group style={group size=1 by 2}]
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+log basis y={10},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={All Txn},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-50, xmax=1578,
+xminorgrids,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Million txn/s (\(\displaystyle \log_{10}\))},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=1080.01948503588, ymax=65690.188672339,
+yminorgrids,
+yminorticks=false,
+ymode=log,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={100,1000,10000,100000,1000000},
+yticklabels={−10000,0,10000,20000,30000}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 1781.04978450288
+48 2681.9462661045
+96 3613.39020497591
+192 6647.43346723232
+384 10502.3210011685
+464 9755.52941467211
+752 11375.1549866683
+928 19661.0932689419
+1120 22823.4714625405
+1312 15710.6607479178
+1504 15795.0936224739
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 1781.98209851295
+48 2663.03307059217
+96 3591.15866243736
+192 6680.42761769607
+384 10730.1472339415
+464 9860.01646786728
+752 11398.1745322224
+928 22322.1777121807
+1120 25493.8146947844
+1312 16335.0687659481
+1504 16726.9478461132
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 1797.16888455049
+48 2707.65792045797
+96 3666.81793481604
+192 6793.95573299115
+384 10732.3431223697
+464 9941.11985147709
+752 11449.6626953694
+928 22455.4025802365
+1120 25911.5123502317
+1312 16376.6890498494
+1504 16846.2303779584
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 1397.12236344995
+48 1984.86751417098
+96 2881.98261478472
+192 5111.04334071862
+752 9972.61128412226
+928 14516.8999336468
+1312 13136.8028346289
+1504 14168.3423218242
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 1301.74414378678
+48 1827.62849534708
+96 2408.57508308424
+192 4665.6655408815
+384 8303.36268794654
+464 8208.41429532378
+752 10367.5178614057
+928 16876.7685688631
+1120 19481.0186865792
+1312 14938.40104978
+1504 15445.4197359547
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 4194.70548938545
+48 6489.4113404977
+96 9707.42793275052
+192 13447.1196696532
+384 17034.5770782302
+464 12561.6825216724
+752 13541.4981996518
+928 27787.6958873127
+1120 29331.3720590738
+1312 18155.5385297634
+1504 17521.9089010426
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 2273.04932062952
+48 3116.85104282834
+96 4280.71777669968
+192 6370.00166995045
+384 9925.0012693464
+464 9488.50198955631
+752 11375.5611619163
+928 19475.8365270376
+1120 21359.8020701045
+1312 14992.0143430306
+1504 16308.222541922
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 2360.47658030148
+48 3333.64502213294
+96 4733.93254511026
+192 7809.29217311004
+384 11890.4548459794
+464 10614.9730759968
+752 12275.477277197
+928 23965.9125862383
+1120 26390.3848948082
+1312 17028.0977938072
+1504 17789.501856234
+};
+
+\nextgroupplot[
+axis line style={white!80!black},
+grid=both,
+height=\figH,
+legend entries={DL DETECT,WAIT DIE,NO WAIT,MVCC,OCC,HSTORE,SILO,TICTOC},
+legend style={legend columns=3,fill=none,draw=none,align=center},
+legend to name={CommonLegend},
+log basis y={10},
+major tick length=0,
+scaled y ticks={base 10:-3},
+tick align=outside,
+title style={yshift=-1.5ex},
+title={All Txn (Replicated Internals)},
+width=\figW,
+x grid style={white!80!black},
+xlabel shift=-1ex,
+xlabel={Number of Cores},
+xmajorgrids,
+xmajorticks=false,
+xmajorticks=true,
+xmin=-50, xmax=1578,
+xminorgrids,
+xtick style={color=white!15!black},
+xticklabel style={align=left},
+y grid style={white!80!black},
+ylabel shift=-1.4ex,
+ylabel={Million txn/s (\(\displaystyle \log_{10}\))},
+ymajorgrids,
+ymajorticks=false,
+ymajorticks=true,
+ymin=1080.01948503588, ymax=65690.188672339,
+yminorgrids,
+yminorticks=false,
+ymode=log,
+ytick scale label code/.code={},
+ytick style={color=white!15!black},
+ytick={100,1000,10000,100000,1000000},
+yticklabels={−10000,0,10000,20000,30000}
+]
+\addplot [line width=0.48pt, color0, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 1785.44755231962
+48 2662.05920396319
+96 3591.00890373682
+192 6685.4994896518
+384 11821.2345371653
+464 12392.9701597115
+752 18877.7328738013
+928 21120.3130291279
+1120 25291.7700501146
+1312 25891.8383638227
+1504 28198.1924358743
+};
+\addplot [line width=0.48pt, color1, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 1784.73583891541
+48 2649.85122642225
+96 3589.01683741722
+192 6695.73830255367
+384 12067.8567030939
+464 12723.0580524865
+752 20973.8528599436
+928 24953.924732937
+1120 29251.4102206876
+1312 33140.5537085329
+1504 44100.6065685481
+};
+\addplot [line width=0.48pt, color2, mark=diamond*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 1798.75507293542
+48 2675.75676892259
+96 3625.90356652418
+192 6776.08079149612
+384 12154.9954376326
+464 12825.892409377
+752 21079.953877542
+928 25678.1351533168
+1120 30456.7090432949
+1312 33946.7920043221
+1504 44924.790843958
+};
+\addplot [line width=0.48pt, color3, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 1393.8695978607
+48 1991.00454564442
+96 2859.83263288579
+192 5101.1708474228
+384 7895.29912152179
+464 8895.86036237211
+752 13335.5030898376
+928 14775.7960299439
+1312 17709.5779032432
+1504 21477.5072470431
+};
+\addplot [line width=0.48pt, color4, mark=*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 1307.61774107125
+48 1850.60407883645
+96 2410.98846674035
+192 4655.59966509874
+384 8593.10130889036
+464 9373.13915403815
+752 14901.1393530585
+928 17592.116342567
+1120 21181.8740089138
+1312 23730.9985890984
+1504 28962.9514108496
+};
+\addplot [line width=0.48pt, white!30.1960784313725!black, mark=square*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 4327.01316324465
+48 6518.86096505626
+96 9762.20808304363
+192 13802.5142503942
+384 24915.9009988105
+464 23630.4525958127
+752 31084.7934301495
+928 33435.0778658814
+1120 35741.6593217613
+1312 37321.3447148124
+1504 46670.5739552193
+};
+\addplot [line width=0.48pt, color5, mark=pentagon*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 2283.64330137414
+48 3128.21171631246
+96 4275.54099321343
+192 6458.81009998771
+384 10700.1414338006
+464 11260.3056643128
+752 18214.0852043987
+928 21539.4312725351
+1120 24701.8175114503
+1312 26412.8421361638
+1504 44828.1402841431
+};
+\addplot [line width=0.48pt, white!63.1372549019608!black, mark=triangle*, mark size=2.4, mark options={solid,draw=white}]
+table {%
+24 2367.19040456061
+48 3355.8536716643
+96 4749.4631119949
+192 7818.30979721712
+384 13984.7958229764
+464 14196.3986223547
+752 22613.462737401
+928 27120.4028944179
+1120 33238.8224412638
+1312 35829.7840420475
+1504 54501.2505571372
+};
+\end{groupplot}
+
