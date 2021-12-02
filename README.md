@@ -1,3 +1,26 @@
+[![Creative Commons License: CC BY 4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
+
+# References
+
+__The Full Story of 1000 Cores: A Dissection of Concurrency Control on Real(ly) Large Multi-Socket Hardware__
+```
+...
+```
+
+__Archived measurements__ (identical to this repo): https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/3299
+```
+@misc{artefactMeasurements,
+  url = { https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/3299 },
+  author = { Bang, Tiemo and May, Norman and Petrov, Ilia and Binnig, Carsten },
+  publisher = { Technical University of Darmstadt },
+  year = { 2021 },
+  copyright = { Creative Commons Attribution 4.0 },
+  title = { The Full Story of 1000 Cores: A Dissection of Concurrency Control on Real(ly) Large Multi-Socket Hardware — Measurements, Logs, Plots }
+}
+```
+
+__Source code of used DBMS prototype (optimised DBx1000)__: https://github.com/DataManagementLab/DBx1000
+
 # General Structure
 
 In the following data collection, we provide for all experiments discussed in "__The Tale of 1000 Cores: An Evaluation of Concurrency Control on Real(ly) Large Multi-Socket Hardware__"[1] and "__The Full Story of 1000 Cores: A Dissection of Concurrency Control on Real(ly) Large Multi-Socket Hardware__"[2]:
@@ -11,6 +34,8 @@ Moreover, along the directories for tha hardware platforms there is a directory 
 [1] Tiemo Bang, Norman May, Ilia Petrov, and Carsten Binnig. 2020. The Tale of 1000 Cores: An Evaluation of Concurrency Control on Real(ly) Large Multi-Socket Hardware. In International Workshop on Data Management on New Hardware (DAMON’20), June 15, 2020, Portland, OR, USA. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3399666.3399910
 
 [2] Tiemo Bang, Norman May, Ilia Petrov, and Carsten Binnig. 2022. The Full Story of 1000 Cores: A Dissection of Concurrency Control on Real(ly) Large Multi-Socket Hardware. *publication outstanding*
+
+# 
 
 # Memory latency and bandwidth by NUMA (Section 2, Table 2)
 
