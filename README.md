@@ -19,7 +19,7 @@ __Archived measurements__ (identical to this repo): https://tudatalib.ulb.tu-dar
 }
 ```
 
-__Source code of used DBMS prototype (optimised DBx1000)__:
+__Source code of used DBMS prototype (optimised DBx1000)__: https://github.com/DataManagementLab/DBx1000
 
 # General Structure
 
