@@ -44,6 +44,7 @@ Moreover, along the directories for tha hardware platforms there is a directory 
 # Simulation vs. Real Hardware
 All following measurements were only executed on the HPE hardware platform.
 
+---
 ## A First Look: Simulation vs. Reality (Section 3.1)
 
 The following measurements contain the initial rerun of the original prototype on real hardware, Fig. 4 and Fig. 5.
@@ -52,6 +53,7 @@ The following measurements contain the initial rerun of the original prototype o
 
 [section_3-1_plain_original_results_low_conflict_1024_warehouses](section_3-1_plain_original_results_low_conflict_1024_warehouses) contains the measurements for high conflict workload with 4 warehouses, Fig. 4b and Fig. 5b.
 
+---
 ## A Second Look: Hidden Secrets (Section 3.2)
 
 ### Hardware Assistance: The Good? (Section 3.2.1)
@@ -68,6 +70,7 @@ For the speedup in Fig. 8 the measurements of Section 3.2.1 were used, i.e., [se
 
 [section_3-2-3_inserts](section_3-2-3_inserts) contains the measurement when including inserts in the TPC-C transactions in the low conflict workload with 1024 warehouses.
 
+---
 ## Effect of State of the Art Optimisations (Section 3.3)
 
 ### Overview of Optimisations (Section 3.3.1)
@@ -88,11 +91,16 @@ For the speedup in Fig. 8 the measurements of Section 3.2.1 were used, i.e., [se
 
 [section_4-1_intel-based_vs_power_high_conflict_4_warehouses](section_4-1_intel-based_vs_power_high_conflict_4_warehouses) contains the measurements comparing the scalability of the three hardware platforms (HPE, Power8, Power9) for the high conflict optimisations, Fig. 13 and Fig. 14.
 
+__[Time Breakdowns](section_4-1_intel-based_vs_power_high_conflict_4_warehouses/time_breakdown.md)__
+
 [section_4-1_intel-based_vs_power_low_conflict_1568_warehouses](section_4-1_intel-based_vs_power_low_conflict_1568_warehouses) contains the measurements comparing the scalability of the three hardware platforms (HPE, Power8, Power9) for the low conflict optimisations, Fig. 15 and Fig. 16.
 Power9 has measurements with __replicated internal__ data structures and for the __original__ implementation without this additional optimisation as well as plots comparing these.
 
+__[Time Breakdowns](section_4-1_intel-based_vs_power_low_conflict_1568_warehouses/time_breakdown.md)__
+
 The measurements for HPE correspond to those of Section 3.3.2 ([section_3-3-2_optimised_low_conflict_1568_warehouses](section_3-3-2_optimised_low_conflict_1568_warehouses), [section_3-3-2_optimised_high_conflict_1568_warehouses](section_3-3-2_optimised_high_conflict_1568_warehouses)).
 
+---
 ## Zooming into Hardware Aspects (Section 4.2)
 
 ### Simultaneous Multithreading (Section 4.2.1)
@@ -110,6 +118,7 @@ The measurements of the limited SMT of the Intel processor in the HPE platform a
 
 [z_extra_non-uniform_memory_access_workload-imposed_effect_all_distances](z_extra_non-uniform_memory_access_workload-imposed_effect_all_distances) contains extra measurements for additional NUMA distances.
 
+---
 ## The Full TPC-C Benchmark (Section 4.3)
 The following measurements concern the performance for the full TPC-C transaction mix beyond the commonly used narrow transaction mix of only *NewOrder* and *Payment*.
 
@@ -118,11 +127,15 @@ The following measurements concern the performance for the full TPC-C transactio
 [section_4-3-1_full_TPC-C_high_conflict_4_warehouses](section_4-3-1_full_TPC-C_high_conflict_4_warehouses)
 contains the measurements with the full TPC-C transaction mix under high conflict, Fig. 21 and Fig. 22.
 
+__[Time Breakdowns](section_4-3-1_full_TPC-C_high_conflict_4_warehouses/time_breakdown.md)__
+
 ### Full TPC-C under Low Conflict
 
 [section_4-3-1_full_TPC-C_low_conflict_1568_warehouses](section_4-3-1_full_TPC-C_low_conflict_1568_warehouses) contains the measurements with the full TPC-C transaction mix under low conflict, Fig. 23 and Fig. 24.
 
 Power9 has measurements with __replicated internal__ data structures and for the __original__ implementation without this additional optimisation as well as plots comparing these.
+
+__[Time Breakdowns](section_4-3-1_full_TPC-C_low_conflict_1568_warehouses/time_breakdown.md)__
 
 # Extra measurements
 
