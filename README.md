@@ -2,7 +2,7 @@
 
 # References
 
-__The Full Story of 1000 Cores: A Dissection of Concurrency Control on Real(ly) Large Multi-Socket Hardware__
+__The Full Story of 1000 Cores: An Examination of Concurrency Control on Real(ly) Large Multi-Socket Hardware__
 ```
 ...
 ```
@@ -15,7 +15,7 @@ __Archived measurements__ (identical to this repo): https://tudatalib.ulb.tu-dar
   publisher = { Technical University of Darmstadt },
   year = { 2021 },
   copyright = { Creative Commons Attribution 4.0 },
-  title = { The Full Story of 1000 Cores: A Dissection of Concurrency Control on Real(ly) Large Multi-Socket Hardware — Measurements, Logs, Plots }
+  title = { The Full Story of 1000 Cores: An Examination of Concurrency Control on Real(ly) Large Multi-Socket Hardware — Measurements, Logs, Plots }
 }
 ```
 
@@ -23,7 +23,7 @@ __Source code of used DBMS prototype (optimised DBx1000)__: https://github.com/D
 
 # General Structure
 
-In the following data collection, we provide for all experiments discussed in "__The Tale of 1000 Cores: An Evaluation of Concurrency Control on Real(ly) Large Multi-Socket Hardware__"[1] and "__The Full Story of 1000 Cores: A Dissection of Concurrency Control on Real(ly) Large Multi-Socket Hardware__"[2]:
+In the following data collection, we provide for all experiments discussed in "__The Tale of 1000 Cores: An Evaluation of Concurrency Control on Real(ly) Large Multi-Socket Hardware__"[1] and "__The Full Story of 1000 Cores: An Examination of Concurrency Control on Real(ly) Large Multi-Socket Hardware__"[2]:
 - The configuration (".conf") and scripts (".sh") for the experimental setup, raw logs ("log.out", ".log"), profiling output ("\*.perf.\*"), and extracted measurements (".results.csv") compressed into measurements.zip;
 - accumulated measurements ("result.csv") and resulting plots (".svg", ".tex", ".html").
 
@@ -33,9 +33,7 @@ Moreover, along the directories for tha hardware platforms there is a directory 
 
 [1] Tiemo Bang, Norman May, Ilia Petrov, and Carsten Binnig. 2020. The Tale of 1000 Cores: An Evaluation of Concurrency Control on Real(ly) Large Multi-Socket Hardware. In International Workshop on Data Management on New Hardware (DAMON’20), June 15, 2020, Portland, OR, USA. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3399666.3399910
 
-[2] Tiemo Bang, Norman May, Ilia Petrov, and Carsten Binnig. 2022. The Full Story of 1000 Cores: A Dissection of Concurrency Control on Real(ly) Large Multi-Socket Hardware. *publication outstanding*
-
-# 
+[2] Tiemo Bang, Norman May, Ilia Petrov, and Carsten Binnig. 2022. The Full Story of 1000 Cores: An Examination of Concurrency Control on Real(ly) Large Multi-Socket Hardware. *publication outstanding*
 
 # Memory latency and bandwidth by NUMA (Section 2, Table 2)
 
@@ -136,6 +134,11 @@ __[Time Breakdowns](section_4-3-1_full_TPC-C_high_conflict_4_warehouses/time_bre
 Power9 has measurements with __replicated internal__ data structures and for the __original__ implementation without this additional optimisation as well as plots comparing these.
 
 __[Time Breakdowns](section_4-3-1_full_TPC-C_low_conflict_1568_warehouses/time_breakdown.md)__
+
+The comparison of effect of the full TPC-C transaction mix vs. the narrow mix across the hardware platforms is located in [section_4-3-1_full_TPC-C_low_conflict_1568_warehouses/comparison_full_TPC-C_vs_narrow_TPC-C_all_hardware](section_4-3-1_full_TPC-C_low_conflict_1568_warehouses/comparison_full_TPC-C_vs_narrow_TPC-C_all_hardware),
+especially the [detailed throughput comparison](section_4-3-1_full_TPC-C_low_conflict_1568_warehouses/comparison_full_TPC-C_vs_narrow_TPC-C_all_hardware/throughput-heatmap-comparison.svg).
+
+Similarly, there are comparisons of the full vs. narrow mix for the individual hardware platforms [HPE: section_4-3-1_full_TPC-C_low_conflict_1568_warehouses/comparison_full_TPC-C_vs_narrow_TPC-C_hpe](section_4-3-1_full_TPC-C_low_conflict_1568_warehouses/comparison_full_TPC-C_vs_narrow_TPC-C_hpe), [Power8: section_4-3-1_full_TPC-C_low_conflict_1568_warehouses/comparison_full_TPC-C_vs_narrow_TPC-C_power8](section_4-3-1_full_TPC-C_low_conflict_1568_warehouses/comparison_full_TPC-C_vs_narrow_TPC-C_power8), and [Power9: section_4-3-1_full_TPC-C_low_conflict_1568_warehouses/comparison_full_TPC-C_vs_narrow_TPC-C_power9](section_4-3-1_full_TPC-C_low_conflict_1568_warehouses/comparison_full_TPC-C_vs_narrow_TPC-C_power9).
 
 # Extra measurements
 
